@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Node : IHeapItem<Node>
 {
+
     public bool walkable;
     public Vector3 worldPosition;
     public int gridX;
@@ -31,14 +32,20 @@ public class Node : IHeapItem<Node>
 
     public int HeapIndex
     {
-        get { return heapIndex; }
-        set { heapIndex = value; }
+        get
+        {
+            return heapIndex;
+        }
+        set
+        {
+            heapIndex = value;
+        }
     }
 
     public int CompareTo(Node nodeToCompare)
     {
         int compare = fCost.CompareTo(nodeToCompare.fCost);
-        if(compare == 0)
+        if (compare == 0)
         {
             compare = hCost.CompareTo(nodeToCompare.hCost);
         }
