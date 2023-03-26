@@ -10,8 +10,6 @@ public class MyAI : MonoBehaviour
     private SphereCollider attackRange;
     private Unit unit;
 
-    
-
 
     void Awake()
     {
@@ -19,28 +17,12 @@ public class MyAI : MonoBehaviour
         attackRange = GetComponent<SphereCollider>();    
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void Update()
     {
-        if (collision.collider.gameObject.CompareTag("Enemy"))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
-            //범위에 들어온 적으로 공격 지정
-            //unit.target = collision.collider.gameObject.transform;
-            //회전
-            //FaceTarget(collsion.collider.gameObject);
-            //A*알고리즘 정지
-            //unit.StopMethod();
-            //공격 애니메이션
-        }
-    }
-    void OnCollisionExit(Collision collision)
-    {
-        if (collision.collider.gameObject.CompareTag("Enemy"))
-        {
-            //타워로 공격 지정
-            //unit.target = ;
-            //A* 알고리즘 다시 실행
-            //unit.StartMethod();
-            //걷는 애니메이션
+            Debug.Log("Stop");
+            unit.StopMethod();
         }
     }
 

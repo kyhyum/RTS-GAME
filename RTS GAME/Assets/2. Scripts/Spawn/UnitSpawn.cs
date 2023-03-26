@@ -7,6 +7,9 @@ public class UnitSpawn : MonoBehaviour
     public string unit_name = "Human";
     // Á¾Á·º° À¯´Öµé ÇÁ¸®ÆÕ
     public GameObject[] hunit = new GameObject[8];
+    public GameObject[] sunit = new GameObject[8];
+    public GameObject[] uunit = new GameObject[8];
+    public GameObject[] wunit = new GameObject[8];
 
     // ³ªÀÇ Á¾Á· ÇÁ¸®ÆÕ
     private GameObject[] unit = new GameObject[8];
