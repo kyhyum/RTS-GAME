@@ -22,7 +22,7 @@ public class Unit : MonoBehaviour
 
     public void StopMethod()
     {
-        StopCoroutine(UpdatePath());
+        StopCoroutine("FollowPath");
     }
     public void StartMethod()
     {
