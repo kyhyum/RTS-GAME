@@ -55,10 +55,10 @@ public class WalkState : IState
         if(neareastTarget != null)
         {
             Units.unit.StopMethod();
+            Units.unit.target = neareastTarget.transform;
             Units.target = neareastTarget.transform;
             Units.unit.StartMethod();
             float distance = Vector3.Distance(Units.transform.position, neareastTarget.transform.position);
-            Debug.Log(distance);
             if (distance < Units.attackRange)
             {
                 Units.unit.StopMethod();

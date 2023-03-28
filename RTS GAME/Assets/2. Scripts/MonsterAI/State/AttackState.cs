@@ -19,8 +19,13 @@ public class AttackState : IState
     }
     public void Stay()
     {
-        Debug.Log("Attack");
         Units.PlayAnimation(AIUnit.State.Attack);
+        float distance = Vector3.Distance(Units.transform.position, Units.target.position);
+        if(distance > Units.seekRange)
+        {
+            Units.States = AIUnit.State.Walk;
+            Units.target = Units.DefualtTarget;
+        }
     }
 
     public void Exit()

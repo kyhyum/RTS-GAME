@@ -15,8 +15,9 @@ public class AIUnit : MonoBehaviour
     public Transform target;
     public Unit unit;
 
-    public int attackRange;
-    public int seekRange;
+    public float attackRange;
+    public float seekRange;
+
     public bool isDead = false;
     public bool isCreep;
 
