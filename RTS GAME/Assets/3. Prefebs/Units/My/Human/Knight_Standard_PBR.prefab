@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 4848494307529910660}
   - component: {fileID: 4760898839710037208}
   - component: {fileID: 8427171668461107211}
+  - component: {fileID: -4045331647530294082}
   m_Layer: 9
   m_Name: Knight_Standard_PBR
   m_TagString: Untagged
@@ -271,6 +272,22 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &-4045331647530294082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4846207184119910674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68d6298a09d5ebf4ca522100c44b5284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  num: 0
+  hpbar: {fileID: 0}
+  maxHp: 10
+  currenthp: 10
 --- !u!1 &4846212313379301876
 GameObject:
   m_ObjectHideFlags: 0

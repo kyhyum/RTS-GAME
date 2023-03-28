@@ -151,6 +151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 78010318331610055}
   - component: {fileID: 20640619186805711}
+  - component: {fileID: -689795492996079441}
   - component: {fileID: 7267238057986560548}
   m_Layer: 9
   m_Name: Archer_Standard_PBR
@@ -196,6 +197,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-689795492996079441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80102757320788717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68d6298a09d5ebf4ca522100c44b5284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  num: 0
+  hpbar: {fileID: 0}
+  maxHp: 10
+  currenthp: 10
 --- !u!136 &7267238057986560548
 CapsuleCollider:
   m_ObjectHideFlags: 0

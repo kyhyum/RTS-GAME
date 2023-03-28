@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Hp_Bar : MonoBehaviour
 {
     private Transform player;
+    public int num = 0;
     public Slider hpbar;
     public float maxHp;
     public float currenthp;
@@ -13,11 +14,19 @@ public class Hp_Bar : MonoBehaviour
     void Awake()
     {
         player = GetComponent<Transform>();
-        hpbar.maxValue = maxHp;
     }
     void Update()
     {
         transform.position = player.position + new Vector3(0, 0, 0);
-        hpbar.value = currenthp;
+        if(hpbar != null)
+            hpbar.value = currenthp;
+        if(currenthp <= 0)
+        {
+            UnitSpawn.instance.Die(player.gameObject, num);
+        }
+    }
+    public void hpchg()
+    {
+        hpbar.maxValue = maxHp;
     }
 }
