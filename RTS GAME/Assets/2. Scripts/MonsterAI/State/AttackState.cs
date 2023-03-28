@@ -1,27 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class AttackState : IState
 {
-    private AIUnit aIUnit;
+    private AIUnit Units;
 
     public AttackState(AIUnit aIUnit)
     {
-        this.aIUnit = aIUnit;
+        Units = aIUnit;
     }
     public void Enter()
     {
-        throw new System.NotImplementedException();
+        Quaternion targetRotation = Quaternion.LookRotation(Units.target.position - Units.transform.position);
+        Units.transform.rotation = Quaternion.Lerp(Units.transform.rotation, targetRotation, Time.deltaTime * 1);
+
     }
     public void Stay()
     {
-        throw new System.NotImplementedException();
+        Debug.Log("Attack");
+        Units.PlayAnimation(AIUnit.State.Attack);
     }
 
     public void Exit()
     {
-        throw new System.NotImplementedException();
     }
 
 

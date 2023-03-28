@@ -5,9 +5,13 @@ using UnityEngine;
 
 public class AIUnit : MonoBehaviour
 {
+    public bool is_Enemy;
+    public string Opposite_team;
+
     public bool is_range_long;
     public GameObject longRangeWeapon;
     private Animator animator;
+    public Transform DefualtTarget;
     public Transform target;
     public Unit unit;
 
@@ -43,7 +47,16 @@ public class AIUnit : MonoBehaviour
 
     void Awake()
     {
-        animator.GetComponent<Animator>();
+        if (is_Enemy == false)
+        {
+            Opposite_team = "Enemy";
+        }
+        else
+        {
+            Opposite_team = "Player";
+        }
+        unit = GetComponent<Unit>();
+        animator = GetComponent<Animator>();
         _IStates = new IState[System.Enum.GetValues(typeof(State)).Length];
         _IStates[(int)State.Idle] = new IdleState(this);
         _IStates[(int)State.Walk] = new WalkState(this);
@@ -51,7 +64,6 @@ public class AIUnit : MonoBehaviour
         _IStates[(int)State.Dead] = new DeadState(this);
         _IStates[(int)State.Victory] = new VictoryState(this);
         _IStates[(int)State.GetHit] = new GetHitState(this);
-        unit = GetComponent<Unit>();
     }
 
     private void Update()

@@ -13,17 +13,15 @@ public class IdleState : IState
 
     public void Enter()
     {
-        units.States = AIUnit.State.Walk;
     }
 
     public void Exit()
     {
-        units.unit.StartMethod();
     }
 
     public void Stay()
     {
-        throw new System.NotImplementedException();
+        units.States = AIUnit.State.Walk;
     }
 
 }

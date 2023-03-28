@@ -12,20 +12,17 @@ public class Unit : MonoBehaviour
     public float turnSpeed = 3;
     public float turnDst = 5;
     public float stoppingDst = 10;
+    bool followingPath = true;
 
     Path path;
 
-    void Start()
-    {
-        StartCoroutine(UpdatePath());
-    }
-
     public void StopMethod()
     {
-        StopCoroutine("FollowPath");
+        followingPath = false;
     }
     public void StartMethod()
     {
+        followingPath = true;
         StartCoroutine(UpdatePath());
     }
 
@@ -66,7 +63,6 @@ public class Unit : MonoBehaviour
     IEnumerator FollowPath()
     {
 
-        bool followingPath = true;
         int pathIndex = 0;
         transform.LookAt(path.lookPoints[0]);
 

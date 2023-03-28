@@ -6,7 +6,6 @@ using UnityEngine;
 public class WalkState : IState
 {
     private AIUnit Units;
-    bool ishavetarget = false;
     bool isGetAttacked = false;
 
     public WalkState(AIUnit aIUnit)
@@ -18,34 +17,32 @@ public class WalkState : IState
     public void Enter()
     {
         Units.PlayAnimation(AIUnit.State.Walk);
+        Units.unit.target = Units.target;
+        Units.unit.StartMethod();
     }
 
     public void Stay()
     {
-        if (!ishavetarget) FindTarget();
-        else if(ishavetarget)
-        {
-            Units.States = AIUnit.State.Attack;
-        }
+        FindTarget();
     }
 
     public void Exit()
     {
-        throw new System.NotImplementedException();
+        Units.unit.StopMethod();
     }
 
 
 
     public void FindTarget()
     {
-        Collider[] colliders = Physics.OverlapSphere(Units.transform.position, Units.seekRange, 1 << LayerMask.NameToLayer("Enemy"));
+        Collider[] colliders = Physics.OverlapSphere(Units.transform.position, Units.seekRange, 1 << LayerMask.NameToLayer(Units.Opposite_team));
         if (colliders.Length <= 0) return;
         AIUnit neareastTarget = null; // 가장 가까운 적을 저장하기 위한 변수
         float minDist = Mathf.Infinity; // 가장 가까운 적과의 거리를 저장하기 위한 변수
         for(int i = 0; i < colliders.Length; i++)
         {
             AIUnit temp = colliders[i].GetComponentInParent<AIUnit>();
-            if(!temp.isDead && Units.isCreep != temp.isCreep)
+            if(!temp.isDead)
             {
                 float dist = Vector3.Distance(Units.transform.position, temp.transform.position);
                 if(dist < minDist)
@@ -57,9 +54,17 @@ public class WalkState : IState
         }
         if(neareastTarget != null)
         {
+            Units.unit.StopMethod();
             Units.target = neareastTarget.transform;
-            ishavetarget = true;
-            Units.States = AIUnit.State.Attack;
+            Units.unit.StartMethod();
+            float distance = Vector3.Distance(Units.transform.position, neareastTarget.transform.position);
+            Debug.Log(distance);
+            if (distance < Units.attackRange)
+            {
+                Units.unit.StopMethod();
+                Units.States = AIUnit.State.Attack;
+            }
         }
     }
+
 }
