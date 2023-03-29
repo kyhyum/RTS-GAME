@@ -5,28 +5,28 @@ using UnityEngine.UI;
 
 public class Hp_Bar : MonoBehaviour
 {
-    private Transform player;
-    public int num = 0;
+    public bool isdead = false;
     public Slider hpbar;
     public float maxHp;
     public float currenthp;
 
     void Awake()
     {
-        player = GetComponent<Transform>();
+        hpbar.maxValue = maxHp;
     }
     void Update()
     {
-        transform.position = player.position + new Vector3(0, 0, 0);
+        transform.position = this.transform.position + new Vector3(0, 0, 0);
         if(hpbar != null)
             hpbar.value = currenthp;
         if(currenthp <= 0)
         {
-            UnitSpawn.instance.Die(player.gameObject, num);
+            isdead = true;
         }
     }
-    public void hpchg()
+    public void GetAttack(float damage, float Armor)
     {
-        hpbar.maxValue = maxHp;
+        float realdamage = Armor - damage;
+        currenthp -= realdamage;
     }
 }

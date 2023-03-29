@@ -71,14 +71,10 @@ public class UnitSpawn : MonoBehaviour
             {
                 GameObject Unit = CreateUnit(j);
                 GameObject Hpbar = Create_HPbar(Player_HPbar, Unit);
-                Hp_Bar a = Unit.GetComponent<Hp_Bar>();
-                //a.hpbar = Hpbar.GetComponent<Slider>();
-                //a.hpchg();
                 hpbar_Control.obj.Add(Unit.transform);
                 hpbar_Control.hp_bar.Add(Hpbar);
                 unit_queue[j].Enqueue(Unit);
                 Player_Hp_bar_queue.Enqueue(Hpbar);
-                Debug.Log(unit_queue.Count);
             }
         }
     }

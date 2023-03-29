@@ -4,25 +4,24 @@ using UnityEngine;
 
 public class DeadState : IState
 {
-    private AIUnit aIUnit;
+    private AIUnit Units;
 
     public DeadState(AIUnit aIUnit)
     {
-        this.aIUnit = aIUnit;
+        Units = aIUnit;
     }
 
     public void Enter()
     {
-        throw new System.NotImplementedException();
+        Units.PlayAnimation(AIUnit.State.Walk);
     }
 
     public void Exit()
     {
-        throw new System.NotImplementedException();
+        UnitSpawn.instance.Die(Units.gameObject, Units.character_num);
     }
 
     public void Stay()
     {
-        throw new System.NotImplementedException();
     }
 }

@@ -5,18 +5,26 @@ using UnityEngine;
 
 public class AIUnit : MonoBehaviour
 {
+    public int character_num;
+
     public bool is_Enemy;
     public string Opposite_team;
 
     public bool is_range_long;
     public GameObject longRangeWeapon;
+
+    public float attackRange;
+
+    public float armor;
+    public float attack;
+
+    public Hp_Bar hp_bar;
+
     private Animator animator;
     public Transform DefualtTarget;
     public Transform target;
     public Unit unit;
 
-    public float attackRange;
-    public float seekRange;
 
     public bool isDead = false;
     public bool isCreep;
@@ -48,6 +56,7 @@ public class AIUnit : MonoBehaviour
 
     void Awake()
     {
+        hp_bar = GetComponent<Hp_Bar>();
         if (is_Enemy == false)
         {
             Opposite_team = "Enemy";
@@ -69,6 +78,7 @@ public class AIUnit : MonoBehaviour
 
     private void Update()
     {
+        isDead = hp_bar.isdead;
         _IStates[(int)_state].Stay();
     }
 

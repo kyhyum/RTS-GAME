@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -17,7 +18,7 @@ public class WalkState : IState
     public void Enter()
     {
         Units.PlayAnimation(AIUnit.State.Walk);
-        Units.unit.target = Units.target;
+        Units.unit.target = Units.target.transform;
         Units.unit.StartMethod();
     }
 
@@ -35,11 +36,11 @@ public class WalkState : IState
 
     public void FindTarget()
     {
-        Collider[] colliders = Physics.OverlapSphere(Units.transform.position, Units.seekRange, 1 << LayerMask.NameToLayer(Units.Opposite_team));
+        Collider[] colliders = Physics.OverlapSphere(Units.transform.position, Units.attackRange, 1 << LayerMask.NameToLayer(Units.Opposite_team));
         if (colliders.Length <= 0) return;
-        AIUnit neareastTarget = null; // 가장 가까운 적을 저장하기 위한 변수
         float minDist = Mathf.Infinity; // 가장 가까운 적과의 거리를 저장하기 위한 변수
-        for(int i = 0; i < colliders.Length; i++)
+        AIUnit neareastTarget = null; // 가장 가까운 적을 저장하기 위한 변수
+        for (int i = 0; i < colliders.Length; i++)
         {
             AIUnit temp = colliders[i].GetComponentInParent<AIUnit>();
             if(!temp.isDead)
@@ -54,16 +55,8 @@ public class WalkState : IState
         }
         if(neareastTarget != null)
         {
-            Units.unit.StopMethod();
-            Units.unit.target = neareastTarget.transform;
             Units.target = neareastTarget.transform;
-            Units.unit.StartMethod();
-            float distance = Vector3.Distance(Units.transform.position, neareastTarget.transform.position);
-            if (distance < Units.attackRange)
-            {
-                Units.unit.StopMethod();
-                Units.States = AIUnit.State.Attack;
-            }
+            Units.States = AIUnit.State.Attack;
         }
     }
 
