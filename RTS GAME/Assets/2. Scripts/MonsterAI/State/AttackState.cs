@@ -7,6 +7,7 @@ public class AttackState : IState
 {
     private AIUnit Units;
     AIUnit target_AIUnit;
+    float time = 0;
 
     public AttackState(AIUnit aIUnit)
     {
@@ -20,16 +21,21 @@ public class AttackState : IState
     public void Stay()
     {
         Units.PlayAnimation(AIUnit.State.Attack);
-        if (Units.is_range_long)
+        time += Time.deltaTime;
+        if (time >= 1.3f)
         {
-            //투사체 오브젝트 풀링 받아와서 쏘기
+            time = 0;
+            target_AIUnit.hp_bar.GetAttack(Units.attack, target_AIUnit.armor);
+            if (Units.is_range_long)
+            {
+                //투사체 오브젝트 풀링 받아와서 쏘기
+            }
         }
-        target_AIUnit.hp_bar.GetAttack(Units.attack, target_AIUnit.armor);
         float distance = Vector3.Distance(Units.transform.position, Units.target.position);
-        if(distance > Units.attackRange + 1)
+        if (distance > Units.attackRange + 1)
         {
             Units.States = AIUnit.State.Walk;
-            Units.target = Units.DefualtTarget;
+            Units.target = Units.DefaultTarget;
         }
     }
 

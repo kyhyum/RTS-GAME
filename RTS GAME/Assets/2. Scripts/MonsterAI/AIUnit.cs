@@ -21,13 +21,13 @@ public class AIUnit : MonoBehaviour
     public Hp_Bar hp_bar;
 
     private Animator animator;
-    public Transform DefualtTarget;
+    public Transform DefaultTarget;
     public Transform target;
     public Unit unit;
 
 
     public bool isDead = false;
-    public bool isCreep;
+    public bool isCreep = false;
 
     public IState[] _IStates;
 
@@ -38,11 +38,11 @@ public class AIUnit : MonoBehaviour
         Idle,
         Walk,
         Attack,
-        Dead,
+        Death,
         Victory,
         GetHit
     }
-    
+
     public State States
     {
         get { return _state; }
@@ -71,7 +71,7 @@ public class AIUnit : MonoBehaviour
         _IStates[(int)State.Idle] = new IdleState(this);
         _IStates[(int)State.Walk] = new WalkState(this);
         _IStates[(int)State.Attack] = new AttackState(this);
-        _IStates[(int)State.Dead] = new DeadState(this);
+        _IStates[(int)State.Death] = new DeadState(this);
         _IStates[(int)State.Victory] = new VictoryState(this);
         _IStates[(int)State.GetHit] = new GetHitState(this);
     }
@@ -79,12 +79,16 @@ public class AIUnit : MonoBehaviour
     private void Update()
     {
         isDead = hp_bar.isdead;
+        if (isDead && isCreep)
+        {
+            this.States = AIUnit.State.Death;
+        }
         _IStates[(int)_state].Stay();
     }
 
     public void PlayAnimation(State state)
     {
-        switch(state)
+        switch (state)
         {
             case State.Idle:
                 animator.Play("Idle");
@@ -98,8 +102,8 @@ public class AIUnit : MonoBehaviour
             case State.Attack:
                 animator.Play("Attack");
                 break;
-            case State.Dead:
-                animator.Play("Dead");
+            case State.Death:
+                animator.Play("Death");
                 break;
             case State.Walk:
                 animator.Play("Walk");

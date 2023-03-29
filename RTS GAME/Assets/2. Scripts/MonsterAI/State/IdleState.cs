@@ -21,7 +21,10 @@ public class IdleState : IState
 
     public void Stay()
     {
-        units.States = AIUnit.State.Walk;
+        if (!units.isDead && units.isCreep)
+        {
+            units.States = AIUnit.State.Walk;
+        }
     }
 
 }

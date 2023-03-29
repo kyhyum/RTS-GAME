@@ -377,6 +377,8 @@
 "Assets/2. Scripts/MonsterAI/State/VictoryState.cs"
 "Assets/2. Scripts/MonsterAI/State/WalkState.cs"
 "Assets/2. Scripts/Spawn/SpawnFunction.cs"
+"Assets/2. Scripts/Spawn/SpawnPos.cs"
+"Assets/2. Scripts/Spawn/UnitDrag.cs"
 "Assets/2. Scripts/Spawn/UnitSpawn.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
