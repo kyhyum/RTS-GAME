@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6106938417093195312}
   - component: {fileID: 6753383031798591946}
   - component: {fileID: 3234144358011725140}
+  - component: {fileID: 8477310293740744111}
   m_Layer: 5
   m_Name: Panel (7)
   m_TagString: Untagged
@@ -117,12 +118,12 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 7326230728036667473}
+  m_TargetGraphic: {fileID: 6753383031798591946}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1442765767756658619, guid: 2ce96ff606a27614891e34336fd700c2, type: 3}
-        m_TargetAssemblyTypeName: UnitSpawn, Assembly-CSharp
+      - m_Target: {fileID: 8477310293740744111}
+        m_TargetAssemblyTypeName: SpawnFunction, Assembly-CSharp
         m_MethodName: spawn
         m_Mode: 3
         m_Arguments:
@@ -133,6 +134,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8477310293740744111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3234144358011725141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f08a717a1609f074a889d94f237007a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3638488844700476680
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,6 +158,7 @@ GameObject:
   - component: {fileID: 1948716265072480960}
   - component: {fileID: 740223914818893473}
   - component: {fileID: 1948716265072480963}
+  - component: {fileID: 6770254079971651738}
   m_Layer: 5
   m_Name: Panel (8)
   m_TagString: Untagged
@@ -250,12 +264,12 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 7326230728036667473}
+  m_TargetGraphic: {fileID: 740223914818893473}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1442765767756658619, guid: 2ce96ff606a27614891e34336fd700c2, type: 3}
-        m_TargetAssemblyTypeName: UnitSpawn, Assembly-CSharp
+      - m_Target: {fileID: 6770254079971651738}
+        m_TargetAssemblyTypeName: SpawnFunction, Assembly-CSharp
         m_MethodName: spawn
         m_Mode: 3
         m_Arguments:
@@ -266,6 +280,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6770254079971651738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3638488844700476680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f08a717a1609f074a889d94f237007a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7326230726152096738
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,6 +389,7 @@ GameObject:
   - component: {fileID: 7326230727065831584}
   - component: {fileID: 7326230727065831585}
   - component: {fileID: 7326230727065831587}
+  - component: {fileID: 2972439485310353929}
   m_Layer: 5
   m_Name: Panel (3)
   m_TagString: Untagged
@@ -468,12 +495,12 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 7326230728036667473}
+  m_TargetGraphic: {fileID: 7326230727065831585}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1442765767756658619, guid: 2ce96ff606a27614891e34336fd700c2, type: 3}
-        m_TargetAssemblyTypeName: UnitSpawn, Assembly-CSharp
+      - m_Target: {fileID: 2972439485310353929}
+        m_TargetAssemblyTypeName: SpawnFunction, Assembly-CSharp
         m_MethodName: spawn
         m_Mode: 3
         m_Arguments:
@@ -484,6 +511,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2972439485310353929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7326230727065831615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f08a717a1609f074a889d94f237007a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7326230727116758338
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,6 +535,7 @@ GameObject:
   - component: {fileID: 7326230727116758343}
   - component: {fileID: 7326230727116758340}
   - component: {fileID: 7326230727116758342}
+  - component: {fileID: 261029286471907247}
   m_Layer: 5
   m_Name: Panel (1)
   m_TagString: Untagged
@@ -601,12 +641,12 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 7326230728036667473}
+  m_TargetGraphic: {fileID: 7326230727116758340}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1442765767756658619, guid: 2ce96ff606a27614891e34336fd700c2, type: 3}
-        m_TargetAssemblyTypeName: UnitSpawn, Assembly-CSharp
+      - m_Target: {fileID: 261029286471907247}
+        m_TargetAssemblyTypeName: SpawnFunction, Assembly-CSharp
         m_MethodName: spawn
         m_Mode: 3
         m_Arguments:
@@ -617,6 +657,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &261029286471907247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7326230727116758338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f08a717a1609f074a889d94f237007a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7326230727216093904
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,6 +681,7 @@ GameObject:
   - component: {fileID: 7326230727216093909}
   - component: {fileID: 7326230727216093906}
   - component: {fileID: 7326230727216093908}
+  - component: {fileID: 3740052669713625834}
   m_Layer: 5
   m_Name: Panel (2)
   m_TagString: Untagged
@@ -734,12 +787,12 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 7326230728036667473}
+  m_TargetGraphic: {fileID: 7326230727216093906}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1442765767756658619, guid: 2ce96ff606a27614891e34336fd700c2, type: 3}
-        m_TargetAssemblyTypeName: UnitSpawn, Assembly-CSharp
+      - m_Target: {fileID: 3740052669713625834}
+        m_TargetAssemblyTypeName: SpawnFunction, Assembly-CSharp
         m_MethodName: spawn
         m_Mode: 3
         m_Arguments:
@@ -750,6 +803,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3740052669713625834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7326230727216093904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f08a717a1609f074a889d94f237007a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7326230728026029144
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,6 +827,7 @@ GameObject:
   - component: {fileID: 7326230728026029149}
   - component: {fileID: 7326230728026029146}
   - component: {fileID: 7326230728026029148}
+  - component: {fileID: 3523874422876657099}
   m_Layer: 5
   m_Name: Panel (4)
   m_TagString: Untagged
@@ -867,12 +933,12 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 7326230728036667473}
+  m_TargetGraphic: {fileID: 7326230728026029146}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1442765767756658619, guid: 2ce96ff606a27614891e34336fd700c2, type: 3}
-        m_TargetAssemblyTypeName: UnitSpawn, Assembly-CSharp
+      - m_Target: {fileID: 3523874422876657099}
+        m_TargetAssemblyTypeName: SpawnFunction, Assembly-CSharp
         m_MethodName: spawn
         m_Mode: 3
         m_Arguments:
@@ -883,6 +949,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3523874422876657099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7326230728026029144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f08a717a1609f074a889d94f237007a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7326230728036667823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,6 +1106,7 @@ GameObject:
   - component: {fileID: 7388345585646611352}
   - component: {fileID: 8627182344943983213}
   - component: {fileID: 1559145962958313428}
+  - component: {fileID: 823071885733567422}
   m_Layer: 5
   m_Name: Panel (6)
   m_TagString: Untagged
@@ -1133,12 +1212,12 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 7326230728036667473}
+  m_TargetGraphic: {fileID: 8627182344943983213}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1442765767756658619, guid: 2ce96ff606a27614891e34336fd700c2, type: 3}
-        m_TargetAssemblyTypeName: UnitSpawn, Assembly-CSharp
+      - m_Target: {fileID: 823071885733567422}
+        m_TargetAssemblyTypeName: SpawnFunction, Assembly-CSharp
         m_MethodName: spawn
         m_Mode: 3
         m_Arguments:
@@ -1149,6 +1228,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &823071885733567422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8217202342398779230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f08a717a1609f074a889d94f237007a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8357459684605579145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1161,6 +1252,7 @@ GameObject:
   - component: {fileID: 6943137722959326574}
   - component: {fileID: 3945583756017418469}
   - component: {fileID: 3945583756017418468}
+  - component: {fileID: 2412357163378977818}
   m_Layer: 5
   m_Name: Panel (5)
   m_TagString: Untagged
@@ -1266,12 +1358,12 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 7326230728036667473}
+  m_TargetGraphic: {fileID: 3945583756017418469}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1442765767756658619, guid: 2ce96ff606a27614891e34336fd700c2, type: 3}
-        m_TargetAssemblyTypeName: UnitSpawn, Assembly-CSharp
+      - m_Target: {fileID: 2412357163378977818}
+        m_TargetAssemblyTypeName: SpawnFunction, Assembly-CSharp
         m_MethodName: spawn
         m_Mode: 3
         m_Arguments:
@@ -1282,3 +1374,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2412357163378977818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8357459684605579145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f08a717a1609f074a889d94f237007a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

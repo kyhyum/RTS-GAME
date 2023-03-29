@@ -17,16 +17,16 @@ public class Hp_Bar : MonoBehaviour
     void Update()
     {
         transform.position = this.transform.position + new Vector3(0, 0, 0);
-        if(hpbar != null)
+        if (hpbar != null)
             hpbar.value = currenthp;
-        if(currenthp <= 0)
+        if (currenthp <= 0)
         {
             isdead = true;
         }
     }
     public void GetAttack(float damage, float Armor)
     {
-        float realdamage = Armor - damage;
+        float realdamage = damage - Armor;
         currenthp -= realdamage;
     }
 }

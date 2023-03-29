@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class UnitSpawn : MonoBehaviour
 {
+    public Transform DefaultTarget;
+
     public static UnitSpawn instance = null;
     Hpbar_Control hpbar_Control;
 
@@ -70,6 +72,7 @@ public class UnitSpawn : MonoBehaviour
             for (int j = 0; j < 8; j++)
             {
                 GameObject Unit = CreateUnit(j);
+               // Unit.GetComponent<AIUnit>().DefualtTarget = DefaultTarget;
                 GameObject Hpbar = Create_HPbar(Player_HPbar, Unit);
                 hpbar_Control.obj.Add(Unit.transform);
                 hpbar_Control.hp_bar.Add(Hpbar);
@@ -94,7 +97,7 @@ public class UnitSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void spawn(int n)
@@ -105,7 +108,7 @@ public class UnitSpawn : MonoBehaviour
             unit_queue[n].Enqueue(CreateUnit(n));
 
         GameObject unit = unit_queue[n].Dequeue();
-        
+
         // ¼öÁ¤
         unit.transform.position = new Vector3(Random.RandomRange(-8, 8), 7, -26);
         unit.SetActive(true);
