@@ -36,6 +36,7 @@ public class WalkState : IState
 
     public void FindTarget()
     {
+        //attackRange만큼의 구에서 Layer가 Enemy인 콜라이더를 찾음
         Collider[] colliders = Physics.OverlapSphere(Units.transform.position, Units.attackRange, 1 << LayerMask.NameToLayer(Units.Opposite_team));
         if (colliders.Length <= 0) return;
         float minDist = Mathf.Infinity; // 가장 가까운 적과의 거리를 저장하기 위한 변수
@@ -43,19 +44,19 @@ public class WalkState : IState
         for (int i = 0; i < colliders.Length; i++)
         {
             AIUnit temp = colliders[i].GetComponentInParent<AIUnit>();
-            if(!temp.isDead)
+            if (!temp.isDead)
             {
+                //적 중에서 가장 가까운 타깃을 찾음
                 float dist = Vector3.Distance(Units.transform.position, temp.transform.position);
-                if(dist < minDist)
+                if (dist < minDist)
                 {
                     minDist = dist;
                     neareastTarget = temp;
                 }
             }
         }
-        if(neareastTarget != null)
+        if (neareastTarget != null)
         {
-            Debug.Log("have target");
             Units.target = neareastTarget.transform;
             Units.States = AIUnit.State.Attack;
         }

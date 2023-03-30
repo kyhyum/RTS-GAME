@@ -816,7 +816,7 @@ MonoBehaviour:
   target: {fileID: 0}
   unit: {fileID: -2684071438444622631, guid: 4c67c04846a72e64688a2ac506212673, type: 3}
   isDead: 0
-  isCreep: 1
+  isEnable: 1
 --- !u!1 &8558818203176508080
 GameObject:
   m_ObjectHideFlags: 0

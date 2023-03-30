@@ -27,7 +27,7 @@ public class AIUnit : MonoBehaviour
 
 
     public bool isDead = false;
-    public bool isCreep = false;
+    public bool isEnable = false;
 
     public IState[] _IStates;
 
@@ -86,7 +86,7 @@ public class AIUnit : MonoBehaviour
     private void Update()
     {
         isDead = hp_bar.isdead;
-        if (isDead && isCreep)
+        if (isDead && isEnable)
         {
             this.States = AIUnit.State.Death;
         }

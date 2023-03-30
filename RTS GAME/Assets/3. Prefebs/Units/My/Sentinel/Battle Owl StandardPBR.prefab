@@ -1381,7 +1381,7 @@ MonoBehaviour:
   target: {fileID: 0}
   unit: {fileID: -3764637999744178663}
   isDead: 0
-  isCreep: 1
+  isEnable: 1
 --- !u!114 &-6135713791583028024
 MonoBehaviour:
   m_ObjectHideFlags: 0
