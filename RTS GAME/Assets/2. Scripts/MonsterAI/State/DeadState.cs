@@ -24,6 +24,12 @@ public class DeadState : IState
     {
         //idle 상태로 변함과 동시에 unitspawn 함수에서 오브젝트 풀링 처리
         UnitSpawn.instance.Die(Units.gameObject, Units.character_num);
+        Units.hp_bar.currenthp = Units.hp_bar.maxHp;
+        Units.hp_bar.isdead = false;
+        Units.hp_bar.hpbar.gameObject.SetActive(false);
+        Units.isEnable = true;
+        Units.hp_bar.gameObject.SetActive(false);
+
     }
 
     public void Stay()

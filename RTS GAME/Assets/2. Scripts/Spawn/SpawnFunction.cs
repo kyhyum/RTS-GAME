@@ -5,7 +5,11 @@ using UnityEngine.UI;
 
 public class SpawnFunction : MonoBehaviour
 {
-    
+
+    void Awake()
+    {
+
+    }
     public void spawn(int n)
     {
         Color color = this.gameObject.GetComponent<Image>().color;
@@ -22,4 +26,10 @@ public class SpawnFunction : MonoBehaviour
          UnitSpawn.instance.spawn(n);
         
     }
+    
+    public void UpgradeClick()
+    {
+        UnitSpawn.instance.ChangeUI();
+    }
+
 }

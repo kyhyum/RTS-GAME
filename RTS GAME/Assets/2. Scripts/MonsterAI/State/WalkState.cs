@@ -40,9 +40,21 @@ public class WalkState : IState
         Collider[] colliders = Physics.OverlapSphere(Units.transform.position, Units.attackRange, 1 << LayerMask.NameToLayer(Units.Opposite_team));
         if (colliders.Length <= 0) return;
         float minDist = Mathf.Infinity; // 가장 가까운 적과의 거리를 저장하기 위한 변수
-        AIUnit neareastTarget = null; // 가장 가까운 적을 저장하기 위한 변수
+        Transform neareastTarget = null; // 가장 가까운 적을 저장하기 위한 변수
         for (int i = 0; i < colliders.Length; i++)
         {
+            if (colliders[i].tag == "Enemy_Tower")
+            {
+                Tower towers = colliders[i].GetComponentInParent<Tower>();
+                float dist = Vector3.Distance(Units.transform.position, towers.transform.position);
+                if (dist < minDist)
+                {
+                    minDist = dist;
+                    neareastTarget = towers.transform;
+                }
+                continue;
+            }
+
             AIUnit temp = colliders[i].GetComponentInParent<AIUnit>();
             if (!temp.isDead)
             {
@@ -51,13 +63,13 @@ public class WalkState : IState
                 if (dist < minDist)
                 {
                     minDist = dist;
-                    neareastTarget = temp;
+                    neareastTarget = temp.transform;
                 }
             }
         }
         if (neareastTarget != null)
         {
-            Units.target = neareastTarget.transform;
+            Units.target = neareastTarget;
             Units.States = AIUnit.State.Attack;
         }
     }

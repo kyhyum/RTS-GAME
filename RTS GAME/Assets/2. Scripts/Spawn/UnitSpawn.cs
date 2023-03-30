@@ -17,7 +17,7 @@ public class UnitSpawn : MonoBehaviour
     public Transform Canvas_Position;
     public Transform UI_Pos;
     public GameObject SpawnPos;
-    private string unit_name = "Human";
+    public string unit_name = "Human";
     //Hpbar 프리펩
     public GameObject Player_HPbar;
     public GameObject Enemy_HPbar;
@@ -34,8 +34,6 @@ public class UnitSpawn : MonoBehaviour
 
     // 오브젝트 풀링
     List<Queue<GameObject>> unit_queue = new List<Queue<GameObject>>();
-    Queue<GameObject> Player_Hp_bar_queue = new Queue<GameObject>();
-    Queue<GameObject> Enemy_Hp_bar_queue = new Queue<GameObject>();
 
     void Awake()
     {
@@ -76,7 +74,8 @@ public class UnitSpawn : MonoBehaviour
         {
             for (int j = 0; j < 8; j++)
             {
-                GameObject Unit = CreateUnit(j);
+                 CreateUnit(j);
+               /*
                 Unit.GetComponent<AIUnit>().Settarget(DefaultTarget);
                 
                 GameObject Hpbar = Create_HPbar(Player_HPbar, Unit);
@@ -88,7 +87,7 @@ public class UnitSpawn : MonoBehaviour
                 hpbar_Control.obj.Add(Unit.transform);
                 hpbar_Control.hp_bar.Add(Hpbar);
                 unit_queue[j].Enqueue(Unit);
-                Player_Hp_bar_queue.Enqueue(Hpbar);
+               */
             }
         }
     }
@@ -105,11 +104,22 @@ public class UnitSpawn : MonoBehaviour
         Hp_bar.SetActive(false);
         return Hp_bar;
     }
-    private GameObject CreateUnit(int n)
+    private void CreateUnit(int n)
     {
-        GameObject unit_object = Instantiate(unit[n]);
-        unit_object.SetActive(false);
-        return unit_object;
+        GameObject Unit = Instantiate(unit[n]);
+        Unit.SetActive(false);
+
+        Unit.GetComponent<AIUnit>().Settarget(DefaultTarget);
+
+        GameObject Hpbar = Create_HPbar(Player_HPbar, Unit);
+
+        Hp_Bar hp_bar = Unit.GetComponent<Hp_Bar>();
+        hp_bar.hpbar = Hpbar.GetComponent<Slider>();
+        hp_bar.SetMaxHP();
+
+        hpbar_Control.obj.Add(Unit.transform);
+        hpbar_Control.hp_bar.Add(Hpbar);
+        unit_queue[n].Enqueue(Unit);
     }
     
 
@@ -165,13 +175,24 @@ public class UnitSpawn : MonoBehaviour
         if (spawn_unit_num == -1)
             return;
         if (unit_queue[spawn_unit_num].Count == 0)
-            unit_queue[spawn_unit_num].Enqueue(CreateUnit(spawn_unit_num));
+            CreateUnit(spawn_unit_num);
         Vector3 vec = new Vector3(-9 + n * 6.25f, 0, -25);
         GameObject unit = unit_queue[spawn_unit_num].Dequeue();
-
+        Hp_Bar hp_bar = unit.GetComponent<Hp_Bar>();
+        hp_bar.hpbar.gameObject.SetActive(true);
         // 수정
 
         unit.transform.position = vec;
         unit.SetActive(true);
+    }
+
+    public void ChangeUI()
+    {
+        Transform tf = UI_Pos.Find("Viewport");
+        tf.Find(unit_name + "_Unit(Clone)").gameObject.SetActive(false);
+        tf.Find("Upgrade").gameObject.SetActive(true);
+        spawn_unit_num = -1;
+        SpawnPos.SetActive(false);
+        SpawnClear(-1);
     }
 }
