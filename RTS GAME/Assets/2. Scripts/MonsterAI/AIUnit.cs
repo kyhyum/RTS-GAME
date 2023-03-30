@@ -33,6 +33,13 @@ public class AIUnit : MonoBehaviour
 
     private State _state;
 
+    public void Settarget(Transform tower)
+    {
+        DefaultTarget = tower;
+        target = tower;
+        unit.target = tower;
+    }
+
     public enum State
     {
         Idle,

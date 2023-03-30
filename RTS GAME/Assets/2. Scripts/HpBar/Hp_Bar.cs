@@ -12,7 +12,6 @@ public class Hp_Bar : MonoBehaviour
 
     void Awake()
     {
-        hpbar.maxValue = maxHp;
     }
     void Update()
     {
@@ -28,5 +27,9 @@ public class Hp_Bar : MonoBehaviour
     {
         float realdamage = damage - Armor;
         currenthp -= realdamage;
+    }
+    public void SetMaxHP()
+    {
+        hpbar.maxValue = maxHp;
     }
 }

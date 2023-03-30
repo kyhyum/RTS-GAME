@@ -55,6 +55,7 @@ public class WalkState : IState
         }
         if(neareastTarget != null)
         {
+            Debug.Log("have target");
             Units.target = neareastTarget.transform;
             Units.States = AIUnit.State.Attack;
         }

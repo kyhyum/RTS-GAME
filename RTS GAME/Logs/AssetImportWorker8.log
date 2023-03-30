@@ -1,0 +1,912 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.11f1 (0a5ca18544bf) revision 679073'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'ko' Physical Memory: 8105 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\2021.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker8
+-projectPath
+D:/Unity 프로젝트/RTS-GAME/RTS GAME
+-logFile
+Logs/AssetImportWorker8.log
+-srvPort
+59952
+Successfully changed project path to: D:/Unity 프로젝트/RTS-GAME/RTS GAME
+D:/Unity 프로젝트/RTS-GAME/RTS GAME
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 3520.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
+[Subsystems] Discovering subsystems at path D:/Unity/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity 프로젝트/RTS-GAME/RTS GAME/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c8d)
+    Vendor:   NVIDIA
+    VRAM:     4021 MB
+    Driver:   24.21.13.9907
+Initialize mono
+Mono path[0] = 'D:/Unity/2021.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2021.3.11f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/Unity/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.013549 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 441.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.081 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3083ms)
+		BeginReloadAssembly (336ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (2396ms)
+			LoadAssemblies (344ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (294ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (1724ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (151ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (442ms)
+				BeforeProcessingInitializeOnLoad (8ms)
+				ProcessInitializeOnLoadAttributes (622ms)
+				ProcessInitializeOnLoadMethodAttributes (500ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.168288 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Unity 프로젝트\RTS-GAME\RTS GAME\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity 프로젝트\RTS-GAME\RTS GAME\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 2.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.134 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5136ms)
+		BeginReloadAssembly (693ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (27ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (212ms)
+		EndReloadAssembly (3761ms)
+			LoadAssemblies (439ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1110ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (258ms)
+			SetupLoadedEditorAssemblies (1745ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (39ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (329ms)
+				ProcessInitializeOnLoadAttributes (1147ms)
+				ProcessInitializeOnLoadMethodAttributes (209ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (60ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.51 seconds
+Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3538 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (57.1 KB). Loaded Objects now: 4010.
+Memory consumption went from 129.4 MB to 129.4 MB.
+Total: 10.082400 ms (FindLiveObjects: 0.617400 ms CreateObjectMapping: 0.371800 ms MarkObjects: 8.875900 ms  DeleteObjects: 0.215800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 160270.035272 seconds.
+  path: Assets/3. Prefebs/Units/My/Warband/Grunt Standard.prefab
+  artifactKey: Guid(b4683b0ac8c1e864782615a054fbab02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Warband/Grunt Standard.prefab using Guid(b4683b0ac8c1e864782615a054fbab02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13ef56bfbfd747fb46aeb65a68d0a393') in 2.763358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 53.659267 seconds.
+  path: Assets/3. Prefebs/Units/My/Warband/Bandwagon Standard.prefab
+  artifactKey: Guid(334dc27e9305392439bd74caaf3086bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Warband/Bandwagon Standard.prefab using Guid(334dc27e9305392439bd74caaf3086bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '141266d06d17107069ed98a5219d1cc6') in 3.034493 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/3. Prefebs/Units/My/Warband/HogRider Standard.prefab
+  artifactKey: Guid(9bd6067e840a7354e9c23e9af517ee06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Warband/HogRider Standard.prefab using Guid(9bd6067e840a7354e9c23e9af517ee06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0f41bbe11c75be31ec172f01c667d60') in 2.251716 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016344 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Unity 프로젝트\RTS-GAME\RTS GAME\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity 프로젝트\RTS-GAME\RTS GAME\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.38 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.249 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3250ms)
+		BeginReloadAssembly (379ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (99ms)
+		EndReloadAssembly (2631ms)
+			LoadAssemblies (313ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1042ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (180ms)
+			SetupLoadedEditorAssemblies (900ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (53ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (168ms)
+				ProcessInitializeOnLoadAttributes (580ms)
+				ProcessInitializeOnLoadMethodAttributes (87ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (50ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3514 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 4022.
+Memory consumption went from 144.4 MB to 144.4 MB.
+Total: 4.522300 ms (FindLiveObjects: 0.436600 ms CreateObjectMapping: 0.359700 ms MarkObjects: 3.694900 ms  DeleteObjects: 0.029700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015680 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Unity 프로젝트\RTS-GAME\RTS GAME\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity 프로젝트\RTS-GAME\RTS GAME\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.180 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4181ms)
+		BeginReloadAssembly (568ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (32ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (92ms)
+		EndReloadAssembly (3255ms)
+			LoadAssemblies (558ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (965ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (212ms)
+			SetupLoadedEditorAssemblies (1485ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (99ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (259ms)
+				ProcessInitializeOnLoadAttributes (954ms)
+				ProcessInitializeOnLoadMethodAttributes (143ms)
+				AfterProcessingInitializeOnLoad (27ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (49ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3514 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.7 KB). Loaded Objects now: 4025.
+Memory consumption went from 144.4 MB to 144.4 MB.
+Total: 25.204700 ms (FindLiveObjects: 0.984700 ms CreateObjectMapping: 0.735800 ms MarkObjects: 23.389200 ms  DeleteObjects: 0.091500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 23.659814 seconds.
+  path: Assets/3. Prefebs/Units/My/Warband/Drake Standard.prefab
+  artifactKey: Guid(74c6a11887ecd8b4493ca558900afa66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Warband/Drake Standard.prefab using Guid(74c6a11887ecd8b4493ca558900afa66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0527af79c69539ceedd14b703c530e95') in 1.642991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/3. Prefebs/Units/My/Warband/Warlock Standard.prefab
+  artifactKey: Guid(4c67c04846a72e64688a2ac506212673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Warband/Warlock Standard.prefab using Guid(4c67c04846a72e64688a2ac506212673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab606c2046ec6933b4514a188b1b0ada') in 1.603945 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.153155 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Meshes/Archer_Arrow.fbx
+  artifactKey: Guid(9449d94729654824bb5a6bd9138eb008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Meshes/Archer_Arrow.fbx using Guid(9449d94729654824bb5a6bd9138eb008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8855d86a19edd9b6390c0bf72161ada4') in 0.563990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Meshes/Stage.fbx
+  artifactKey: Guid(10f7143bde2ec2848be6793111eba02e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Meshes/Stage.fbx using Guid(10f7143bde2ec2848be6793111eba02e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '983516a065bb6e24b8510d6b436a2a7f') in 0.155951 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Meshes/Mage_Default.fbx
+  artifactKey: Guid(85817aa52585f7c448b111fe88f56c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Meshes/Mage_Default.fbx using Guid(85817aa52585f7c448b111fe88f56c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bf54773398158822e9fe700793ec77f') in 0.117124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.129499 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Archer/Archer_Attack01_Routine.fbx
+  artifactKey: Guid(57e98efd3af47064ba1f8008f6e7c413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Archer/Archer_Attack01_Routine.fbx using Guid(57e98efd3af47064ba1f8008f6e7c413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7214e6b794efdcb09fd5a3264e81c30d') in 0.150950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Archer/Archer_GetHit.fbx
+  artifactKey: Guid(b3ce16fccca3cd54d8b250faf4a38926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Archer/Archer_GetHit.fbx using Guid(b3ce16fccca3cd54d8b250faf4a38926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b26d276cceba7fedd7cee46e633bf6ef') in 0.168223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Archer/Archer_Idle.fbx
+  artifactKey: Guid(efd53a409eabce94aa425d15d914fd81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Archer/Archer_Idle.fbx using Guid(efd53a409eabce94aa425d15d914fd81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f877b416b68638e41860ca4c58a2a345') in 0.205552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.493213 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Archer_Standard_PBR.prefab
+  artifactKey: Guid(beea34203aacb834b91e2a4b289ce9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Archer_Standard_PBR.prefab using Guid(beea34203aacb834b91e2a4b289ce9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Archer': Transition 'AnyState -> Victory' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor\Src\Animation\StateMachine.cpp line 1845]
+
+ -> (artifact id: '7109ccc9d3f5e783184aa4de128bb633') in 2.262493 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/SiegeEngine_Standard_PBR.prefab
+  artifactKey: Guid(eca79a1fd5ed8d64481de118dd265670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/SiegeEngine_Standard_PBR.prefab using Guid(eca79a1fd5ed8d64481de118dd265670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7514a7a7bc06e5c4b4d56ed39240005') in 1.443680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007986 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Mage_Standard_PBR.prefab
+  artifactKey: Guid(a2bc892d14f460c42bd3980042e9a730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Mage_Standard_PBR.prefab using Guid(a2bc892d14f460c42bd3980042e9a730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9b54e69ef7559d93e4b8b8b43a08a0d') in 1.452028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.752797 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Griffin/Griffin_Attack01.fbx
+  artifactKey: Guid(424350809b276974782bce4fe925b10f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Griffin/Griffin_Attack01.fbx using Guid(424350809b276974782bce4fe925b10f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73341f9afdb55382f2a3f2f100406913') in 0.099149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Griffin/Griffin_GetHit.fbx
+  artifactKey: Guid(d1d4a25ba356eb94c834323e52e0f553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Griffin/Griffin_GetHit.fbx using Guid(d1d4a25ba356eb94c834323e52e0f553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '033f9462ea453673b14e0d06fde4ba36') in 0.140770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Griffin/Griffin_Fly.fbx
+  artifactKey: Guid(2dd11a148bd913b41b39eb739aea8d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Griffin/Griffin_Fly.fbx using Guid(2dd11a148bd913b41b39eb739aea8d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cd7119ffb861cad20ccd6aca9e654a1') in 0.086165 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 84.118330 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Mage/Mage_Attack01.fbx
+  artifactKey: Guid(10fb3feb324bfc14699633782366a37c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Mage/Mage_Attack01.fbx using Guid(10fb3feb324bfc14699633782366a37c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a02256418b77f6eac00cfabc24327ab') in 0.394170 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Mage/Mage_Run.fbx
+  artifactKey: Guid(934310d1e7621754eb2a5bd0db1b4dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Mage/Mage_Run.fbx using Guid(934310d1e7621754eb2a5bd0db1b4dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '294c7e6d3ef8999252c60594a79ba124') in 0.186385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Mage/Mage_GetHit.fbx
+  artifactKey: Guid(2c2ca45794b07284c94f0f726ba8e3e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Mage/Mage_GetHit.fbx using Guid(2c2ca45794b07284c94f0f726ba8e3e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7aca5de113f7bfea156e2832f1abd82') in 0.091375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Mage/Mage_Death.fbx
+  artifactKey: Guid(e0ab1f1ea444c50479765c35c882b4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Mage/Mage_Death.fbx using Guid(e0ab1f1ea444c50479765c35c882b4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe10f3dc2b566c7b5353d4d4f726c2b1') in 0.073094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.093926 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Worker/Worker_Death.fbx
+  artifactKey: Guid(66c159703bd406e40a1adff34f139157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Worker/Worker_Death.fbx using Guid(66c159703bd406e40a1adff34f139157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2e11eed7e58af537c59e47e83bd66cb') in 0.066067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Worker/Worker_Work_Start.fbx
+  artifactKey: Guid(adc18a231e56aed4baa222caa4d85880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Worker/Worker_Work_Start.fbx using Guid(adc18a231e56aed4baa222caa4d85880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca3fb0b849b43d822875e81913f56571') in 0.064204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Worker/Worker_Victory.fbx
+  artifactKey: Guid(f8e276b64753af1488291f61c2bb700f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Worker/Worker_Victory.fbx using Guid(f8e276b64753af1488291f61c2bb700f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c66cf9232316556c18600d049572d8e') in 0.053443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Worker/Worker_Walk.fbx
+  artifactKey: Guid(b2918bbbedb444d40b7ca5695c331910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Worker/Worker_Walk.fbx using Guid(b2918bbbedb444d40b7ca5695c331910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eab94428f8806a92cd03f90096f5ba83') in 0.062532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.002658 seconds.
+  path: Assets/3. Prefebs/Units/Enemy/Warband/Bandwagon MaskTint.prefab
+  artifactKey: Guid(e1d0875af59b10041afc96e18fc7498e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/Enemy/Warband/Bandwagon MaskTint.prefab using Guid(e1d0875af59b10041afc96e18fc7498e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2c7125ac6758a048a89552979201b17') in 3.092969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/3. Prefebs/Units/Enemy/Warband/Minion MaskTint.prefab
+  artifactKey: Guid(025eb7477c8a66147b828c57cc869188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/Enemy/Warband/Minion MaskTint.prefab using Guid(025eb7477c8a66147b828c57cc869188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce7f6c11d201438f67c15da5b6299dc7') in 1.240480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/3. Prefebs/Units/Enemy/Warband/Warlock MaskTint.prefab
+  artifactKey: Guid(98c8ba3fc4259c2419e8ef73b72dad5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/Enemy/Warband/Warlock MaskTint.prefab using Guid(98c8ba3fc4259c2419e8ef73b72dad5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd448205f917fa7e7505b316241cf4ed2') in 1.396918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.766222 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Battle Owl StandardPBR.prefab
+  artifactKey: Guid(f1295f6c1c4dfed49bf67520d2099268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Battle Owl StandardPBR.prefab using Guid(f1295f6c1c4dfed49bf67520d2099268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46a648b957fa1671f8bbbcaf47c08f43') in 2.428072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Rock Golem StandardPBR.prefab
+  artifactKey: Guid(b7f53c3859741ad48ab226f656b97c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Rock Golem StandardPBR.prefab using Guid(b7f53c3859741ad48ab226f656b97c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff3a7a57e0a8748eb6dd2b07d84aed3e') in 1.681690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.033800 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Elf Ranger StandardPBR.prefab
+  artifactKey: Guid(26230e18ad56acd4783cafa9c1e2cba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Elf Ranger StandardPBR.prefab using Guid(26230e18ad56acd4783cafa9c1e2cba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6567c5377e0a06cf5393e281cae19e93') in 1.545315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.218114 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Sentinel PBR/Animations/Battle Owl/Attack01.fbx
+  artifactKey: Guid(8a129ee9ef0987d4f8d8767f6ea532bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Sentinel PBR/Animations/Battle Owl/Attack01.fbx using Guid(8a129ee9ef0987d4f8d8767f6ea532bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a791b607432cc365f5368351b812a20') in 0.090125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Sentinel PBR/Animations/Battle Owl/Fly.fbx
+  artifactKey: Guid(3e14f5a57a417134dbc77ed54cadeb9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Sentinel PBR/Animations/Battle Owl/Fly.fbx using Guid(3e14f5a57a417134dbc77ed54cadeb9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef65d7e4ef1688e1cb6f79405fe20170') in 0.084803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Sentinel PBR/Animations/Battle Owl/Victory.fbx
+  artifactKey: Guid(3efefde3105bf3a40b71a731c071b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Sentinel PBR/Animations/Battle Owl/Victory.fbx using Guid(3efefde3105bf3a40b71a731c071b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90aacccd85c856bba63f81f83f97332f') in 0.086515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 63.432704 seconds.
+  path: Assets/3. Prefebs/Units/My/Undead/Crossbowman Standard.prefab
+  artifactKey: Guid(487bbff996fca444e890114bc6c4d8da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Undead/Crossbowman Standard.prefab using Guid(487bbff996fca444e890114bc6c4d8da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dafdabcae4896725fadbe65ff940b064') in 2.147138 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/3. Prefebs/Units/My/Undead/Siege Engine Standard.prefab
+  artifactKey: Guid(6ecfd0c20bb74564d808ba6c890ba2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Undead/Siege Engine Standard.prefab using Guid(6ecfd0c20bb74564d808ba6c890ba2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfd9ad27eec67cf3ce193b393539b140') in 1.229872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/3. Prefebs/Units/My/Undead/Lich Standard.prefab
+  artifactKey: Guid(e01851f734bc3a241b4f1683d897b934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Undead/Lich Standard.prefab using Guid(e01851f734bc3a241b4f1683d897b934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb43fac42a0190b05230d28e608f7b6e') in 1.293745 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/3. Prefebs/Units/My/Undead/Slave Standard.prefab
+  artifactKey: Guid(c6c0e2b4caf61074387580f8cc7f1657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Undead/Slave Standard.prefab using Guid(c6c0e2b4caf61074387580f8cc7f1657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ba56a072810092ced9e2f99e073dd5') in 1.322590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.191528 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Crossbowman/Attack01.fbx
+  artifactKey: Guid(9c5c5dc8bac5b5f43a432364a7eef2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Crossbowman/Attack01.fbx using Guid(9c5c5dc8bac5b5f43a432364a7eef2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04bc5b57db8d7a7591e608b92d94bb88') in 0.075606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Crossbowman/Run.fbx
+  artifactKey: Guid(259985482690f1943bac940bfda1f555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Crossbowman/Run.fbx using Guid(259985482690f1943bac940bfda1f555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86e5375ebeee7ef2d1f8b557933816ca') in 0.094359 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Crossbowman/Victory.fbx
+  artifactKey: Guid(eaa417cab4feac644a0bff6f9dcf1248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Crossbowman/Victory.fbx using Guid(eaa417cab4feac644a0bff6f9dcf1248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9563e265f62fb5a57b621585a951da29') in 0.081081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Crossbowman/Die.fbx
+  artifactKey: Guid(48c219b962cc44f41b7623c65fa11079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Crossbowman/Die.fbx using Guid(48c219b962cc44f41b7623c65fa11079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4933a88edf0f60da119fd7b75821217a') in 0.096771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Crossbowman/Walk.fbx
+  artifactKey: Guid(80538cb093f1953499bffeee58007879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Crossbowman/Walk.fbx using Guid(80538cb093f1953499bffeee58007879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4199d9c50f380c3db4b70aa1ca9e1a2f') in 0.076571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 66.545637 seconds.
+  path: Assets/4. Image/Warband/Warband_Berserker.png
+  artifactKey: Guid(62738194f8ca21348bc09d2fac03a513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Image/Warband/Warband_Berserker.png using Guid(62738194f8ca21348bc09d2fac03a513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7d04b4bc57c20c5950e3e060f90b08c') in 0.213399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/4. Image/Warband/Warband_Warlock.png
+  artifactKey: Guid(16d88eb1a95449541a8b04e8ae5f764b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Image/Warband/Warband_Warlock.png using Guid(16d88eb1a95449541a8b04e8ae5f764b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01f695106a52422b481105f6f6532c0e') in 0.067849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/4. Image/Warband/Warband_HogRider.png
+  artifactKey: Guid(48074f24bcac1a84e92d7a7e57f6c39f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Image/Warband/Warband_HogRider.png using Guid(48074f24bcac1a84e92d7a7e57f6c39f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02b3933bd98186511f910626137d75d0') in 0.078324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/4. Image/Warband/Warband_Headhunter.png
+  artifactKey: Guid(873ded0ae3503664e97d21a8dacd66e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Image/Warband/Warband_Headhunter.png using Guid(873ded0ae3503664e97d21a8dacd66e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '743e868ce5118dbe8a1cedfea42e4079') in 0.160005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/4. Image/Warband/Warband_Grunt.png
+  artifactKey: Guid(e46cb96f199d1d540be30477808dba3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Image/Warband/Warband_Grunt.png using Guid(e46cb96f199d1d540be30477808dba3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ba54a19f1862c3e3d9df8b65b8fb0c2') in 0.108400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.906830 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Death Knight/Die.fbx
+  artifactKey: Guid(5b8ddb21b1d25b24294c600fee269b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Death Knight/Die.fbx using Guid(5b8ddb21b1d25b24294c600fee269b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0c62b2a77cefadd034989afd9fdf37b') in 0.054825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Death Knight/Walk.fbx
+  artifactKey: Guid(19d234ff1ab51364e905f2e22a0c53f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Death Knight/Walk.fbx using Guid(19d234ff1ab51364e905f2e22a0c53f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ce86922fc87ae8586f119cdda8fc616') in 0.085341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Death Knight/Idle.fbx
+  artifactKey: Guid(44ad30a09c34b4044bf86aa8d4f83c61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Death Knight/Idle.fbx using Guid(44ad30a09c34b4044bf86aa8d4f83c61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '276064d1e5cba8dc4a9b107346cda14b') in 0.100941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Death Knight/GetHit.fbx
+  artifactKey: Guid(fb1b34985b5c1524380be9c002e418ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Death Knight/GetHit.fbx using Guid(fb1b34985b5c1524380be9c002e418ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9bc0eef14d1efd3a942f587361a3930') in 0.067241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.144113 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Death Rider/Die.fbx
+  artifactKey: Guid(9fcfb5fbe197c9146b9b7b48cb9b6e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Death Rider/Die.fbx using Guid(9fcfb5fbe197c9146b9b7b48cb9b6e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd875ab26a51032f5f073892d75b87825') in 0.102286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Death Rider/Victory.fbx
+  artifactKey: Guid(cbe3e3bdeae4fad4fa2b15bf317f3f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Death Rider/Victory.fbx using Guid(cbe3e3bdeae4fad4fa2b15bf317f3f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99b6c6950d9d8ff82e029fdd372df628') in 0.127110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.825076 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Gargolye/Die.fbx
+  artifactKey: Guid(24870a1e361b9464897b4323e4654960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Gargolye/Die.fbx using Guid(24870a1e361b9464897b4323e4654960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4d3dae8796eef51629d370c8a80eb4d') in 0.214607 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Gargolye/Victory.fbx
+  artifactKey: Guid(54337acc7487bb1428c57a1e0beda273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Gargolye/Victory.fbx using Guid(54337acc7487bb1428c57a1e0beda273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fd6da8eb90df7c760761cdfeaa5a5dd') in 0.252141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Gargolye/Idle.fbx
+  artifactKey: Guid(4768587ab5b61434ca8bfef09f17c62d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Gargolye/Idle.fbx using Guid(4768587ab5b61434ca8bfef09f17c62d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc391fd58c949d58043ad236aec53a36') in 0.055590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 302.302304 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Lich/Attack02.fbx
+  artifactKey: Guid(6697acb43fdafa843b4f580432139f91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Lich/Attack02.fbx using Guid(6697acb43fdafa843b4f580432139f91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ce1b5fbb5e49d72b2d552cf58b94920') in 0.379126 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Lich/Walk.fbx
+  artifactKey: Guid(8a45777a5c5e22f4282098347b9d0325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Lich/Walk.fbx using Guid(8a45777a5c5e22f4282098347b9d0325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0d00b06fb49f59f9dd29f61cc7fc741') in 0.140636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Lich/Idle.fbx
+  artifactKey: Guid(bbbbd6549ccaec640a00b73723d856b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Lich/Idle.fbx using Guid(bbbbd6549ccaec640a00b73723d856b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2777a27a4e9b588f9a721cf5d3c1179b') in 0.150009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Lich/Run.fbx
+  artifactKey: Guid(d1b4db69cc11343449d93cc5f0459e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Lich/Run.fbx using Guid(d1b4db69cc11343449d93cc5f0459e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3161ae020e78a504cc244308cdb607f0') in 0.166370 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.738527 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Siege Engine/Attack02.fbx
+  artifactKey: Guid(7c85837001e6bfb47823ada52ff8d0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Siege Engine/Attack02.fbx using Guid(7c85837001e6bfb47823ada52ff8d0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4859479707723011fae50b532d9fe7f2') in 0.105915 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Siege Engine/Move.fbx
+  artifactKey: Guid(65df6e50d3d48354f937cdb228586e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Siege Engine/Move.fbx using Guid(65df6e50d3d48354f937cdb228586e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beacf6a605e954a57073e90cfb137509') in 0.111286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Siege Engine/Victory.fbx
+  artifactKey: Guid(fbeef79109c61914aa07fa07c33555cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Siege Engine/Victory.fbx using Guid(fbeef79109c61914aa07fa07c33555cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7d96cd6075a6772d56a4fd8b35560e0') in 0.159775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.267800 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Skeleton Warrior/Attack02.fbx
+  artifactKey: Guid(4020449a7d350284eb27e52eaa6783a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Skeleton Warrior/Attack02.fbx using Guid(4020449a7d350284eb27e52eaa6783a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65fe5c48eeac9e5d250701624f7f68ba') in 0.246974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Skeleton Warrior/Victory.fbx
+  artifactKey: Guid(466f68fb8cdbab14a9aa5c41ae4104d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Skeleton Warrior/Victory.fbx using Guid(466f68fb8cdbab14a9aa5c41ae4104d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b48256f749e792a160b064d06a32e491') in 0.147455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Skeleton Warrior/Walk.fbx
+  artifactKey: Guid(55e44e930e504aa4390b9920b9aef8c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Undead PBR/Animations/Skeleton Warrior/Walk.fbx using Guid(55e44e930e504aa4390b9920b9aef8c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cdb289b709fdea8d4505b3ffa985b02') in 0.087093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.043872 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Band Wagon/Attack02.fbx
+  artifactKey: Guid(4e58b5c14282d2243b9e93af9964cde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Band Wagon/Attack02.fbx using Guid(4e58b5c14282d2243b9e93af9964cde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '879966b1045eb631c3a93c10b13bc068') in 0.247463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Band Wagon/Idle.fbx
+  artifactKey: Guid(87d642cf66b3018428f482837dca476c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Band Wagon/Idle.fbx using Guid(87d642cf66b3018428f482837dca476c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08ff8f4cc9c1512eeae1a56994cca3fd') in 0.075653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.558005 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Berserker/Attack02.fbx
+  artifactKey: Guid(a45f38b01cd88af40b33e6fb8654515e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Berserker/Attack02.fbx using Guid(a45f38b01cd88af40b33e6fb8654515e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '599dd3b1da5da1e76b2017a33b913d3f') in 0.190305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Berserker/GetHit.fbx
+  artifactKey: Guid(3c2efc8a098635d4093c33d37594f358) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Berserker/GetHit.fbx using Guid(3c2efc8a098635d4093c33d37594f358) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce04263fda5c9d0c61676ea306acfc4a') in 0.081589 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Berserker/Run.fbx
+  artifactKey: Guid(f0b665d9626ab4b47840a0b48be62da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Berserker/Run.fbx using Guid(f0b665d9626ab4b47840a0b48be62da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bc34c9b7f2a4c33252ac9392c31a084') in 0.091086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 46.752451 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Head Hunter/Attack01_start.fbx
+  artifactKey: Guid(e309f5c832fbc87478c6aa25ffe8f579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Head Hunter/Attack01_start.fbx using Guid(e309f5c832fbc87478c6aa25ffe8f579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c31660adb96cae01005b8532c971eeb') in 0.243675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Head Hunter/Victory.fbx
+  artifactKey: Guid(c89772445cb1118438c47a26208a6a4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Head Hunter/Victory.fbx using Guid(c89772445cb1118438c47a26208a6a4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6c1f821898b2326b42ea8ef6d4ad243') in 0.107079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Head Hunter/Idle.fbx
+  artifactKey: Guid(6102da586fb7b834789e9180b80e1f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Head Hunter/Idle.fbx using Guid(6102da586fb7b834789e9180b80e1f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c89781695f23e16b4e69fc17bbbbda65') in 0.120144 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.018131 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Hog Rider/Attack02.fbx
+  artifactKey: Guid(ea620a96d861cb543864caa18a48474e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Hog Rider/Attack02.fbx using Guid(ea620a96d861cb543864caa18a48474e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70f59e045ede4ca3d2c8890977707e66') in 0.186472 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Hog Rider/Idle.fbx
+  artifactKey: Guid(ed7314633b879e448a0559df04cfb1ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Hog Rider/Idle.fbx using Guid(ed7314633b879e448a0559df04cfb1ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '980c29ac9e5f8421c5307d2c47254c90') in 0.197806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.369958 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Warlock/Attack02.fbx
+  artifactKey: Guid(e18304083d8d00d4aa2e6c0b2ca68771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Warlock/Attack02.fbx using Guid(e18304083d8d00d4aa2e6c0b2ca68771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e911c5b08ff883d0ce9e339d77b5451c') in 0.064924 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Warlock/Walk.fbx
+  artifactKey: Guid(4cb0b4d9f8ec17e4ab82fe8e2d260603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Warband PBR/Animations/Warlock/Walk.fbx using Guid(4cb0b4d9f8ec17e4ab82fe8e2d260603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa0acc52cfedf9846faae9b92cad7381') in 0.080698 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.329315 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/SiegeEngine/SiegeEngine_Attack02.fbx
+  artifactKey: Guid(762efc0fe35d1eb44a672e43aaeac3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/SiegeEngine/SiegeEngine_Attack02.fbx using Guid(762efc0fe35d1eb44a672e43aaeac3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3021736b2a4293f22f6440ef6996c522') in 0.124888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/SiegeEngine/SiegeEngine_Move.fbx
+  artifactKey: Guid(b1e73d39ad22cbd4d9f21599cc100c7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/SiegeEngine/SiegeEngine_Move.fbx using Guid(b1e73d39ad22cbd4d9f21599cc100c7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fd06679a6c07ddc5ceda03512c519f8') in 0.069217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.380218 seconds.
+  path: Assets/3. Prefebs/Units/My/Warband/Berserker Standard.prefab
+  artifactKey: Guid(e331f429439fa6f418d7343bbb82562a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Warband/Berserker Standard.prefab using Guid(e331f429439fa6f418d7343bbb82562a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e564b7e87979981340247617e9806739') in 2.116352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/3. Prefebs/Units/My/Warband/HeadHunter Standard.prefab
+  artifactKey: Guid(79e3e79dae4815247a26e597863cf9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Warband/HeadHunter Standard.prefab using Guid(79e3e79dae4815247a26e597863cf9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '463037f34d1241b8d2985a22d37b33f4') in 0.747864 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014033 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Unity 프로젝트\RTS-GAME\RTS GAME\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity 프로젝트\RTS-GAME\RTS GAME\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.576 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3579ms)
+		BeginReloadAssembly (451ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (124ms)
+		EndReloadAssembly (2775ms)
+			LoadAssemblies (321ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (996ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (188ms)
+			SetupLoadedEditorAssemblies (1114ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (77ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (204ms)
+				ProcessInitializeOnLoadAttributes (683ms)
+				ProcessInitializeOnLoadMethodAttributes (140ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (41ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 11.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3514 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.7 KB). Loaded Objects now: 4048.
+Memory consumption went from 145.4 MB to 145.4 MB.
+Total: 39.937300 ms (FindLiveObjects: 3.748300 ms CreateObjectMapping: 18.281200 ms MarkObjects: 17.865200 ms  DeleteObjects: 0.039800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013457 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Unity 프로젝트\RTS-GAME\RTS GAME\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity 프로젝트\RTS-GAME\RTS GAME\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.068 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4074ms)
+		BeginReloadAssembly (440ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (18ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (100ms)
+		EndReloadAssembly (3298ms)
+			LoadAssemblies (359ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1105ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (251ms)
+			SetupLoadedEditorAssemblies (1445ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (94ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (7ms)
+				BeforeProcessingInitializeOnLoad (257ms)
+				ProcessInitializeOnLoadAttributes (932ms)
+				ProcessInitializeOnLoadMethodAttributes (145ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (51ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3514 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 4051.
+Memory consumption went from 145.4 MB to 145.4 MB.
+Total: 15.479800 ms (FindLiveObjects: 0.678900 ms CreateObjectMapping: 0.435400 ms MarkObjects: 14.328700 ms  DeleteObjects: 0.035000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

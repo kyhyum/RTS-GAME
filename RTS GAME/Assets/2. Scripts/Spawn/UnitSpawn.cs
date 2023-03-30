@@ -11,6 +11,8 @@ public class UnitSpawn : MonoBehaviour
     Hpbar_Control hpbar_Control;
     public int spawn_unit_num = -1;
 
+    public Transform DefaultTarget;
+
     public Camera ca;
     public Transform Canvas_Position;
     public Transform UI_Pos;
@@ -75,11 +77,13 @@ public class UnitSpawn : MonoBehaviour
             for (int j = 0; j < 8; j++)
             {
                 GameObject Unit = CreateUnit(j);
-               // Unit.GetComponent<AIUnit>().DefualtTarget = DefaultTarget;
+                Unit.GetComponent<AIUnit>().Settarget(DefaultTarget);
+                
                 GameObject Hpbar = Create_HPbar(Player_HPbar, Unit);
 
                 Hp_Bar hp_bar = Unit.GetComponent<Hp_Bar>();
                 hp_bar.hpbar = Hpbar.GetComponent<Slider>();
+                hp_bar.SetMaxHP();
 
                 hpbar_Control.obj.Add(Unit.transform);
                 hpbar_Control.hp_bar.Add(Hpbar);

@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.11f1 (0a5ca18544bf) revision 679073'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'ko' Physical Memory: 16197 MB
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'ko' Physical Memory: 8105 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Unity.exe
+D:\Unity\2021.3.11f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker2
 -projectPath
-C:/Users/alstn/Documents/GitHub/RTS-GAME/RTS GAME
+D:/Unity 프로젝트/RTS-GAME/RTS GAME
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-63955
-Successfully changed project path to: C:/Users/alstn/Documents/GitHub/RTS-GAME/RTS GAME
-C:/Users/alstn/Documents/GitHub/RTS-GAME/RTS GAME
+59952
+Successfully changed project path to: D:/Unity 프로젝트/RTS-GAME/RTS GAME
+D:/Unity 프로젝트/RTS-GAME/RTS GAME
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,113 +47,109 @@ C:/Users/alstn/Documents/GitHub/RTS-GAME/RTS GAME
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 63.65 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 547.89 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/alstn/Documents/GitHub/RTS-GAME/RTS GAME/Assets
+[Subsystems] Discovering subsystems at path D:/Unity/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity 프로젝트/RTS-GAME/RTS GAME/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: AMD Radeon RX 6600 (ID=0x73ff)
-    Vendor:   ATI
-    VRAM:     8147 MB
-    Driver:   31.0.14033.1012
+    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c8d)
+    Vendor:   NVIDIA
+    VRAM:     4021 MB
+    Driver:   24.21.13.9907
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56568
+Mono path[0] = 'D:/Unity/2021.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56736
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009317 seconds.
+Register platform support module: D:/Unity/2021.3.11f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/Unity/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.069396 seconds.
 Native extension for WindowsStandalone target not found
-[usbmuxd] Start listen thread
-[usbmuxd] Listen thread started
-Native extension for iOS target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 67.26 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 151.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.542 seconds
+- Completed reload, in  1.974 seconds
 Domain Reload Profiling:
-	ReloadAssembly (542ms)
-		BeginReloadAssembly (64ms)
+	ReloadAssembly (1976ms)
+		BeginReloadAssembly (759ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (381ms)
-			LoadAssemblies (62ms)
+		EndReloadAssembly (951ms)
+			LoadAssemblies (761ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (83ms)
+			SetupTypeCache (251ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (236ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (567ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (53ms)
+				InitializePlatformSupportModulesInManaged (95ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (67ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (69ms)
-				ProcessInitializeOnLoadMethodAttributes (44ms)
+				RefreshPlugins (152ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (186ms)
+				ProcessInitializeOnLoadMethodAttributes (131ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007494 seconds.
+Registered in 0.219261 seconds.
+Android Extension - Scanning For ADB Devices 6847 ms
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\alstn\Documents\GitHub\RTS-GAME\RTS GAME\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\alstn\Documents\GitHub\RTS-GAME\RTS GAME\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity 프로젝트\RTS-GAME\RTS GAME\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity 프로젝트\RTS-GAME\RTS GAME\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.971 seconds
+- Completed reload, in  3.184 seconds
 Domain Reload Profiling:
-	ReloadAssembly (971ms)
-		BeginReloadAssembly (204ms)
+	ReloadAssembly (3185ms)
+		BeginReloadAssembly (239ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (14ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (116ms)
-		EndReloadAssembly (668ms)
-			LoadAssemblies (80ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (2666ms)
+			LoadAssemblies (1060ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (200ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (319ms)
+			SetupTypeCache (591ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (108ms)
+			SetupLoadedEditorAssemblies (849ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (3ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (72ms)
-				ProcessInitializeOnLoadAttributes (181ms)
-				ProcessInitializeOnLoadMethodAttributes (37ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
+				BeforeProcessingInitializeOnLoad (150ms)
+				ProcessInitializeOnLoadAttributes (540ms)
+				ProcessInitializeOnLoadMethodAttributes (127ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (33ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.42 seconds
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3536 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 29 unused Assets / (57.2 KB). Loaded Objects now: 4008.
-Memory consumption went from 133.7 MB to 133.7 MB.
-Total: 2.444400 ms (FindLiveObjects: 0.200400 ms CreateObjectMapping: 0.128400 ms MarkObjects: 2.034100 ms  DeleteObjects: 0.080800 ms)
+Unloading 3538 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (57.1 KB). Loaded Objects now: 4010.
+Memory consumption went from 129.3 MB to 129.3 MB.
+Total: 6.224000 ms (FindLiveObjects: 0.531200 ms CreateObjectMapping: 0.449100 ms MarkObjects: 5.038900 ms  DeleteObjects: 0.203800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -168,28 +164,576 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 112296.497852 seconds.
-  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Archer/Archer_Victory.fbx
-  artifactKey: Guid(a96f18fcde7c4e94a8fab7314eec3df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Archer/Archer_Victory.fbx using Guid(a96f18fcde7c4e94a8fab7314eec3df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '658017b8f1fddaf12979d878796bb524') in 0.185992 seconds 
+  Time since last request: 156788.341144 seconds.
+  path: Assets/3. Prefebs/Units/Enemy/Human/Worker_MaskTint_PBR.prefab
+  artifactKey: Guid(5dbcabce3b30b35429494fbe5690c74a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/Enemy/Human/Worker_MaskTint_PBR.prefab using Guid(5dbcabce3b30b35429494fbe5690c74a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37597e5244d29dea42c281ee4b88774d') in 2.646022 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Archer/Archer_Attack02_Routine.fbx
-  artifactKey: Guid(66984a16ec82bb0419ed070b4816ce3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Archer/Archer_Attack02_Routine.fbx using Guid(66984a16ec82bb0419ed070b4816ce3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '518aa5bfb36003758b54dde0e242fe3b') in 0.026798 seconds 
+  Time since last request: 0.000047 seconds.
+  path: Assets/3. Prefebs/Units/Enemy/Human/Archer_MaskTint_PBR.prefab
+  artifactKey: Guid(4821ecf090accc34cad4d12d1dfb4214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/Enemy/Human/Archer_MaskTint_PBR.prefab using Guid(4821ecf090accc34cad4d12d1dfb4214) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Archer': Transition 'AnyState -> Victory' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor\Src\Animation\StateMachine.cpp line 1845]
+
+ -> (artifact id: 'e1043cc8789f907edd3a1c2d65adeb1a') in 1.169944 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Archer/Archer_Idle.fbx
-  artifactKey: Guid(efd53a409eabce94aa425d15d914fd81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Archer/Archer_Idle.fbx using Guid(efd53a409eabce94aa425d15d914fd81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd45fc9827fcae2e1e9ba964877b02a18') in 0.027071 seconds 
+  Time since last request: 0.000061 seconds.
+  path: Assets/3. Prefebs/Units/Enemy/Human/Knight_MaskTint_PBR.prefab
+  artifactKey: Guid(6aa720fa3ed76594ebe90a0684a6ae27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/Enemy/Human/Knight_MaskTint_PBR.prefab using Guid(6aa720fa3ed76594ebe90a0684a6ae27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '093e396b202aad56033494f857dae907') in 1.261509 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Archer/Archer_Attack01_Routine.fbx
-  artifactKey: Guid(57e98efd3af47064ba1f8008f6e7c413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RTS Mini Legion Fantasy PBR/Mini Legion Human PBR/Animations/Archer/Archer_Attack01_Routine.fbx using Guid(57e98efd3af47064ba1f8008f6e7c413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3871a67308fcda7f7eece4f31b37c0d') in 0.026129 seconds 
+  Time since last request: 0.045917 seconds.
+  path: Assets/3. Prefebs/Units/Enemy/Human/Footman_MaskTint_PBR Variant.prefab
+  artifactKey: Guid(b7fe2a6abbf341544a9752a00e4d57da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/Enemy/Human/Footman_MaskTint_PBR Variant.prefab using Guid(b7fe2a6abbf341544a9752a00e4d57da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb1b25b5c08586867cd79201b1b58ef4') in 1.071722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Knight_Standard_PBR.prefab
+  artifactKey: Guid(a781d5759ef7f2747981d392b926d8cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Knight_Standard_PBR.prefab using Guid(a781d5759ef7f2747981d392b926d8cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36eead1bd778adb985dc1136279dc090') in 0.983297 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.610022 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Archer_Standard_PBR.prefab
+  artifactKey: Guid(beea34203aacb834b91e2a4b289ce9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Archer_Standard_PBR.prefab using Guid(beea34203aacb834b91e2a4b289ce9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Archer': Transition 'AnyState -> Victory' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor\Src\Animation\StateMachine.cpp line 1845]
+
+ -> (artifact id: '8106ff95125f3b4eb1d20654d37b3ed7') in 0.411982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.146298 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Archer_Standard_PBR.prefab
+  artifactKey: Guid(beea34203aacb834b91e2a4b289ce9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Archer_Standard_PBR.prefab using Guid(beea34203aacb834b91e2a4b289ce9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Archer': Transition 'AnyState -> Victory' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor\Src\Animation\StateMachine.cpp line 1845]
+
+ -> (artifact id: '0d06eb1a140b6f7fe64f6f1b650dfb34') in 0.343743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.698446 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Archer_Standard_PBR.prefab
+  artifactKey: Guid(beea34203aacb834b91e2a4b289ce9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Archer_Standard_PBR.prefab using Guid(beea34203aacb834b91e2a4b289ce9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Archer': Transition 'AnyState -> Victory' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor\Src\Animation\StateMachine.cpp line 1845]
+
+ -> (artifact id: '3d7bafd6f3a31f75b9f00fe762d08b1c') in 0.326633 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.429289 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Archer_Standard_PBR.prefab
+  artifactKey: Guid(beea34203aacb834b91e2a4b289ce9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Archer_Standard_PBR.prefab using Guid(beea34203aacb834b91e2a4b289ce9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Archer': Transition 'AnyState -> Victory' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor\Src\Animation\StateMachine.cpp line 1845]
+
+ -> (artifact id: '718fb1515d1a7e574681e9697ff26985') in 0.316350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.469441 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Archer_Standard_PBR.prefab
+  artifactKey: Guid(beea34203aacb834b91e2a4b289ce9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Archer_Standard_PBR.prefab using Guid(beea34203aacb834b91e2a4b289ce9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Archer': Transition 'AnyState -> Victory' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor\Src\Animation\StateMachine.cpp line 1845]
+
+ -> (artifact id: '22c9df825aa6a376b724a7fadb37264d') in 0.338195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.010492 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Footman_Standard_PBR.prefab
+  artifactKey: Guid(4dd157582750fea488763a03a48b8aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Footman_Standard_PBR.prefab using Guid(4dd157582750fea488763a03a48b8aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd86867b5ac65ffa2d5a075d42eea6f13') in 0.433665 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.613919 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Griffin_Standard_PBR.prefab
+  artifactKey: Guid(70a5fd203cb01e94eaa0ff6f5e2e990d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Griffin_Standard_PBR.prefab using Guid(70a5fd203cb01e94eaa0ff6f5e2e990d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd587e122de35eb28fe8c8a9a018c9fab') in 0.363695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.459232 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Horseman_Standard_PBR.prefab
+  artifactKey: Guid(eed858001959d9c4c85152d984d42f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Horseman_Standard_PBR.prefab using Guid(eed858001959d9c4c85152d984d42f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9de1ad5ef3c781163713afe1b6cbc2ec') in 0.360951 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.498443 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Knight_Standard_PBR.prefab
+  artifactKey: Guid(a781d5759ef7f2747981d392b926d8cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Knight_Standard_PBR.prefab using Guid(a781d5759ef7f2747981d392b926d8cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e6619590a7d945a325c391178053216') in 0.413642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.345505 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Mage_Standard_PBR.prefab
+  artifactKey: Guid(a2bc892d14f460c42bd3980042e9a730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Mage_Standard_PBR.prefab using Guid(a2bc892d14f460c42bd3980042e9a730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '444045cceb41a578ad22e3c0283c24c6') in 0.339549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.216561 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/SiegeEngine_Standard_PBR.prefab
+  artifactKey: Guid(eca79a1fd5ed8d64481de118dd265670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/SiegeEngine_Standard_PBR.prefab using Guid(eca79a1fd5ed8d64481de118dd265670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fef4369d5481ccfec50b87f4278f65c5') in 0.358159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.477866 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Worker_Standard_PBR.prefab
+  artifactKey: Guid(d528cd331b231554c9378763f755cc6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Worker_Standard_PBR.prefab using Guid(d528cd331b231554c9378763f755cc6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0724e0cd031a4d5b2bfee1a22f12796') in 0.316873 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.181772 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Footman_Standard_PBR.prefab
+  artifactKey: Guid(4dd157582750fea488763a03a48b8aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Footman_Standard_PBR.prefab using Guid(4dd157582750fea488763a03a48b8aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3fea077a52496b992c96dac15d644e2') in 0.378810 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.130738 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Griffin_Standard_PBR.prefab
+  artifactKey: Guid(70a5fd203cb01e94eaa0ff6f5e2e990d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Griffin_Standard_PBR.prefab using Guid(70a5fd203cb01e94eaa0ff6f5e2e990d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '448fd92c29777a6df425c21caa265f8b') in 0.358450 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.971233 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Horseman_Standard_PBR.prefab
+  artifactKey: Guid(eed858001959d9c4c85152d984d42f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Horseman_Standard_PBR.prefab using Guid(eed858001959d9c4c85152d984d42f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e1d92de39465df74de53a2c4758f245') in 0.480768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.153183 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Knight_Standard_PBR.prefab
+  artifactKey: Guid(a781d5759ef7f2747981d392b926d8cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Knight_Standard_PBR.prefab using Guid(a781d5759ef7f2747981d392b926d8cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec6fa3709e57901cd4ce18b71ddd1a24') in 0.316375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.011153 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/SiegeEngine_Standard_PBR.prefab
+  artifactKey: Guid(eca79a1fd5ed8d64481de118dd265670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/SiegeEngine_Standard_PBR.prefab using Guid(eca79a1fd5ed8d64481de118dd265670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67a45b1a425961e8a0d0e7bb3361bbf3') in 0.380336 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.743382 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Archer_Standard_PBR.prefab
+  artifactKey: Guid(beea34203aacb834b91e2a4b289ce9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Archer_Standard_PBR.prefab using Guid(beea34203aacb834b91e2a4b289ce9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Archer': Transition 'AnyState -> Victory' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor\Src\Animation\StateMachine.cpp line 1845]
+
+ -> (artifact id: '2d5cdf2a157b14151354b0a38ed046b5') in 0.293662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.731477 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Footman_Standard_PBR.prefab
+  artifactKey: Guid(4dd157582750fea488763a03a48b8aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Footman_Standard_PBR.prefab using Guid(4dd157582750fea488763a03a48b8aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63d2408e266970d9920b5100a9485e30') in 0.288201 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.889159 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Footman_Standard_PBR.prefab
+  artifactKey: Guid(4dd157582750fea488763a03a48b8aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Footman_Standard_PBR.prefab using Guid(4dd157582750fea488763a03a48b8aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dab6d6a9edc716ea8f6373245d4f00a') in 0.397854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.056781 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Griffin_Standard_PBR.prefab
+  artifactKey: Guid(70a5fd203cb01e94eaa0ff6f5e2e990d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Griffin_Standard_PBR.prefab using Guid(70a5fd203cb01e94eaa0ff6f5e2e990d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '372cc5f3160fc834a17aaf14ea9a721f') in 0.333404 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.652842 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Griffin_Standard_PBR.prefab
+  artifactKey: Guid(70a5fd203cb01e94eaa0ff6f5e2e990d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Griffin_Standard_PBR.prefab using Guid(70a5fd203cb01e94eaa0ff6f5e2e990d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f4abcb87d685aeef11390e2bcb4d83d') in 0.354173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.568713 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Horseman_Standard_PBR.prefab
+  artifactKey: Guid(eed858001959d9c4c85152d984d42f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Horseman_Standard_PBR.prefab using Guid(eed858001959d9c4c85152d984d42f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25aafdb00fe0f2424311e76c3ab004f1') in 0.305016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.858223 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Horseman_Standard_PBR.prefab
+  artifactKey: Guid(eed858001959d9c4c85152d984d42f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Horseman_Standard_PBR.prefab using Guid(eed858001959d9c4c85152d984d42f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4427d3bcfe048c560171cf87bbc087fb') in 0.332792 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.621549 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Knight_Standard_PBR.prefab
+  artifactKey: Guid(a781d5759ef7f2747981d392b926d8cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Knight_Standard_PBR.prefab using Guid(a781d5759ef7f2747981d392b926d8cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f18d0fecf2f78bd407afbe0d5f1656a9') in 0.303707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.852202 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Knight_Standard_PBR.prefab
+  artifactKey: Guid(a781d5759ef7f2747981d392b926d8cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Knight_Standard_PBR.prefab using Guid(a781d5759ef7f2747981d392b926d8cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d0717fead912d51ed256564d689ada9') in 0.334549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.551908 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Mage_Standard_PBR.prefab
+  artifactKey: Guid(a2bc892d14f460c42bd3980042e9a730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Mage_Standard_PBR.prefab using Guid(a2bc892d14f460c42bd3980042e9a730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b88698275d02b9d713e4df012409f812') in 0.387118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.572479 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/SiegeEngine_Standard_PBR.prefab
+  artifactKey: Guid(eca79a1fd5ed8d64481de118dd265670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/SiegeEngine_Standard_PBR.prefab using Guid(eca79a1fd5ed8d64481de118dd265670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c985576a796d97a88c5ba696ccbbb808') in 0.283011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.514611 seconds.
+  path: Assets/3. Prefebs/Units/My/Human/Worker_Standard_PBR.prefab
+  artifactKey: Guid(d528cd331b231554c9378763f755cc6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Human/Worker_Standard_PBR.prefab using Guid(d528cd331b231554c9378763f755cc6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '522fbcba8c86de7cf1a4854387d018b9') in 0.344752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.151231 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Battle Owl StandardPBR.prefab
+  artifactKey: Guid(f1295f6c1c4dfed49bf67520d2099268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Battle Owl StandardPBR.prefab using Guid(f1295f6c1c4dfed49bf67520d2099268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec6fda902647be98a31da183550584d0') in 2.158250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Rock Golem StandardPBR.prefab
+  artifactKey: Guid(b7f53c3859741ad48ab226f656b97c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Rock Golem StandardPBR.prefab using Guid(b7f53c3859741ad48ab226f656b97c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd977fdd08b651085784b2f323b87b894') in 1.056798 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Knome StandardPBR.prefab
+  artifactKey: Guid(85204cf2f716f26419087a3415ce116a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Knome StandardPBR.prefab using Guid(85204cf2f716f26419087a3415ce116a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c92da4302a6b3fc13f03bd77d9121b0') in 0.916177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.009917 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Dryad StandardPBR.prefab
+  artifactKey: Guid(70b1bc6861e0df14ab9f57a96bc9e560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Dryad StandardPBR.prefab using Guid(70b1bc6861e0df14ab9f57a96bc9e560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4448b13234e790c9b699a366f720fd2') in 0.845511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.294502 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Battle Owl StandardPBR.prefab
+  artifactKey: Guid(f1295f6c1c4dfed49bf67520d2099268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Battle Owl StandardPBR.prefab using Guid(f1295f6c1c4dfed49bf67520d2099268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c76df02010bf2ca8d834c7309de684ad') in 0.317537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.057690 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Demon Hunter StandardPBR.prefab
+  artifactKey: Guid(afca957642c642a4eb429c119c9e7224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Demon Hunter StandardPBR.prefab using Guid(afca957642c642a4eb429c119c9e7224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34f6dc7fbfd6c2b703a69673eec5056a') in 0.328216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.973120 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Druid StandardPBR.prefab
+  artifactKey: Guid(087ae1c9a97f3134caae740afa28253d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Druid StandardPBR.prefab using Guid(087ae1c9a97f3134caae740afa28253d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '968a5628af0182ed7cee7408ae130093') in 0.393749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.834045 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Dryad StandardPBR.prefab
+  artifactKey: Guid(70b1bc6861e0df14ab9f57a96bc9e560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Dryad StandardPBR.prefab using Guid(70b1bc6861e0df14ab9f57a96bc9e560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14988fe4bcde583c433ebe40fbadb8f8') in 0.319168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.904557 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Elf Ranger StandardPBR.prefab
+  artifactKey: Guid(26230e18ad56acd4783cafa9c1e2cba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Elf Ranger StandardPBR.prefab using Guid(26230e18ad56acd4783cafa9c1e2cba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3f2bf97b6fcef243d21ba757dc58fea') in 0.595420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.342998 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Knome StandardPBR.prefab
+  artifactKey: Guid(85204cf2f716f26419087a3415ce116a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Knome StandardPBR.prefab using Guid(85204cf2f716f26419087a3415ce116a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ab781c136f8e0fa2424dee65593f864') in 0.414383 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.703988 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Rock Golem StandardPBR.prefab
+  artifactKey: Guid(b7f53c3859741ad48ab226f656b97c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Rock Golem StandardPBR.prefab using Guid(b7f53c3859741ad48ab226f656b97c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1490e8e7a4e822d2da73c63ff7783964') in 0.311995 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.627416 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Treeant StandardPBR.prefab
+  artifactKey: Guid(a6a9b76c282529e4bb35726edf3a8732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Treeant StandardPBR.prefab using Guid(a6a9b76c282529e4bb35726edf3a8732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8645b3a8d4ad84dfc5698140ebf46328') in 0.387053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.440363 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Elf Ranger StandardPBR.prefab
+  artifactKey: Guid(26230e18ad56acd4783cafa9c1e2cba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Elf Ranger StandardPBR.prefab using Guid(26230e18ad56acd4783cafa9c1e2cba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010abe6ffdfeb3fda6a6e2757ec75e20') in 0.342496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.694031 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Elf Ranger StandardPBR.prefab
+  artifactKey: Guid(26230e18ad56acd4783cafa9c1e2cba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Elf Ranger StandardPBR.prefab using Guid(26230e18ad56acd4783cafa9c1e2cba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2af436b687bfc8ac65c03f21f8d4249a') in 0.341214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.347007 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Elf Ranger StandardPBR.prefab
+  artifactKey: Guid(26230e18ad56acd4783cafa9c1e2cba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Elf Ranger StandardPBR.prefab using Guid(26230e18ad56acd4783cafa9c1e2cba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da361c1214a39ff9a01d041e90491d3f') in 0.346227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.023153 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Elf Ranger StandardPBR.prefab
+  artifactKey: Guid(26230e18ad56acd4783cafa9c1e2cba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Elf Ranger StandardPBR.prefab using Guid(26230e18ad56acd4783cafa9c1e2cba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0712a24b4d7fc719410fdc103977a72') in 0.501532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.593452 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Knome StandardPBR.prefab
+  artifactKey: Guid(85204cf2f716f26419087a3415ce116a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Knome StandardPBR.prefab using Guid(85204cf2f716f26419087a3415ce116a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d92529a05eacfd9b3de66228cf3b498') in 0.346067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.250441 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Rock Golem StandardPBR.prefab
+  artifactKey: Guid(b7f53c3859741ad48ab226f656b97c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Rock Golem StandardPBR.prefab using Guid(b7f53c3859741ad48ab226f656b97c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c16819cdf92925e326a6caa6bdfadfd') in 0.309723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.847419 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Treeant StandardPBR.prefab
+  artifactKey: Guid(a6a9b76c282529e4bb35726edf3a8732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Treeant StandardPBR.prefab using Guid(a6a9b76c282529e4bb35726edf3a8732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2ff23f0f479f9f071d4dcb05b23d8f0') in 0.377548 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.328125 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Druid StandardPBR.prefab
+  artifactKey: Guid(087ae1c9a97f3134caae740afa28253d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Druid StandardPBR.prefab using Guid(087ae1c9a97f3134caae740afa28253d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4037fc57906fd4294c948c82a924ce0f') in 0.323304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.674523 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Dryad StandardPBR.prefab
+  artifactKey: Guid(70b1bc6861e0df14ab9f57a96bc9e560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Dryad StandardPBR.prefab using Guid(70b1bc6861e0df14ab9f57a96bc9e560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac8de1732c691bd648f4cb256e648f3e') in 0.512622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.824646 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Demon Hunter StandardPBR.prefab
+  artifactKey: Guid(afca957642c642a4eb429c119c9e7224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Demon Hunter StandardPBR.prefab using Guid(afca957642c642a4eb429c119c9e7224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c7ca713590ab82446fe3e5efac38b6b') in 0.345089 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.877786 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Battle Owl StandardPBR.prefab
+  artifactKey: Guid(f1295f6c1c4dfed49bf67520d2099268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Battle Owl StandardPBR.prefab using Guid(f1295f6c1c4dfed49bf67520d2099268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77b38ad11e9117e6562a535614e2a310') in 0.356459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 115.017963 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Battle Owl StandardPBR.prefab
+  artifactKey: Guid(f1295f6c1c4dfed49bf67520d2099268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Battle Owl StandardPBR.prefab using Guid(f1295f6c1c4dfed49bf67520d2099268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c8423e5ad284eda4d71f6cef4b27c8b') in 0.360994 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.546984 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Demon Hunter StandardPBR.prefab
+  artifactKey: Guid(afca957642c642a4eb429c119c9e7224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Demon Hunter StandardPBR.prefab using Guid(afca957642c642a4eb429c119c9e7224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c74da999bfa43dd411e5adbbad9cbe7') in 0.321610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.684485 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Druid StandardPBR.prefab
+  artifactKey: Guid(087ae1c9a97f3134caae740afa28253d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Druid StandardPBR.prefab using Guid(087ae1c9a97f3134caae740afa28253d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be48f72e1057589d3cad207ac12cfff9') in 0.361507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.370721 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Dryad StandardPBR.prefab
+  artifactKey: Guid(70b1bc6861e0df14ab9f57a96bc9e560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Dryad StandardPBR.prefab using Guid(70b1bc6861e0df14ab9f57a96bc9e560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51cb3d964b40bf03ac5a2a8fd94d2ed8') in 0.427747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.251666 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Elf Ranger StandardPBR.prefab
+  artifactKey: Guid(26230e18ad56acd4783cafa9c1e2cba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Elf Ranger StandardPBR.prefab using Guid(26230e18ad56acd4783cafa9c1e2cba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99dec9023d369b51ada6848b4dad5951') in 0.327410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.056144 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Knome StandardPBR.prefab
+  artifactKey: Guid(85204cf2f716f26419087a3415ce116a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Knome StandardPBR.prefab using Guid(85204cf2f716f26419087a3415ce116a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8093bd7933fc1b9a1fa3898a09d8f59') in 0.368468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.140294 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Rock Golem StandardPBR.prefab
+  artifactKey: Guid(b7f53c3859741ad48ab226f656b97c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Rock Golem StandardPBR.prefab using Guid(b7f53c3859741ad48ab226f656b97c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa9d306bef11e0fd3a954c5f1f78706d') in 0.346653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.805892 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Treeant StandardPBR.prefab
+  artifactKey: Guid(a6a9b76c282529e4bb35726edf3a8732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Treeant StandardPBR.prefab using Guid(a6a9b76c282529e4bb35726edf3a8732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ad779dbc4a7e5cae5fac19081971db') in 0.511480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.759658 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Treeant StandardPBR.prefab
+  artifactKey: Guid(a6a9b76c282529e4bb35726edf3a8732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Treeant StandardPBR.prefab using Guid(a6a9b76c282529e4bb35726edf3a8732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '359e6a9622c324c1e6dbfdbc1a706c0b') in 0.317701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.843840 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Treeant StandardPBR.prefab
+  artifactKey: Guid(a6a9b76c282529e4bb35726edf3a8732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Treeant StandardPBR.prefab using Guid(a6a9b76c282529e4bb35726edf3a8732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '392ef9c5be3537010873925026dcea14') in 0.337508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.098997 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Treeant StandardPBR.prefab
+  artifactKey: Guid(a6a9b76c282529e4bb35726edf3a8732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Treeant StandardPBR.prefab using Guid(a6a9b76c282529e4bb35726edf3a8732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '572c265c2d41205c3def801ba4ff1adc') in 0.381414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.622850 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Rock Golem StandardPBR.prefab
+  artifactKey: Guid(b7f53c3859741ad48ab226f656b97c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Rock Golem StandardPBR.prefab using Guid(b7f53c3859741ad48ab226f656b97c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4813717e7450a67d776a1c79030a7e0d') in 0.386799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.247119 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Knome StandardPBR.prefab
+  artifactKey: Guid(85204cf2f716f26419087a3415ce116a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Knome StandardPBR.prefab using Guid(85204cf2f716f26419087a3415ce116a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '756d393de4849764299a995be3235f79') in 0.354933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.050932 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Elf Ranger StandardPBR.prefab
+  artifactKey: Guid(26230e18ad56acd4783cafa9c1e2cba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Elf Ranger StandardPBR.prefab using Guid(26230e18ad56acd4783cafa9c1e2cba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd99548abf45359faf893bab2040116de') in 0.341755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.746017 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Dryad StandardPBR.prefab
+  artifactKey: Guid(70b1bc6861e0df14ab9f57a96bc9e560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Dryad StandardPBR.prefab using Guid(70b1bc6861e0df14ab9f57a96bc9e560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19b0b670fbe7a636f7a1bca9921696c1') in 0.342257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.725506 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Druid StandardPBR.prefab
+  artifactKey: Guid(087ae1c9a97f3134caae740afa28253d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Druid StandardPBR.prefab using Guid(087ae1c9a97f3134caae740afa28253d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4d5d23cf770ed28e8d38227e6c7c34e') in 0.312571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.215638 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Demon Hunter StandardPBR.prefab
+  artifactKey: Guid(afca957642c642a4eb429c119c9e7224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Demon Hunter StandardPBR.prefab using Guid(afca957642c642a4eb429c119c9e7224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7745c3177f29c8505a785c124b15e090') in 0.368255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.666618 seconds.
+  path: Assets/3. Prefebs/Units/My/Sentinel/Battle Owl StandardPBR.prefab
+  artifactKey: Guid(f1295f6c1c4dfed49bf67520d2099268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Sentinel/Battle Owl StandardPBR.prefab using Guid(f1295f6c1c4dfed49bf67520d2099268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '465c4428eef4fd6758549537b066f74b') in 0.325973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 46.127299 seconds.
+  path: Assets/3. Prefebs/Units/My/Undead/Crossbowman Standard.prefab
+  artifactKey: Guid(487bbff996fca444e890114bc6c4d8da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Undead/Crossbowman Standard.prefab using Guid(487bbff996fca444e890114bc6c4d8da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3cc3d641a48906f4a8bd9fb3189559c') in 2.567163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/3. Prefebs/Units/My/Undead/Siege Engine Standard.prefab
+  artifactKey: Guid(6ecfd0c20bb74564d808ba6c890ba2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Undead/Siege Engine Standard.prefab using Guid(6ecfd0c20bb74564d808ba6c890ba2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13ccdef21e342f7e3df22f90f676771e') in 0.949766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/3. Prefebs/Units/My/Undead/Lich Standard.prefab
+  artifactKey: Guid(e01851f734bc3a241b4f1683d897b934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Undead/Lich Standard.prefab using Guid(e01851f734bc3a241b4f1683d897b934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d2b524a64dbc49541c6ca76d8a84dda') in 0.761939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/3. Prefebs/Units/My/Undead/Gargolye Standard.prefab
+  artifactKey: Guid(bbeabfba917a72441980d7510b2faa8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Prefebs/Units/My/Undead/Gargolye Standard.prefab using Guid(bbeabfba917a72441980d7510b2faa8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b538c4440ff0a519d1ae917278224b03') in 0.869356 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

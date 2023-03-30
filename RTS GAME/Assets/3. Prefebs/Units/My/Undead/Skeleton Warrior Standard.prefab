@@ -237,6 +237,9 @@ GameObject:
   - component: {fileID: 8576409517939294882}
   - component: {fileID: 8528042844655244226}
   - component: {fileID: 6329654779397088400}
+  - component: {fileID: 1552801058745393733}
+  - component: {fileID: 5911438138422082946}
+  - component: {fileID: -8815156667012324061}
   m_Layer: 9
   m_Name: Skeleton Warrior Standard
   m_TagString: Untagged
@@ -295,6 +298,65 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1552801058745393733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8578420428358810290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03e4da558c4d374fbcf2acf54f8758c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character_num: 0
+  is_Enemy: 0
+  Opposite_team: 
+  is_range_long: 0
+  longRangeWeapon: {fileID: 0}
+  attackRange: 8
+  armor: 2
+  attack: 3
+  hp_bar: {fileID: -8815156667012324061}
+  DefaultTarget: {fileID: 0}
+  target: {fileID: 0}
+  unit: {fileID: 5911438138422082946}
+  isDead: 0
+  isCreep: 1
+--- !u!114 &5911438138422082946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8578420428358810290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8296162e3f68ed4294d57d2bb27019c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  speed: 4
+  turnSpeed: 3
+  turnDst: 5
+  stoppingDst: 10
+--- !u!114 &-8815156667012324061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8578420428358810290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68d6298a09d5ebf4ca522100c44b5284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isdead: 0
+  hpbar: {fileID: 0}
+  maxHp: 10
+  currenthp: 10
 --- !u!1 &8578858196384705826
 GameObject:
   m_ObjectHideFlags: 0

@@ -1647,6 +1647,8 @@ GameObject:
   - component: {fileID: 3797366049300064317}
   - component: {fileID: 1387670366448583042}
   - component: {fileID: 6917559033837162963}
+  - component: {fileID: 1353704793580464305}
+  - component: {fileID: 415948499233296125}
   m_Layer: 9
   m_Name: Horseman_Standard_PBR
   m_TagString: Untagged
@@ -1717,7 +1719,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68d6298a09d5ebf4ca522100c44b5284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 0
+  isdead: 0
   hpbar: {fileID: 0}
   maxHp: 10
   currenthp: 10
+--- !u!114 &1353704793580464305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3883785136654820945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03e4da558c4d374fbcf2acf54f8758c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character_num: 0
+  is_Enemy: 0
+  Opposite_team: 
+  is_range_long: 1
+  longRangeWeapon: {fileID: 0}
+  attackRange: 3
+  armor: 1
+  attack: 3
+  hp_bar: {fileID: 6917559033837162963}
+  DefaultTarget: {fileID: 0}
+  target: {fileID: 0}
+  unit: {fileID: 415948499233296125}
+  isDead: 0
+  isCreep: 1
+--- !u!114 &415948499233296125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3883785136654820945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8296162e3f68ed4294d57d2bb27019c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  speed: 6
+  turnSpeed: 3
+  turnDst: 5
+  stoppingDst: 10
