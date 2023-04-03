@@ -13,7 +13,10 @@ public class AIUnit : MonoBehaviour
     public bool is_range_long;
     public GameObject longRangeWeapon;
 
+    public Transform Weapon;
     public float attackRange;
+    public float attackHeight;
+    public float attack_anim_speed;
 
     public float armor;
     public float attack;
@@ -74,6 +77,7 @@ public class AIUnit : MonoBehaviour
         }
         unit = GetComponent<Unit>();
         animator = GetComponent<Animator>();
+        attack_anim_speed = animator.speed;
         _IStates = new IState[System.Enum.GetValues(typeof(State)).Length];
         _IStates[(int)State.Idle] = new IdleState(this);
         _IStates[(int)State.Walk] = new WalkState(this);

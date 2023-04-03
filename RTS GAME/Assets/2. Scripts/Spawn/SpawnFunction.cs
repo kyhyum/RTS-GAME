@@ -23,10 +23,10 @@ public class SpawnFunction : MonoBehaviour
             color.a = 0.8f;
             this.gameObject.GetComponent<Image>().color = color;
         }
-         UnitSpawn.instance.spawn(n);
-        
+        UnitSpawn.instance.spawn(n);
+
     }
-    
+
     public void UpgradeClick()
     {
         UnitSpawn.instance.ChangeUI();

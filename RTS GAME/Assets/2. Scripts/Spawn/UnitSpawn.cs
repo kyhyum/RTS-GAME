@@ -5,12 +5,13 @@ using UnityEngine.UI;
 
 public class UnitSpawn : MonoBehaviour
 {
-   // public Transform DefaultTarget;
+    // public Transform DefaultTarget;
 
     public static UnitSpawn instance = null;
     Hpbar_Control hpbar_Control;
     public int spawn_unit_num = -1;
 
+    public Transform crys;
     public Transform DefaultTarget;
 
     public Camera ca;
@@ -18,6 +19,7 @@ public class UnitSpawn : MonoBehaviour
     public Transform UI_Pos;
     public GameObject SpawnPos;
     public string unit_name = "Human";
+    private int[] Unit_Price = { 3, 5, 10, 10, 10, 20, 25, 30 };
     //Hpbar 프리펩
     public GameObject Player_HPbar;
     public GameObject Enemy_HPbar;
@@ -74,20 +76,20 @@ public class UnitSpawn : MonoBehaviour
         {
             for (int j = 0; j < 8; j++)
             {
-                 CreateUnit(j);
-               /*
-                Unit.GetComponent<AIUnit>().Settarget(DefaultTarget);
-                
-                GameObject Hpbar = Create_HPbar(Player_HPbar, Unit);
+                CreateUnit(j);
+                /*
+                 Unit.GetComponent<AIUnit>().Settarget(DefaultTarget);
 
-                Hp_Bar hp_bar = Unit.GetComponent<Hp_Bar>();
-                hp_bar.hpbar = Hpbar.GetComponent<Slider>();
-                hp_bar.SetMaxHP();
+                 GameObject Hpbar = Create_HPbar(Player_HPbar, Unit);
 
-                hpbar_Control.obj.Add(Unit.transform);
-                hpbar_Control.hp_bar.Add(Hpbar);
-                unit_queue[j].Enqueue(Unit);
-               */
+                 Hp_Bar hp_bar = Unit.GetComponent<Hp_Bar>();
+                 hp_bar.hpbar = Hpbar.GetComponent<Slider>();
+                 hp_bar.SetMaxHP();
+
+                 hpbar_Control.obj.Add(Unit.transform);
+                 hpbar_Control.hp_bar.Add(Hpbar);
+                 unit_queue[j].Enqueue(Unit);
+                */
             }
         }
     }
@@ -109,7 +111,12 @@ public class UnitSpawn : MonoBehaviour
         GameObject Unit = Instantiate(unit[n]);
         Unit.SetActive(false);
 
-        Unit.GetComponent<AIUnit>().Settarget(DefaultTarget);
+        if (n == 0)
+        {
+            Unit.GetComponent<Worker>().Settarget(crys);
+        }
+        else
+            Unit.GetComponent<AIUnit>().Settarget(DefaultTarget);
 
         GameObject Hpbar = Create_HPbar(Player_HPbar, Unit);
 
@@ -121,7 +128,7 @@ public class UnitSpawn : MonoBehaviour
         hpbar_Control.hp_bar.Add(Hpbar);
         unit_queue[n].Enqueue(Unit);
     }
-    
+
 
     public void spawn(int n)
     {
@@ -172,6 +179,15 @@ public class UnitSpawn : MonoBehaviour
 
     public void SpawnUnit(int n)
     {
+        if (Unit_Price[spawn_unit_num] > crystal.instance.now_crystal)
+        {
+            //구매 가격 부족
+
+            PriceLack();
+
+            return;
+        }
+        crystal.instance.now_crystal -= Unit_Price[spawn_unit_num];
         if (spawn_unit_num == -1)
             return;
         if (unit_queue[spawn_unit_num].Count == 0)
@@ -184,6 +200,12 @@ public class UnitSpawn : MonoBehaviour
 
         unit.transform.position = vec;
         unit.SetActive(true);
+    }
+    //구매가격 부족
+    private void PriceLack()
+    {
+        Color color = crystal.instance.tmp.color;
+        crystal.instance.tmp.color = Color.red;
     }
 
     public void ChangeUI()
