@@ -339,6 +339,7 @@ GameObject:
   - component: {fileID: 2578480143276024474}
   - component: {fileID: 8458630398627376983}
   - component: {fileID: 6252846180488085001}
+  - component: {fileID: 6844424928743595355}
   m_Layer: 9
   m_Name: Druid StandardPBR
   m_TagString: Untagged
@@ -429,9 +430,12 @@ MonoBehaviour:
   character_num: 0
   is_Enemy: 0
   Opposite_team: 
-  is_range_long: 0
-  longRangeWeapon: {fileID: 0}
+  is_range_long: 1
+  longRangeWeapon: {fileID: 910963571719254232, guid: fadf43e5e7fca7f48bdd0f45fd043d3f, type: 3}
+  Weapon: {fileID: 4753118377641495482}
   attackRange: 8
+  attackHeight: 0
+  attack_anim_speed: 0
   armor: 1
   attack: 3
   hp_bar: {fileID: 6252846180488085001}
@@ -456,6 +460,18 @@ MonoBehaviour:
   hpbar: {fileID: 0}
   maxHp: 10
   currenthp: 10
+--- !u!114 &6844424928743595355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4747486437392866456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2098304760bcc40a503f7da715cb52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4747493169750136778
 GameObject:
   m_ObjectHideFlags: 0

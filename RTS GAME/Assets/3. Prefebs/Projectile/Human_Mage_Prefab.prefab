@@ -9659,6 +9659,7 @@ GameObject:
   - component: {fileID: 8128909913127948071}
   - component: {fileID: 8223175670164765771}
   - component: {fileID: 8222215680897019805}
+  - component: {fileID: 9019721027761730546}
   m_Layer: 0
   m_Name: Human_Mage_Prefab
   m_TagString: Untagged
@@ -9674,7 +9675,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8132136636488983941}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 2.407546, y: 0, z: 20.806738}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14476,6 +14477,22 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &9019721027761730546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8132136636488983941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d50e06dbc21650418b8f0d77ca87dce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isparabola: 0
+  height: 0
+  projectile_Spawn: {fileID: 0}
+  Projectile_trs: {fileID: 0}
 --- !u!1 &8132179598873255381
 GameObject:
   m_ObjectHideFlags: 0

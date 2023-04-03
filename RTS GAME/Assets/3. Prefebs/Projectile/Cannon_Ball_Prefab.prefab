@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8918073984605382553}
   - component: {fileID: 3540730204318535047}
   - component: {fileID: 1742115319198102164}
+  - component: {fileID: 142109242242268095}
   m_Layer: 0
   m_Name: Cannon_Ball_Prefab
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9201838998605782534}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 9.630235, y: 0, z: -9.225522}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -97,3 +98,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &142109242242268095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9201838998605782534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d50e06dbc21650418b8f0d77ca87dce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isparabola: 1
+  height: 0
+  projectile_Spawn: {fileID: 0}
+  Projectile_trs: {fileID: 6247436401829936347}

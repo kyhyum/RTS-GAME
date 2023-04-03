@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841691580103597735}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.614173, y: 0, z: -3.8879733}
+  m_LocalPosition: {x: 9.616908, y: 0, z: -4.207779}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -117,5 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d50e06dbc21650418b8f0d77ca87dce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isparabola: 0
   height: 0.5
   projectile_Spawn: {fileID: 0}
+  Projectile_trs: {fileID: 845442154838206223}

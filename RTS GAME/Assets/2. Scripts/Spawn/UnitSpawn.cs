@@ -111,12 +111,7 @@ public class UnitSpawn : MonoBehaviour
         GameObject Unit = Instantiate(unit[n]);
         Unit.SetActive(false);
 
-        if (n == 0)
-        {
-            Unit.GetComponent<Worker>().Settarget(crys);
-        }
-        else
-            Unit.GetComponent<AIUnit>().Settarget(DefaultTarget);
+        Unit.GetComponent<AIUnit>().Settarget(DefaultTarget);
 
         GameObject Hpbar = Create_HPbar(Player_HPbar, Unit);
 

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 913941953638570388}
   - component: {fileID: 1017397609824526642}
   - component: {fileID: 1037371261275579226}
+  - component: {fileID: -2260872820203474787}
   m_Layer: 0
   m_Name: Sentinel_Mage_Prefab
   m_TagString: Untagged
@@ -4828,6 +4829,20 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &-2260872820203474787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910963571719254232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d50e06dbc21650418b8f0d77ca87dce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  height: 0
+  projectile_Spawn: {fileID: 0}
 --- !u!1 &911010523319937408
 GameObject:
   m_ObjectHideFlags: 0

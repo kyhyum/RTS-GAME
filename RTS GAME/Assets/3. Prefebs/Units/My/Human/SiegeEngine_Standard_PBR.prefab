@@ -462,6 +462,7 @@ GameObject:
   - component: {fileID: -4084034566309996116}
   - component: {fileID: -3504981837752945149}
   - component: {fileID: 9152845233718674352}
+  - component: {fileID: 473495255329636668}
   m_Layer: 9
   m_Name: SiegeEngine_Standard_PBR
   m_TagString: Untagged
@@ -552,8 +553,11 @@ MonoBehaviour:
   is_Enemy: 0
   Opposite_team: 
   is_range_long: 1
-  longRangeWeapon: {fileID: 0}
+  longRangeWeapon: {fileID: 9201838998605782534, guid: 723e8a296d892014eba90d5f8844f98e, type: 3}
+  Weapon: {fileID: 7743651784795702997}
   attackRange: 12
+  attackHeight: 3
+  attack_anim_speed: 0
   armor: 1
   attack: 3
   hp_bar: {fileID: -4084034566309996116}
@@ -579,6 +583,18 @@ MonoBehaviour:
   turnSpeed: 3
   turnDst: 5
   stoppingDst: 10
+--- !u!114 &473495255329636668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7746111679098623765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2098304760bcc40a503f7da715cb52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7746167241985664551
 GameObject:
   m_ObjectHideFlags: 0
