@@ -45,9 +45,10 @@ public class Worker : MonoBehaviour
             animator.SetBool("IsWork", true);
             StartCoroutine("pickup");
         }
-        // 자원을 캔 후 타워로 타겟 지정
-        if (collision.gameObject.tag == "Player_Tower")
+        // 자원을 캔 후 타워로 타겟1  `2`  지정
+        if (collision.gameObject.tag == "Store_Tower")
         {
+            Debug.Log("Store");
             if (Mined)
             {
                 crystal.instance.now_crystal += 1;
@@ -64,7 +65,7 @@ public class Worker : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         IsWork = false;
         animator.SetBool("IsMove", true);
-        Settarget(GameObject.Find("Mine WallTower").transform);
+        Settarget(GameObject.Find("HightTower").transform);
         Mined = true;
     }
 }

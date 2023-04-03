@@ -8,6 +8,8 @@ TagManager:
   - Enemy_Tower
   - Player_Tower
   - Crystal
+  - Worker
+  - Store_Tower
   layers:
   - Default
   - TransparentFX

@@ -76,18 +76,17 @@ public class AttackState : MonoBehaviour,IState
                 }
                 time = 0;
 
-            }
-
-            //적이 죽거나 적이 거리가 멀어지면 walkstate로 변환
-            if (!istower)
+            }        
+        }
+        //적이 죽거나 적이 거리가 멀어지면 walkstate로 변환
+        if (!istower)
+        {
+            float distance = Vector3.Distance(Units.transform.position, Units.target.position);
+            if (distance > Units.attackRange + 1 || target_AIUnit.isDead == true)
             {
-                float distance = Vector3.Distance(Units.transform.position, Units.target.position);
-                if (distance > Units.attackRange + 1 || target_AIUnit.isDead == true)
-                {
-                    Units.States = AIUnit.State.Walk;
-                    Units.target = Units.DefaultTarget;
-                    Units.unit.target = Units.DefaultTarget;
-                }
+                Units.States = AIUnit.State.Walk;
+                Units.target = Units.DefaultTarget;
+                Units.unit.target = Units.DefaultTarget;
             }
         }
     }

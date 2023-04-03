@@ -1186,9 +1186,12 @@ MonoBehaviour:
   character_num: 0
   is_Enemy: 0
   Opposite_team: 
-  is_range_long: 1
+  is_range_long: 0
   longRangeWeapon: {fileID: 0}
+  Weapon: {fileID: 0}
   attackRange: 3
+  attackHeight: 0
+  attack_anim_speed: 0
   armor: 1
   attack: 3
   hp_bar: {fileID: -6935259303518070575}
