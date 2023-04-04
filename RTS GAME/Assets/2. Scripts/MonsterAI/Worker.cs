@@ -2,19 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using TMPro;
+using System;
 
 public class Worker : MonoBehaviour
 {
     private NavMeshAgent agent;
     public Transform target = null;
     private Animator animator;
+    private GameObject mytower;
 
     private bool IsWork = false;
     private bool Mined = false;
-    private string crystal_name = "small crystal target";
+    private bool IsBig = false;
+    private string crystal_name;
     // Start is called before the first frame update
     void Awake()
     {
+        crystal_name = "small crystal target";
+        
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
         target = GameObject.Find(crystal_name).transform;
@@ -51,7 +57,12 @@ public class Worker : MonoBehaviour
             Debug.Log("Store");
             if (Mined)
             {
-                crystal.instance.now_crystal += 1;
+                if (GameObject.Find("Mine WallTower").GetComponent<MyTower>().upgrade_lv >= 3)
+                    BigCrystal();
+                if (IsBig)
+                    crystal.instance.now_crystal += 2;
+                else
+                    crystal.instance.now_crystal += 1;
                 Mined = false;
                 Settarget(GameObject.Find(crystal_name).transform);
             }
@@ -67,5 +78,11 @@ public class Worker : MonoBehaviour
         animator.SetBool("IsMove", true);
         Settarget(GameObject.Find("Mine StoreTower").transform);
         Mined = true;
+    }
+
+    public void BigCrystal()
+    {
+        crystal_name = "big crystal target";
+        IsBig = true;
     }
 }

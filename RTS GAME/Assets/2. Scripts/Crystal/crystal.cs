@@ -5,7 +5,7 @@ using TMPro;
 
 public class crystal : MonoBehaviour
 {
-    public int now_crystal = 100;
+    public int now_crystal;
     public static crystal instance = null;
     public TMP_Text tmp;
     Color color;

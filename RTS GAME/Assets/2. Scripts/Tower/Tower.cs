@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Tower : MonoBehaviour
@@ -8,7 +10,7 @@ public class Tower : MonoBehaviour
 
     public float armor = 2;
 
-    int Upgrade_Level;
+    public int Upgrade_Level;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,5 @@ public class Tower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 }

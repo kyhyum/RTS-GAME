@@ -37,6 +37,9 @@ public class UnitSpawn : MonoBehaviour
     // 오브젝트 풀링
     List<Queue<GameObject>> unit_queue = new List<Queue<GameObject>>();
 
+    //업그레이드 수치
+    public int PlusAttack = 0, PlusArmor = 0;
+
     void Awake()
     {
         instance = this;
@@ -190,15 +193,18 @@ public class UnitSpawn : MonoBehaviour
             CreateUnit(spawn_unit_num);
         Vector3 vec = new Vector3(-9 + n * 6.25f, 0, -25);
         GameObject unit = unit_queue[spawn_unit_num].Dequeue();
+        if (spawn_unit_num != 0)
+        {
+            unit.GetComponent<AIUnit>().armor += PlusArmor;
+            unit.GetComponent<AIUnit>().attack += PlusAttack;
+        }
         Hp_Bar hp_bar = unit.GetComponent<Hp_Bar>();
         hp_bar.hpbar.gameObject.SetActive(true);
-        // 수정
-
         unit.transform.position = vec;
         unit.SetActive(true);
     }
     //구매가격 부족
-    private void PriceLack()
+    public void PriceLack()
     {
         Color color = crystal.instance.tmp.color;
         crystal.instance.tmp.color = Color.red;
