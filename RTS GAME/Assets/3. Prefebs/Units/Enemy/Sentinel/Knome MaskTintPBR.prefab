@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 7426200727809164668}
   - component: {fileID: 7371739156640040982}
   - component: {fileID: 357297035402390143}
+  - component: {fileID: -5974519723020910258}
   m_Layer: 8
   m_Name: Knome MaskTintPBR
   m_TagString: Untagged
@@ -196,6 +197,22 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &-5974519723020910258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7429003065155458372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68d6298a09d5ebf4ca522100c44b5284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isdead: 0
+  hpbar: {fileID: 0}
+  maxHp: 20
+  currenthp: 20
 --- !u!1 &7429022837273543662
 GameObject:
   m_ObjectHideFlags: 0

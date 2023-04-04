@@ -14,7 +14,6 @@ public class UnitSpawn : MonoBehaviour
     public Transform crys;
     public Transform DefaultTarget;
 
-    public Camera ca;
     public Transform Canvas_Position;
     public Transform UI_Pos;
     public GameObject SpawnPos;
@@ -22,7 +21,6 @@ public class UnitSpawn : MonoBehaviour
     private int[] Unit_Price = { 3, 5, 10, 10, 10, 20, 25, 30 };
     //Hpbar ÇÁ¸®Æé
     public GameObject Player_HPbar;
-    public GameObject Enemy_HPbar;
     // Á¾Á·º° À¯´Öµé ÇÁ¸®ÆÕ
     public GameObject[] unitUI = new GameObject[4];
     public GameObject[] hunit = new GameObject[8];
@@ -191,7 +189,7 @@ public class UnitSpawn : MonoBehaviour
             return;
         if (unit_queue[spawn_unit_num].Count == 0)
             CreateUnit(spawn_unit_num);
-        Vector3 vec = new Vector3(-9 + n * 6.25f, 0, -25);
+        Vector3 vec = new Vector3(-9 + n * 6.25f, 0, -23);
         GameObject unit = unit_queue[spawn_unit_num].Dequeue();
         if (spawn_unit_num != 0)
         {

@@ -403,6 +403,10 @@ GameObject:
   - component: {fileID: 4757750505283836}
   - component: {fileID: 95203712623174452}
   - component: {fileID: 2219296995989297748}
+  - component: {fileID: -6311453806558239213}
+  - component: {fileID: 1461466896860095885}
+  - component: {fileID: -8602078872649905161}
+  - component: {fileID: -2749316883412342938}
   m_Layer: 8
   m_Name: Archer_MaskTint_PBR
   m_TagString: Untagged
@@ -461,6 +465,81 @@ CapsuleCollider:
   m_Height: 2.1373887
   m_Direction: 1
   m_Center: {x: -0.016494215, y: 0.56869435, z: 0}
+--- !u!114 &-6311453806558239213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385073486490892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2098304760bcc40a503f7da715cb52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1461466896860095885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385073486490892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68d6298a09d5ebf4ca522100c44b5284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isdead: 0
+  hpbar: {fileID: 0}
+  maxHp: 20
+  currenthp: 20
+--- !u!114 &-8602078872649905161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385073486490892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03e4da558c4d374fbcf2acf54f8758c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character_num: 0
+  is_Enemy: 1
+  Opposite_team: 
+  is_range_long: 1
+  longRangeWeapon: {fileID: 841691580103597735, guid: 47c102b5dcf8a474693003ae278158df, type: 3}
+  Weapon: {fileID: 4547955822316544}
+  AIr_Unit_Attack: 1
+  attackRange: 8
+  attack_anim_speed: 0
+  armor: 1
+  attack: 3
+  isInAir: 0
+  hp_bar: {fileID: 1461466896860095885}
+  DefaultTarget: {fileID: 0}
+  target: {fileID: 0}
+  unit: {fileID: -2749316883412342938}
+  isDead: 0
+  isEnable: 1
+--- !u!114 &-2749316883412342938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385073486490892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8296162e3f68ed4294d57d2bb27019c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  speed: 4
+  turnSpeed: 3
+  turnDst: 5
+  stoppingDst: 10
 --- !u!1 &1394863450129858
 GameObject:
   m_ObjectHideFlags: 0

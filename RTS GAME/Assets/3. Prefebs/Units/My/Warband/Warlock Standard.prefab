@@ -324,13 +324,14 @@ MonoBehaviour:
   is_Enemy: 0
   Opposite_team: 
   is_range_long: 1
-  longRangeWeapon: {fileID: 0}
-  Weapon: {fileID: 0}
+  longRangeWeapon: {fileID: 8132274071651884416, guid: f5853700da3f6d3448a615a0ead2fcaa, type: 3}
+  Weapon: {fileID: 764749360286545855}
+  AIr_Unit_Attack: 0
   attackRange: 8
-  attackHeight: 0
   attack_anim_speed: 0
   armor: 2
   attack: 3
+  isInAir: 0
   hp_bar: {fileID: 887153243162700779}
   DefaultTarget: {fileID: 0}
   target: {fileID: 0}

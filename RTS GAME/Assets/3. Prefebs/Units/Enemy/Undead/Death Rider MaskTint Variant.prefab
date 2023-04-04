@@ -260,3 +260,66 @@ CapsuleCollider:
   m_Height: 3
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &-3945710736780778025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247721584946596868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8296162e3f68ed4294d57d2bb27019c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  speed: 4
+  turnSpeed: 3
+  turnDst: 5
+  stoppingDst: 10
+--- !u!114 &-3412245228599660634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247721584946596868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03e4da558c4d374fbcf2acf54f8758c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character_num: 0
+  is_Enemy: 1
+  Opposite_team: 
+  is_range_long: 0
+  longRangeWeapon: {fileID: 0}
+  Weapon: {fileID: 0}
+  AIr_Unit_Attack: 0
+  attackRange: 8
+  attack_anim_speed: 0
+  armor: 1
+  attack: 3
+  isInAir: 0
+  hp_bar: {fileID: -1559553831575531432}
+  DefaultTarget: {fileID: 0}
+  target: {fileID: 0}
+  unit: {fileID: -3945710736780778025}
+  isDead: 0
+  isEnable: 1
+--- !u!114 &-1559553831575531432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247721584946596868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68d6298a09d5ebf4ca522100c44b5284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isdead: 0
+  hpbar: {fileID: 0}
+  maxHp: 20
+  currenthp: 20

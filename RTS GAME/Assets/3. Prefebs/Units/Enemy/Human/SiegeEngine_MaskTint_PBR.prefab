@@ -303,6 +303,10 @@ GameObject:
   - component: {fileID: 6872553551446884368}
   - component: {fileID: 6783414424097775038}
   - component: {fileID: 6877425263935218663}
+  - component: {fileID: -1116100801159646306}
+  - component: {fileID: -6459534431222164434}
+  - component: {fileID: 2552040900887740647}
+  - component: {fileID: 4316640395429983658}
   m_Layer: 8
   m_Name: SiegeEngine_MaskTint_PBR
   m_TagString: Untagged
@@ -361,6 +365,81 @@ CapsuleCollider:
   m_Height: 5
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &-1116100801159646306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6878597331834024274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8296162e3f68ed4294d57d2bb27019c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  speed: 4
+  turnSpeed: 3
+  turnDst: 5
+  stoppingDst: 10
+--- !u!114 &-6459534431222164434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6878597331834024274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68d6298a09d5ebf4ca522100c44b5284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isdead: 0
+  hpbar: {fileID: 0}
+  maxHp: 20
+  currenthp: 20
+--- !u!114 &2552040900887740647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6878597331834024274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03e4da558c4d374fbcf2acf54f8758c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character_num: 0
+  is_Enemy: 1
+  Opposite_team: 
+  is_range_long: 1
+  longRangeWeapon: {fileID: 9201838998605782534, guid: 723e8a296d892014eba90d5f8844f98e, type: 3}
+  Weapon: {fileID: 6881197442946071072}
+  AIr_Unit_Attack: 0
+  attackRange: 8
+  attack_anim_speed: 0
+  armor: 1
+  attack: 3
+  isInAir: 0
+  hp_bar: {fileID: -6459534431222164434}
+  DefaultTarget: {fileID: 0}
+  target: {fileID: 0}
+  unit: {fileID: -1116100801159646306}
+  isDead: 0
+  isEnable: 1
+--- !u!114 &4316640395429983658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6878597331834024274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2098304760bcc40a503f7da715cb52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6878601634457520932
 GameObject:
   m_ObjectHideFlags: 0

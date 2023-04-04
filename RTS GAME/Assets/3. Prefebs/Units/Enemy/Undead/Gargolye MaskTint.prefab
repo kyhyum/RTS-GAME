@@ -173,6 +173,10 @@ GameObject:
   - component: {fileID: 2894341068820222701}
   - component: {fileID: 2985607421816988077}
   - component: {fileID: 652800491666684525}
+  - component: {fileID: -3288944057449657650}
+  - component: {fileID: -1660750390783622598}
+  - component: {fileID: -5619556445456188779}
+  - component: {fileID: 8127872202189983294}
   m_Layer: 8
   m_Name: Gargolye MaskTint
   m_TagString: Untagged
@@ -231,6 +235,81 @@ CapsuleCollider:
   m_Height: 3
   m_Direction: 1
   m_Center: {x: 0, y: 4, z: 0}
+--- !u!114 &-3288944057449657650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2898327355965298489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68d6298a09d5ebf4ca522100c44b5284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isdead: 0
+  hpbar: {fileID: 0}
+  maxHp: 20
+  currenthp: 20
+--- !u!114 &-1660750390783622598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2898327355965298489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03e4da558c4d374fbcf2acf54f8758c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character_num: 0
+  is_Enemy: 1
+  Opposite_team: 
+  is_range_long: 1
+  longRangeWeapon: {fileID: 4120147466952756178, guid: 20c69ea67ee15b143ac4e8cb9ab8a71f, type: 3}
+  Weapon: {fileID: 2894584844262590903}
+  AIr_Unit_Attack: 0
+  attackRange: 8
+  attack_anim_speed: 0
+  armor: 1
+  attack: 3
+  isInAir: 1
+  hp_bar: {fileID: -3288944057449657650}
+  DefaultTarget: {fileID: 0}
+  target: {fileID: 0}
+  unit: {fileID: -5619556445456188779}
+  isDead: 0
+  isEnable: 1
+--- !u!114 &-5619556445456188779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2898327355965298489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8296162e3f68ed4294d57d2bb27019c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  speed: 4
+  turnSpeed: 3
+  turnDst: 5
+  stoppingDst: 10
+--- !u!114 &8127872202189983294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2898327355965298489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2098304760bcc40a503f7da715cb52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2899293622708040415
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3574646579188317422}
   - component: {fileID: 3514485959953203458}
   - component: {fileID: 3210049829473624613}
+  - component: {fileID: 8044997905752661669}
   m_Layer: 8
   m_Name: Minion MaskTint
   m_TagString: Untagged
@@ -69,6 +70,22 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &8044997905752661669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3571443434083683662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68d6298a09d5ebf4ca522100c44b5284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isdead: 0
+  hpbar: {fileID: 0}
+  maxHp: 20
+  currenthp: 20
 --- !u!1 &3571480250191322464
 GameObject:
   m_ObjectHideFlags: 0

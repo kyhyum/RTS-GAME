@@ -415,7 +415,7 @@ MonoBehaviour:
   attack_anim_speed: 0
   armor: 2
   attack: 3
-  isInAir: 0
+  isInAir: 1
   hp_bar: {fileID: 5310483764677890231}
   DefaultTarget: {fileID: 0}
   target: {fileID: 0}

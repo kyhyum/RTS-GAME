@@ -395,6 +395,7 @@
 "Assets/2. Scripts/MonsterAI/State/VictoryState.cs"
 "Assets/2. Scripts/MonsterAI/State/WalkState.cs"
 "Assets/2. Scripts/MonsterAI/Worker.cs"
+"Assets/2. Scripts/Spawn/EnemySpawn.cs"
 "Assets/2. Scripts/Spawn/SpawnFunction.cs"
 "Assets/2. Scripts/Spawn/SpawnPos.cs"
 "Assets/2. Scripts/Spawn/UIChange.cs"

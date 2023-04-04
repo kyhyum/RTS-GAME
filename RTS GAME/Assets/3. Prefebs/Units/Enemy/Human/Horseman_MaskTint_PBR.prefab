@@ -1071,6 +1071,9 @@ GameObject:
   - component: {fileID: 5079301004264641621}
   - component: {fileID: 5133897585788781247}
   - component: {fileID: 9092343588601950278}
+  - component: {fileID: 7623798867835718522}
+  - component: {fileID: 2944833784367613739}
+  - component: {fileID: -7031437081054475404}
   m_Layer: 8
   m_Name: Horseman_MaskTint_PBR
   m_TagString: Untagged
@@ -1129,6 +1132,69 @@ CapsuleCollider:
   m_Height: 3
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &7623798867835718522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5073977766447389165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8296162e3f68ed4294d57d2bb27019c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  speed: 4
+  turnSpeed: 3
+  turnDst: 5
+  stoppingDst: 10
+--- !u!114 &2944833784367613739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5073977766447389165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68d6298a09d5ebf4ca522100c44b5284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isdead: 0
+  hpbar: {fileID: 0}
+  maxHp: 20
+  currenthp: 20
+--- !u!114 &-7031437081054475404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5073977766447389165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03e4da558c4d374fbcf2acf54f8758c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character_num: 0
+  is_Enemy: 1
+  Opposite_team: 
+  is_range_long: 0
+  longRangeWeapon: {fileID: 0}
+  Weapon: {fileID: 0}
+  AIr_Unit_Attack: 0
+  attackRange: 8
+  attack_anim_speed: 0
+  armor: 1
+  attack: 3
+  isInAir: 0
+  hp_bar: {fileID: 2944833784367613739}
+  DefaultTarget: {fileID: 0}
+  target: {fileID: 0}
+  unit: {fileID: 7623798867835718522}
+  isDead: 0
+  isEnable: 1
 --- !u!1 &5074005365328039113
 GameObject:
   m_ObjectHideFlags: 0
