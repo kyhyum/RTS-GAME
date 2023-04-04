@@ -266,11 +266,12 @@ MonoBehaviour:
   is_range_long: 1
   longRangeWeapon: {fileID: 841691580103597735, guid: 47c102b5dcf8a474693003ae278158df, type: 3}
   Weapon: {fileID: 74878245822823531}
+  AIr_Unit_Attack: 1
   attackRange: 8
-  attackHeight: 0
   attack_anim_speed: 0
   armor: 1
   attack: 3
+  isInAir: 0
   hp_bar: {fileID: -689795492996079441}
   DefaultTarget: {fileID: 0}
   target: {fileID: 0}

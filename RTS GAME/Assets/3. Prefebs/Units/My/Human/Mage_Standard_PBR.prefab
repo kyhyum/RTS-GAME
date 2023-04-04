@@ -785,7 +785,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0.5, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &1641816570843471104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -820,11 +820,12 @@ MonoBehaviour:
   is_range_long: 1
   longRangeWeapon: {fileID: 8132136636488983941, guid: de03e38213f44bc4fb7c271ebdde5df8, type: 3}
   Weapon: {fileID: 6660748464055797683}
+  AIr_Unit_Attack: 1
   attackRange: 8
-  attackHeight: 1
   attack_anim_speed: 0
   armor: 1
   attack: 3
+  isInAir: 0
   hp_bar: {fileID: 1641816570843471104}
   DefaultTarget: {fileID: 0}
   target: {fileID: 0}

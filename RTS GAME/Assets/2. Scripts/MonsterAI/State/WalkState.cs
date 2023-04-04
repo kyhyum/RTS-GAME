@@ -58,6 +58,10 @@ public class WalkState : IState
             AIUnit temp = colliders[i].GetComponentInParent<AIUnit>();
             if (!temp.isDead)
             {
+                if(temp.isInAir && !Units.AIr_Unit_Attack)
+                {
+                    continue;
+                }
                 //적 중에서 가장 가까운 타깃을 찾음
                 float dist = Vector3.Distance(Units.transform.position, temp.transform.position);
                 if (dist < minDist)

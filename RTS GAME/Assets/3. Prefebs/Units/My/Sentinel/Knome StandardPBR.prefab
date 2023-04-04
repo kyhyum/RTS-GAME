@@ -745,7 +745,10 @@ MonoBehaviour:
   Opposite_team: 
   is_range_long: 0
   longRangeWeapon: {fileID: 0}
+  Weapon: {fileID: 0}
   attackRange: 2
+  attackHeight: 0
+  attack_anim_speed: 0
   armor: 1
   attack: 3
   hp_bar: {fileID: -7676854354527580172}

@@ -1649,6 +1649,7 @@ GameObject:
   - component: {fileID: 6917559033837162963}
   - component: {fileID: 1353704793580464305}
   - component: {fileID: 415948499233296125}
+  - component: {fileID: 6387876676762829782}
   m_Layer: 9
   m_Name: Horseman_Standard_PBR
   m_TagString: Untagged
@@ -1706,7 +1707,7 @@ CapsuleCollider:
   m_Radius: 1
   m_Height: 3
   m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!114 &6917559033837162963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1769,3 +1770,19 @@ MonoBehaviour:
   turnSpeed: 3
   turnDst: 5
   stoppingDst: 10
+--- !u!54 &6387876676762829782
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3883785136654820945}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0

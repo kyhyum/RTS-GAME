@@ -132,9 +132,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 2
+  m_Height: 1.5
   m_Direction: 1
-  m_Center: {x: 0, y: 0.5, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &2247650770731066353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,7 +152,10 @@ MonoBehaviour:
   Opposite_team: 
   is_range_long: 0
   longRangeWeapon: {fileID: 0}
+  Weapon: {fileID: 0}
   attackRange: 8
+  attackHeight: 0
+  attack_anim_speed: 0
   armor: 2
   attack: 3
   hp_bar: {fileID: -2800846651623376104}

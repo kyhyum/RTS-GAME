@@ -514,6 +514,7 @@ GameObject:
   - component: {fileID: 7225088484803062317}
   - component: {fileID: 7125973028993998451}
   - component: {fileID: 5891905310888462384}
+  - component: {fileID: 3219045452216675706}
   m_Layer: 9
   m_Name: Elf Ranger StandardPBR
   m_TagString: Untagged
@@ -607,11 +608,12 @@ MonoBehaviour:
   is_range_long: 1
   longRangeWeapon: {fileID: 841691580103597735, guid: 47c102b5dcf8a474693003ae278158df, type: 3}
   Weapon: {fileID: 5268543675281835734}
+  AIr_Unit_Attack: 1
   attackRange: 8
-  attackHeight: 0
   attack_anim_speed: 0
   armor: 1
   attack: 3
+  isInAir: 0
   hp_bar: {fileID: 7125973028993998451}
   DefaultTarget: {fileID: 0}
   target: {fileID: 0}
@@ -646,6 +648,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e2098304760bcc40a503f7da715cb52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &3219045452216675706
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5262790608975727066}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
 --- !u!1 &5262838695325564750
 GameObject:
   m_ObjectHideFlags: 0

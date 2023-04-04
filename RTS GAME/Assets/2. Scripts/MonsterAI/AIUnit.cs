@@ -7,19 +7,30 @@ public class AIUnit : MonoBehaviour
 {
     public int character_num;
 
+    //우리편 상대편 확인
     public bool is_Enemy;
     public string Opposite_team;
 
+    //원거리 공격 확인
     public bool is_range_long;
     public GameObject longRangeWeapon;
-
     public Transform Weapon;
+
+    //공중 공격 가능 확인
+    public bool AIr_Unit_Attack;
+
+    //공격 범위
     public float attackRange;
-    public float attackHeight;
+    //공격 애니메이션
     public float attack_anim_speed;
 
+    //방어력
     public float armor;
+    //공격력
     public float attack;
+
+    //공중 유닛인지 확인
+    public bool isInAir;
 
     public Hp_Bar hp_bar;
 
@@ -27,7 +38,6 @@ public class AIUnit : MonoBehaviour
     public Transform DefaultTarget;
     public Transform target;
     public Unit unit;
-
 
     public bool isDead = false;
     public bool isEnable = false;
@@ -48,6 +58,7 @@ public class AIUnit : MonoBehaviour
         Idle,
         Walk,
         Attack,
+        Air_Attack,
         Death,
         Victory,
         GetHit
@@ -112,6 +123,9 @@ public class AIUnit : MonoBehaviour
                 break;
             case State.Attack:
                 animator.Play("Attack");
+                break;
+            case State.Air_Attack:
+                animator.Play("Air_Attack");
                 break;
             case State.Death:
                 animator.Play("Death");

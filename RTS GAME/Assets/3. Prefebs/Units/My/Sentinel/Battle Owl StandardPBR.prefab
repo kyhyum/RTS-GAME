@@ -1281,6 +1281,7 @@ GameObject:
   - component: {fileID: -3764637999744178663}
   - component: {fileID: -3069937912190952218}
   - component: {fileID: -6135713791583028024}
+  - component: {fileID: 415142920375941754}
   m_Layer: 9
   m_Name: Battle Owl StandardPBR
   m_TagString: Untagged
@@ -1373,9 +1374,13 @@ MonoBehaviour:
   Opposite_team: 
   is_range_long: 0
   longRangeWeapon: {fileID: 0}
+  Weapon: {fileID: 0}
+  AIr_Unit_Attack: 0
   attackRange: 3
+  attack_anim_speed: 0
   armor: 1
   attack: 3
+  isInAir: 1
   hp_bar: {fileID: -6135713791583028024}
   DefaultTarget: {fileID: 0}
   target: {fileID: 0}
@@ -1398,6 +1403,22 @@ MonoBehaviour:
   hpbar: {fileID: 0}
   maxHp: 10
   currenthp: 10
+--- !u!54 &415142920375941754
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3311652374618969292}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
 --- !u!1 &3311678138144502672
 GameObject:
   m_ObjectHideFlags: 0

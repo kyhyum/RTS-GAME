@@ -65,7 +65,7 @@ public class Worker : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         IsWork = false;
         animator.SetBool("IsMove", true);
-        Settarget(GameObject.Find("HightTower").transform);
+        Settarget(GameObject.Find("Mine StoreTower").transform);
         Mined = true;
     }
 }

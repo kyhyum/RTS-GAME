@@ -50,8 +50,16 @@ public class AttackState : MonoBehaviour,IState
         {
             if (time == 0)
             {
-                //Attack 애니메이션을 실행
-                Units.PlayAnimation(AIUnit.State.Attack);
+                if(target_AIUnit.isInAir)
+                {
+                    //Air_Attack 애니메이션 실행
+                    Units.PlayAnimation(AIUnit.State.Air_Attack);
+                }
+                else
+                {
+                    //Attack 애니메이션을 실행
+                    Units.PlayAnimation(AIUnit.State.Attack);
+                }
             }
 
             //1.2초마다 상대 피가 까이고 오브젝트가 날아가게 함

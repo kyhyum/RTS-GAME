@@ -666,6 +666,7 @@ GameObject:
   - component: {fileID: 7566338512211773189}
   - component: {fileID: 1228872278022190984}
   - component: {fileID: 280999831408071312}
+  - component: {fileID: -4961359293908999640}
   m_Layer: 9
   m_Name: Grunt Standard
   m_TagString: Untagged
@@ -774,7 +775,10 @@ MonoBehaviour:
   Opposite_team: 
   is_range_long: 0
   longRangeWeapon: {fileID: 0}
+  Weapon: {fileID: 0}
   attackRange: 8
+  attackHeight: 0
+  attack_anim_speed: 0
   armor: 2
   attack: 3
   hp_bar: {fileID: 7566338512211773189}
@@ -783,6 +787,22 @@ MonoBehaviour:
   unit: {fileID: 1228872278022190984}
   isDead: 0
   isEnable: 1
+--- !u!54 &-4961359293908999640
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6691761803491675792}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
 --- !u!1 &6691771378601015012
 GameObject:
   m_ObjectHideFlags: 0

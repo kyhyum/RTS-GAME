@@ -236,6 +236,7 @@ GameObject:
   - component: {fileID: -7835591942780000112}
   - component: {fileID: -128656399984791734}
   - component: {fileID: -7245397981852294978}
+  - component: {fileID: -2240758768415418517}
   m_Layer: 9
   m_Name: Gargolye Standard
   m_TagString: Untagged
@@ -309,11 +310,15 @@ MonoBehaviour:
   character_num: 0
   is_Enemy: 0
   Opposite_team: 
-  is_range_long: 0
-  longRangeWeapon: {fileID: 0}
+  is_range_long: 1
+  longRangeWeapon: {fileID: 4120147466952756178, guid: 20c69ea67ee15b143ac4e8cb9ab8a71f, type: 3}
+  Weapon: {fileID: 508195934148912271}
+  AIr_Unit_Attack: 0
   attackRange: 8
+  attack_anim_speed: 0
   armor: 2
   attack: 3
+  isInAir: 0
   hp_bar: {fileID: -7245397981852294978}
   DefaultTarget: {fileID: 0}
   target: {fileID: 0}
@@ -353,6 +358,22 @@ MonoBehaviour:
   hpbar: {fileID: 0}
   maxHp: 10
   currenthp: 10
+--- !u!54 &-2240758768415418517
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511318628590368471}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
 --- !u!1 &511339146343312159
 GameObject:
   m_ObjectHideFlags: 0

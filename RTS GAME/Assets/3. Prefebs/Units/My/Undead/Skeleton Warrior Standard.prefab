@@ -240,6 +240,7 @@ GameObject:
   - component: {fileID: 1552801058745393733}
   - component: {fileID: 5911438138422082946}
   - component: {fileID: -8815156667012324061}
+  - component: {fileID: 1060120663112281981}
   m_Layer: 9
   m_Name: Skeleton Warrior Standard
   m_TagString: Untagged
@@ -315,7 +316,10 @@ MonoBehaviour:
   Opposite_team: 
   is_range_long: 0
   longRangeWeapon: {fileID: 0}
+  Weapon: {fileID: 0}
   attackRange: 8
+  attackHeight: 0
+  attack_anim_speed: 0
   armor: 2
   attack: 3
   hp_bar: {fileID: -8815156667012324061}
@@ -357,6 +361,22 @@ MonoBehaviour:
   hpbar: {fileID: 0}
   maxHp: 10
   currenthp: 10
+--- !u!54 &1060120663112281981
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8578420428358810290}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
 --- !u!1 &8578858196384705826
 GameObject:
   m_ObjectHideFlags: 0
