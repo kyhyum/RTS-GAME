@@ -13,6 +13,11 @@ public class PhotonConnect : MonoBehaviourPunCallbacks
     public Button CancelButton;
     public GameObject matching_popup;
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        PhotonNetwork.AutomaticallySyncScene = true;
+    }
     void Start()
     {
         PhotonNetwork.GameVersion = gameVersion;
@@ -25,9 +30,9 @@ public class PhotonConnect : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        if (PhotonNetwork.IsMasterClient && PhotonNetwork.CurrentRoom.PlayerCount == 2)
-            PhotonNetwork.LoadLevel("MatchingMenu");
+
     }
+
 
     // 서버 연결 성공 후
     public override void OnConnectedToMaster()
@@ -47,7 +52,7 @@ public class PhotonConnect : MonoBehaviourPunCallbacks
     public void matching()
     {
         joingButton.interactable = false;
-        // 서버에 연결 중이면 룸에 접속 시도
+        //서버에 연결 중이면 룸에 접속 시도
         if (PhotonNetwork.IsConnected)
         {
             matching_popup.SetActive(true);
@@ -75,6 +80,17 @@ public class PhotonConnect : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-        CancelButton.interactable = true;
+        Debug.Log("룸 접속 완료");
+       CancelButton.interactable = true;
+    }
+    public override void OnPlayerEnteredRoom(Player newPlayer)
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            if(PhotonNetwork.CurrentRoom.PlayerCount == 2)
+            {
+                PhotonNetwork.LoadLevel("MatchingMenu");
+            }
+        }
     }
 }

@@ -1892,6 +1892,7 @@ GameObject:
   - component: {fileID: 1405593891}
   - component: {fileID: 1405593890}
   - component: {fileID: 1405593893}
+  - component: {fileID: 1405593894}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1965,8 +1966,34 @@ MonoBehaviour:
   opponent_ready: 0
   me: {fileID: 1585213731}
   opponent: {fileID: 2141476571}
+  me_tribe: {fileID: 675706946}
+  opp_tribe: {fileID: 1114833041}
+  READY_btn: {fileID: 1069129932}
   dropdown: {fileID: 2019111862}
   time: {fileID: 39644948}
+  PV: {fileID: 0}
+--- !u!114 &1405593894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405593889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 1
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1408979543
 GameObject:
   m_ObjectHideFlags: 0
