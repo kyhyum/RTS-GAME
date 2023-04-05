@@ -68,17 +68,10 @@ public class Matching : MonoBehaviourPunCallbacks
                 Timer = 5;
         }
         
-        // 게임 시작
-        if(Timer == 0)
-        {
-            if (PhotonNetwork.IsMasterClient)
-                PhotonNetwork.LoadLevel("BattleScene");
-        }
+       
 
-       if (photonView.IsMine)
-        {
-           photonView.RPC("opponent_tribe", RpcTarget.Others, "aa");
-        }
+       
+        photonView.RPC("opponent_tribe", RpcTarget.Others, me_tribe.text.ToString());
     }
     IEnumerator Count()
     {
@@ -87,6 +80,14 @@ public class Matching : MonoBehaviourPunCallbacks
             Debug.Log(Timer);
             yield return new WaitForSeconds(1.0f);
             Timer--;
+        }
+        //게임시작
+        if (Timer == 0)
+        {
+            if (PhotonNetwork.IsMasterClient)
+            {
+                PhotonNetwork.LoadLevel("BattleScene");
+            }
         }
 
     }
