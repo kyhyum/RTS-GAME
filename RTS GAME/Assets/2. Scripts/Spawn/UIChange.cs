@@ -91,7 +91,7 @@ public class UIChange : MonoBehaviour
             mytower.GetComponent<MeshRenderer>().material = lv4;
             UpgradeUI.transform.GetChild(1).GetComponent<Button>().interactable = false;
         }
-        mytower.GetComponent<MyTower>().upgrade_lv++;
+        mytower.GetComponent<Tower>().upgrade_lv++;
         mytower.GetComponent<Hp_Bar>().maxHp += 50;
         mytower.GetComponent<Hp_Bar>().currenthp += 50;
         tower.text = (++tower_lv).ToString();

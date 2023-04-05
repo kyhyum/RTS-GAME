@@ -7,7 +7,6 @@ using UnityEngine;
 public class WalkState : IState
 {
     private AIUnit Units;
-    bool isGetAttacked = false;
 
     public WalkState(AIUnit aIUnit)
     {

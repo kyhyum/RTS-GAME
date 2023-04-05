@@ -57,7 +57,7 @@ public class Worker : MonoBehaviour
             Debug.Log("Store");
             if (Mined)
             {
-                if (GameObject.Find("Mine WallTower").GetComponent<MyTower>().upgrade_lv >= 3)
+                if (GameObject.Find("Mine WallTower").GetComponent<Tower>().upgrade_lv >= 3)
                     BigCrystal();
                 if (IsBig)
                     crystal.instance.now_crystal += 2;

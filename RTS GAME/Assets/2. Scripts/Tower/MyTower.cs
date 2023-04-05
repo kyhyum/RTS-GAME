@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MyTower : MonoBehaviour
 {
-    public int upgrade_lv = 1;
+    
     // Start is called before the first frame update
     void Start()
     {

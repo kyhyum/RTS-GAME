@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class AIUnit : MonoBehaviour
@@ -21,9 +22,8 @@ public class AIUnit : MonoBehaviour
 
     //공격 범위
     public float attackRange;
-    //공격 애니메이션
+    //공격 애니메이션 속도
     public float attack_anim_speed;
-
     //방어력
     public float armor;
     //공격력
@@ -34,6 +34,9 @@ public class AIUnit : MonoBehaviour
 
     public Hp_Bar hp_bar;
 
+    public Tower EnemyTower;
+    public Tower MyTower;
+
     private Animator animator;
     public Transform DefaultTarget;
     public Transform target;
@@ -41,6 +44,8 @@ public class AIUnit : MonoBehaviour
 
     public bool isDead = false;
     public bool isEnable = false;
+    public bool isVictory = false;
+    public bool isLose = false;
 
     public IState[] _IStates;
 
@@ -51,6 +56,7 @@ public class AIUnit : MonoBehaviour
         DefaultTarget = tower;
         target = tower;
         unit.target = tower;
+        EnemyTower = DefaultTarget.GetComponent<Tower>();
     }
 
     public enum State
@@ -101,9 +107,13 @@ public class AIUnit : MonoBehaviour
     private void Update()
     {
         isDead = hp_bar.isdead;
-        if (isDead && isEnable)
+        if ((isDead && isEnable) || MyTower.IsDestroy)
         {
             this.States = AIUnit.State.Death;
+        }
+        if (EnemyTower.IsDestroy)
+        {
+            this.States = AIUnit.State.Victory;
         }
         _IStates[(int)_state].Stay();
     }

@@ -3074,11 +3074,15 @@ MonoBehaviour:
   attack: 3
   isInAir: 0
   hp_bar: {fileID: 800031179}
+  EnemyTower: {fileID: 0}
+  MyTower: {fileID: 0}
   DefaultTarget: {fileID: 8007417970686142856}
   target: {fileID: 8007417970686142856}
   unit: {fileID: 800031174}
   isDead: 0
   isEnable: 1
+  isVictory: 0
+  isLose: 0
 --- !u!114 &800031179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3264,11 +3268,15 @@ MonoBehaviour:
   attack: 3
   isInAir: 0
   hp_bar: {fileID: 8533576543610663941}
+  EnemyTower: {fileID: 0}
+  MyTower: {fileID: 0}
   DefaultTarget: {fileID: 8007417971996637118}
   target: {fileID: 8007417971996637118}
   unit: {fileID: 835277996}
   isDead: 0
   isEnable: 1
+  isVictory: 0
+  isLose: 0
 --- !u!1 &849506025
 GameObject:
   m_ObjectHideFlags: 0
@@ -5960,9 +5968,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad26cbe997bbe31489134f893ca3128f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hpbar_Control: {fileID: 514951745}
   spawn_unit_num: -1
   crys: {fileID: 4000012498681912}
   DefaultTarget: {fileID: 8007417971996637118}
+  MyTower: {fileID: 9181499218274833130}
   Canvas_Position: {fileID: 514951744}
   UI_Pos: {fileID: 1243477042}
   SpawnPos: {fileID: 1596324829}
@@ -6046,8 +6056,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80c5c76d86ed1ff4696de0648ad6f7cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hpbar_Control: {fileID: 514951745}
   spawn_unit_num: -1
   DefaultTarget: {fileID: 8007417970686142856}
+  MyTower: {fileID: 9181499218512039122}
   Canvas_Position: {fileID: 514951744}
   enemy_unit_name: Human
   Enemy_HPbar: {fileID: 2434061774592756559, guid: bb4c0e16115fcc346a6ad12943268ef8, type: 3}
@@ -9592,7 +9604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &80220515828564829
 GameObject:
   m_ObjectHideFlags: 0
@@ -13725,11 +13737,15 @@ MonoBehaviour:
   attack: 3
   isInAir: 1
   hp_bar: {fileID: 4419811395945467973}
+  EnemyTower: {fileID: 0}
+  MyTower: {fileID: 0}
   DefaultTarget: {fileID: 8007417970686142856}
   target: {fileID: 8007417970686142856}
   unit: {fileID: 4419811395945467971}
   isDead: 0
   isEnable: 1
+  isVictory: 0
+  isLose: 0
 --- !u!114 &4419811395945467973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16490,10 +16506,10 @@ GameObject:
   - component: {fileID: 8007417970686142856}
   - component: {fileID: 6381543142387918381}
   - component: {fileID: 9181499218274833127}
-  - component: {fileID: 9181499218274833130}
   - component: {fileID: 2042584528}
   - component: {fileID: 9181499218274833128}
   - component: {fileID: 9181499218274833129}
+  - component: {fileID: 9181499218274833130}
   m_Layer: 9
   m_Name: Mine WallTower
   m_TagString: Player_Tower
@@ -17528,10 +17544,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 7236088970409669426}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd1e93ca20e6ee747b51f189c8766765, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d1269639ef63ad4497a4d360ca7fc5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   upgrade_lv: 1
+  hp_bar: {fileID: 2042584528}
+  IsDestroy: 0
+  armor: 2
+  Upgrade_Level: 0
 --- !u!23 &9181499218512039121
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17586,6 +17606,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d1269639ef63ad4497a4d360ca7fc5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  upgrade_lv: 1
   hp_bar: {fileID: 973513386}
+  IsDestroy: 0
   armor: 2
   Upgrade_Level: 0

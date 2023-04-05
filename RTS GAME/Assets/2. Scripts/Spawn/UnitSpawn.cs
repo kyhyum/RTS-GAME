@@ -5,14 +5,13 @@ using UnityEngine.UI;
 
 public class UnitSpawn : MonoBehaviour
 {
-    // public Transform DefaultTarget;
-
     public static UnitSpawn instance = null;
-    Hpbar_Control hpbar_Control;
+    public Hpbar_Control hpbar_Control;
     public int spawn_unit_num = -1;
 
     public Transform crys;
     public Transform DefaultTarget;
+    public Tower MyTower;
 
     public Transform Canvas_Position;
     public Transform UI_Pos;
@@ -41,7 +40,8 @@ public class UnitSpawn : MonoBehaviour
     void Awake()
     {
         instance = this;
-        hpbar_Control = GameObject.Find("Canvas").GetComponent<Hpbar_Control>();
+        MyTower = MyTower.GetComponent<Tower>();
+        hpbar_Control = hpbar_Control.GetComponent<Hpbar_Control>();
 
         for (int i = 0; i < 8; i++)
         {
@@ -78,19 +78,6 @@ public class UnitSpawn : MonoBehaviour
             for (int j = 0; j < 8; j++)
             {
                 CreateUnit(j);
-                /*
-                 Unit.GetComponent<AIUnit>().Settarget(DefaultTarget);
-
-                 GameObject Hpbar = Create_HPbar(Player_HPbar, Unit);
-
-                 Hp_Bar hp_bar = Unit.GetComponent<Hp_Bar>();
-                 hp_bar.hpbar = Hpbar.GetComponent<Slider>();
-                 hp_bar.SetMaxHP();
-
-                 hpbar_Control.obj.Add(Unit.transform);
-                 hpbar_Control.hp_bar.Add(Hpbar);
-                 unit_queue[j].Enqueue(Unit);
-                */
             }
         }
     }
@@ -113,8 +100,12 @@ public class UnitSpawn : MonoBehaviour
         Unit.SetActive(false);
 
         if(n != 0)
-            Unit.GetComponent<AIUnit>().Settarget(DefaultTarget);
-
+        {
+            AIUnit Units = Unit.GetComponent<AIUnit>();
+            Units.Settarget(DefaultTarget);
+            Units.MyTower = MyTower;
+        }
+         
         GameObject Hpbar = Create_HPbar(Player_HPbar, Unit);
 
         Hp_Bar hp_bar = Unit.GetComponent<Hp_Bar>();
@@ -129,19 +120,6 @@ public class UnitSpawn : MonoBehaviour
 
     public void spawn(int n)
     {
-        /*
-        Debug.Log(n);
-        Debug.Log(unit_queue.Count);
-        if (unit_queue[n].Count == 0)
-            unit_queue[n].Enqueue(CreateUnit(n));
-
-        GameObject unit = unit_queue[n].Dequeue();
-
-        // ¼öÁ¤
-        unit.transform.position = new Vector3(Random.RandomRange(-8, 8), 7, -26);
-        unit.SetActive(true);
-        */
-
         SpawnClear(n);
         if (spawn_unit_num == n)
             spawn_unit_num = -1;

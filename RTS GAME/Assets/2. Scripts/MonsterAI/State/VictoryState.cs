@@ -4,25 +4,24 @@ using UnityEngine;
 
 public class VictoryState : IState
 {
-    private AIUnit aIUnit;
+    private AIUnit Units;
 
     public VictoryState(AIUnit aIUnit)
     {
-        this.aIUnit = aIUnit;
+        Units = aIUnit;
     }
 
     public void Exit()
     {
-        throw new System.NotImplementedException();
+        
     }
 
     public void Stay()
     {
-        throw new System.NotImplementedException();
     }
 
     public void Enter()
     {
-        throw new System.NotImplementedException();
+        Units.PlayAnimation(AIUnit.State.Victory);
     }
 }

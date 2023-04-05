@@ -5,13 +5,12 @@ using UnityEngine.UI;
 
 public class EnemySpawn : MonoBehaviour
 {
-    // public Transform DefaultTarget;
-
     public static EnemySpawn instance = null;
-    Hpbar_Control hpbar_Control;
+    public Hpbar_Control hpbar_Control;
     public int spawn_unit_num = -1;
 
     public Transform DefaultTarget;
+    public Tower MyTower;
 
     public Transform Canvas_Position;
     public string enemy_unit_name = "Human";
@@ -27,7 +26,7 @@ public class EnemySpawn : MonoBehaviour
     public GameObject[] unit = new GameObject[8];
 
     // 오브젝트 풀링
-    List<Queue<GameObject>> enemy_unit_queue = new List<Queue<GameObject>>();
+    public List<Queue<GameObject>> enemy_unit_queue = new List<Queue<GameObject>>();
 
     //업그레이드 수치
     public int enemy_PlusAttack = 0, enemy_PlusArmor = 0;
@@ -35,7 +34,8 @@ public class EnemySpawn : MonoBehaviour
     void Awake()
     {
         instance = this;
-        hpbar_Control = GameObject.Find("Canvas").GetComponent<Hpbar_Control>();
+        hpbar_Control = hpbar_Control.GetComponent<Hpbar_Control>();
+        MyTower = MyTower.GetComponent<Tower>();
 
         for (int i = 0; i < 8; i++)
         {
@@ -68,9 +68,7 @@ public class EnemySpawn : MonoBehaviour
             }
         }
     }
-    void Update()
-    {
-    }
+
     private GameObject Create_HPbar(GameObject gameObject, GameObject player)
     {
         GameObject Hp_bar = Instantiate(gameObject, Vector2.zero, Quaternion.identity, Canvas_Position);
@@ -83,7 +81,11 @@ public class EnemySpawn : MonoBehaviour
         Unit.SetActive(false);
 
         if(n != 0)
-            Unit.GetComponent<AIUnit>().Settarget(DefaultTarget);
+        {
+            AIUnit Units = Unit.GetComponent<AIUnit>();
+            Units.Settarget(DefaultTarget);
+            Units.MyTower = MyTower;
+        }
 
         GameObject Hpbar = Create_HPbar(Enemy_HPbar, Unit);
 
@@ -101,16 +103,15 @@ public class EnemySpawn : MonoBehaviour
     {
         unit_object.SetActive(false);
         enemy_unit_queue[n].Enqueue(unit_object);
-
     }
 
-    public void Spawn_Enemy_Unit(int n)
+    public void Spawn_Enemy_Unit(int n, int spawn_Enemyunit_num)
     {
-        if (enemy_unit_queue[spawn_unit_num].Count == 0)
-            CreateUnit(spawn_unit_num);
+        if (enemy_unit_queue[spawn_Enemyunit_num].Count == 0)
+            CreateUnit(spawn_Enemyunit_num);
         Vector3 vec = new Vector3(9 + n * -6.25f, 0, 23);
-        GameObject unit = enemy_unit_queue[spawn_unit_num].Dequeue();
-        if (spawn_unit_num != 0)
+        GameObject unit = enemy_unit_queue[spawn_Enemyunit_num].Dequeue();
+        if (spawn_Enemyunit_num != 0)
         {
             unit.GetComponent<AIUnit>().armor += enemy_PlusArmor;
             unit.GetComponent<AIUnit>().attack += enemy_PlusAttack;
