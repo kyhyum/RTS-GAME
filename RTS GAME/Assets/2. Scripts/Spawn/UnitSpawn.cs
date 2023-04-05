@@ -1,7 +1,10 @@
+using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
+using Photon.Realtime;
 
 public class UnitSpawn : MonoBehaviour
 {
@@ -128,7 +131,6 @@ public class UnitSpawn : MonoBehaviour
 
 
     }
-
     private void SpawnClear(int n)
     {
         Transform tf = UI_Pos.Find("Viewport").Find(unit_name + "_Unit(Clone)");
@@ -178,6 +180,7 @@ public class UnitSpawn : MonoBehaviour
         hp_bar.hpbar.gameObject.SetActive(true);
         unit.transform.position = vec;
         unit.SetActive(true);
+        EnemySpawn.instance.spawn(n,spawn_unit_num);
     }
     //구매가격 부족
     public void PriceLack()

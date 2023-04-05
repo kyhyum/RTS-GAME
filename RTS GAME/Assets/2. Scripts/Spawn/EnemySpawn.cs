@@ -1,9 +1,12 @@
+using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
+using Photon.Realtime;
 
-public class EnemySpawn : MonoBehaviour
+public class EnemySpawn : MonoBehaviourPunCallbacks
 {
     public static EnemySpawn instance = null;
     public Hpbar_Control hpbar_Control;
@@ -69,6 +72,11 @@ public class EnemySpawn : MonoBehaviour
         }
     }
 
+    public void spawn(int n, int enemy_num)
+    {
+        photonView.RPC("Spawn_Enemy_Unit", RpcTarget.Others, n, enemy_num);
+    }
+
     private GameObject Create_HPbar(GameObject gameObject, GameObject player)
     {
         GameObject Hp_bar = Instantiate(gameObject, Vector2.zero, Quaternion.identity, Canvas_Position);
@@ -105,6 +113,7 @@ public class EnemySpawn : MonoBehaviour
         enemy_unit_queue[n].Enqueue(unit_object);
     }
 
+    [PunRPC]
     public void Spawn_Enemy_Unit(int n, int spawn_Enemyunit_num)
     {
         if (enemy_unit_queue[spawn_Enemyunit_num].Count == 0)

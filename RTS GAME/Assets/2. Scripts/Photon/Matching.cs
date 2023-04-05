@@ -68,9 +68,6 @@ public class Matching : MonoBehaviourPunCallbacks
                 Timer = 5;
         }
         
-       
-
-       
         photonView.RPC("opponent_tribe", RpcTarget.Others, me_tribe.text.ToString());
     }
     IEnumerator Count()
