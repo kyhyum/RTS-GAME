@@ -565,8 +565,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isdead: 0
   hpbar: {fileID: 0}
-  maxHp: 20
-  currenthp: 20
+  maxHp: 10
+  currenthp: 10
 --- !u!114 &3613167082110120447
 MonoBehaviour:
   m_ObjectHideFlags: 0

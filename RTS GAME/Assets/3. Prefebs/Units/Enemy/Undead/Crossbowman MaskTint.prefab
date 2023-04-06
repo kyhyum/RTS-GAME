@@ -345,7 +345,7 @@ MonoBehaviour:
   AIr_Unit_Attack: 1
   attackRange: 8
   attack_anim_speed: 0
-  armor: 1
+  armor: 0
   attack: 3
   isInAir: 0
   hp_bar: {fileID: -8457346981767510522}
