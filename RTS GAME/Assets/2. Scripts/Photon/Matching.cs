@@ -100,13 +100,13 @@ public class Matching : MonoBehaviourPunCallbacks
         {
             me_ready = false;
             dropdown.interactable = true;
-            photonView.RPC("opp_ready", RpcTarget.Others, false);
+            photonView.RPC("ready", RpcTarget.Others, false);
         }
         else
         {
             me_ready = true;
             dropdown.interactable = false;
-            photonView.RPC("opp_ready", RpcTarget.Others, true);
+            photonView.RPC("ready", RpcTarget.Others, true);
         }
     }
 
@@ -117,7 +117,7 @@ public class Matching : MonoBehaviourPunCallbacks
     }
 
     [PunRPC]
-    public void opp_ready(bool state)
+    public void ready(bool state)
     {
         opponent_ready = state;
     }
