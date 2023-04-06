@@ -445,17 +445,21 @@ MonoBehaviour:
   longRangeWeapon: {fileID: 1866299089148362, guid: 64434728de3af5e47a38c72aab8a65cd, type: 3}
   Weapon: {fileID: 9048145186390473648}
   AIr_Unit_Attack: 1
-  attackRange: 8
+  attackRange: 10
   attack_anim_speed: 0
-  armor: 1
-  attack: 3
+  armor: 0
+  attack: 2
   isInAir: 0
   hp_bar: {fileID: -8733413725957956867}
+  EnemyTower: {fileID: 0}
+  MyTower: {fileID: 0}
   DefaultTarget: {fileID: 0}
   target: {fileID: 0}
   unit: {fileID: -1732540343434392298}
   isDead: 0
   isEnable: 1
+  isVictory: 0
+  isLose: 0
 --- !u!114 &-1732540343434392298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -469,7 +473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  speed: 4
+  speed: 3
   turnSpeed: 3
   turnDst: 5
   stoppingDst: 10

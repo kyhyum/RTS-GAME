@@ -545,23 +545,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03e4da558c4d374fbcf2acf54f8758c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character_num: 0
+  character_num: 1
   is_Enemy: 0
   Opposite_team: 
   is_range_long: 0
   longRangeWeapon: {fileID: 0}
   Weapon: {fileID: 0}
+  AIr_Unit_Attack: 0
   attackRange: 3
-  attackHeight: 0
   attack_anim_speed: 0
-  armor: 2
+  armor: 0
   attack: 3
+  isInAir: 0
   hp_bar: {fileID: -8374873673301650451}
+  EnemyTower: {fileID: 0}
+  MyTower: {fileID: 0}
   DefaultTarget: {fileID: 0}
   target: {fileID: 0}
   unit: {fileID: 3753302487920294472}
   isDead: 0
   isEnable: 1
+  isVictory: 0
+  isLose: 0
 --- !u!114 &3753302487920294472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -575,10 +580,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  speed: 4
-  turnSpeed: 3
-  turnDst: 5
-  stoppingDst: 10
+  speed: 3
+  turnSpeed: 0
+  turnDst: 1
+  stoppingDst: 3
 --- !u!114 &-8374873673301650451
 MonoBehaviour:
   m_ObjectHideFlags: 0

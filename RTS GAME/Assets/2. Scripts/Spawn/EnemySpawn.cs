@@ -36,6 +36,7 @@ public class EnemySpawn : MonoBehaviourPunCallbacks
 
     void Awake()
     {
+        enemy_unit_name = PlayerPrefs.GetString("Enemy_Tribe");
         instance = this;
         hpbar_Control = hpbar_Control.GetComponent<Hpbar_Control>();
         MyTower = MyTower.GetComponent<Tower>();
@@ -88,7 +89,7 @@ public class EnemySpawn : MonoBehaviourPunCallbacks
         GameObject Unit = Instantiate(unit[n]);
         Unit.SetActive(false);
 
-        if(n != 0)
+        if (n != 0)
         {
             AIUnit Units = Unit.GetComponent<AIUnit>();
             Units.Settarget(DefaultTarget);

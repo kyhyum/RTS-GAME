@@ -12,7 +12,6 @@ public class Matching : MonoBehaviourPunCallbacks
 {
     public bool me_ready = false, opponent_ready = false;
 
-    public GameObject Loading_;
 
     // READY TEXT
     public TMP_Text me, opponent;
@@ -41,7 +40,7 @@ public class Matching : MonoBehaviourPunCallbacks
     {
         // 카운트 다운 표시
         time.text = Timer.ToString();
-        
+
         // 준비 완료 또는 준비 중 표시
         if (me_ready)
         {
@@ -63,20 +62,20 @@ public class Matching : MonoBehaviourPunCallbacks
             color.a = 0f;
             opponent.color = color;
         }
-        
+
         // 모두 준비 완료 시 5초 카운트 다운
-        if(me_ready && opponent_ready)
+        if (me_ready && opponent_ready)
         {
             READY_btn.interactable = false;
             if (Timer > 5)
                 Timer = 5;
         }
-        
+
         photonView.RPC("opponent_tribe", RpcTarget.Others, me_tribe.text.ToString());
     }
     IEnumerator Count()
     {
-        while(Timer > 0)
+        while (Timer > 0)
         {
             Debug.Log(Timer);
             yield return new WaitForSeconds(1.0f);
@@ -85,7 +84,8 @@ public class Matching : MonoBehaviourPunCallbacks
         //게임시작
         if (Timer == 0)
         {
-            Instantiate(Loading_);
+            PlayerPrefs.SetString("Enemy_Tribe", opp_tribe.text.ToString());
+            PlayerPrefs.SetString("Player_Tribe", me_tribe.text.ToString());
             if (PhotonNetwork.IsMasterClient)
             {
                 PhotonNetwork.LoadLevel("BattleScene");
@@ -121,4 +121,18 @@ public class Matching : MonoBehaviourPunCallbacks
     {
         opponent_ready = state;
     }
+
+    public void LeaveRoom()
+    {
+        Leave();
+        photonView.RPC("Leave", RpcTarget.Others);
+    }
+
+    [PunRPC]
+    public void Leave()
+    {
+        PhotonNetwork.LeaveRoom();
+        SceneManager.LoadScene("MainMenu");
+    }
+    
 }

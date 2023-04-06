@@ -10,10 +10,7 @@ public class Loading : MonoBehaviourPunCallbacks
 {
     public bool IsLoading_Enemy = false;
 
-    private void Start()
-    {
-        DontDestroyOnLoad(gameObject);    
-    }
+
 
     private void Update()
     {
@@ -21,15 +18,6 @@ public class Loading : MonoBehaviourPunCallbacks
         if (IsLoading_Enemy)
         {
             Destroy(gameObject);
-        }
-    }
-
-    public override void OnJoinedRoom()
-    {
-        // 현재 씬 이름이 "Lobby"인 경우에만 LoadLevel() 함수 호출
-        if (SceneManager.GetActiveScene().name == "BattleScene")
-        {
-            Load();
         }
     }
 

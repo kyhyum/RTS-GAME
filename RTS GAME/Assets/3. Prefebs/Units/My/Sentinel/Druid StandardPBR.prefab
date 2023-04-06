@@ -428,23 +428,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03e4da558c4d374fbcf2acf54f8758c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character_num: 0
+  character_num: 2
   is_Enemy: 0
   Opposite_team: 
   is_range_long: 1
   longRangeWeapon: {fileID: 910963571719254232, guid: fadf43e5e7fca7f48bdd0f45fd043d3f, type: 3}
   Weapon: {fileID: 4753118377641495482}
+  AIr_Unit_Attack: 0
   attackRange: 8
-  attackHeight: 0
   attack_anim_speed: 0
-  armor: 1
-  attack: 3
+  armor: 0
+  attack: 4
+  isInAir: 0
   hp_bar: {fileID: 6252846180488085001}
+  EnemyTower: {fileID: 0}
+  MyTower: {fileID: 0}
   DefaultTarget: {fileID: 0}
   target: {fileID: 0}
   unit: {fileID: 2578480143276024474}
   isDead: 0
   isEnable: 1
+  isVictory: 0
+  isLose: 0
 --- !u!114 &6252846180488085001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -459,8 +464,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isdead: 0
   hpbar: {fileID: 0}
-  maxHp: 10
-  currenthp: 10
+  maxHp: 12
+  currenthp: 12
 --- !u!114 &6844424928743595355
 MonoBehaviour:
   m_ObjectHideFlags: 0

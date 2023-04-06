@@ -74,7 +74,6 @@ GameObject:
   - component: {fileID: 3063641075850666229}
   - component: {fileID: 3152996108433878785}
   - component: {fileID: 876467658257079776}
-  - component: {fileID: 2247650770731066353}
   - component: {fileID: -2368708788633351800}
   - component: {fileID: -2800846651623376104}
   m_Layer: 9
@@ -135,35 +134,6 @@ CapsuleCollider:
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &2247650770731066353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3067067894370423875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b03e4da558c4d374fbcf2acf54f8758c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  character_num: 0
-  is_Enemy: 0
-  Opposite_team: 
-  is_range_long: 0
-  longRangeWeapon: {fileID: 0}
-  Weapon: {fileID: 0}
-  attackRange: 8
-  attackHeight: 0
-  attack_anim_speed: 0
-  armor: 2
-  attack: 3
-  hp_bar: {fileID: -2800846651623376104}
-  DefaultTarget: {fileID: 0}
-  target: {fileID: 0}
-  unit: {fileID: -2368708788633351800}
-  isDead: 0
-  isEnable: 1
 --- !u!114 &-2368708788633351800
 MonoBehaviour:
   m_ObjectHideFlags: 0

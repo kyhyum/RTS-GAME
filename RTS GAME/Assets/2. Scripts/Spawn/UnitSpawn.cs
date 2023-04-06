@@ -42,6 +42,8 @@ public class UnitSpawn : MonoBehaviour
 
     void Awake()
     {
+        unit_name = PlayerPrefs.GetString("Player_Tribe");
+
         instance = this;
         MyTower = MyTower.GetComponent<Tower>();
         hpbar_Control = hpbar_Control.GetComponent<Hpbar_Control>();
@@ -102,13 +104,13 @@ public class UnitSpawn : MonoBehaviour
         GameObject Unit = Instantiate(unit[n]);
         Unit.SetActive(false);
 
-        if(n != 0)
+        if (n != 0)
         {
             AIUnit Units = Unit.GetComponent<AIUnit>();
             Units.Settarget(DefaultTarget);
             Units.MyTower = MyTower;
         }
-         
+
         GameObject Hpbar = Create_HPbar(Player_HPbar, Unit);
 
         Hp_Bar hp_bar = Unit.GetComponent<Hp_Bar>();
@@ -180,7 +182,7 @@ public class UnitSpawn : MonoBehaviour
         hp_bar.hpbar.gameObject.SetActive(true);
         unit.transform.position = vec;
         unit.SetActive(true);
-        EnemySpawn.instance.spawn(n,spawn_unit_num);
+        EnemySpawn.instance.spawn(n, spawn_unit_num);
     }
     //구매가격 부족
     public void PriceLack()

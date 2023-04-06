@@ -26,6 +26,10 @@ public class Hp_Bar : MonoBehaviour
     public void GetAttack(float damage, float Armor)
     {
         float realdamage = damage - Armor;
+        if (realdamage <= 0)
+        {
+            realdamage = 1;
+        }
         currenthp -= realdamage;
     }
     public void SetMaxHP()

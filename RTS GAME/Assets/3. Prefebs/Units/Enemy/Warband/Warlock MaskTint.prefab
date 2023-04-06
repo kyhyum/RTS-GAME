@@ -275,8 +275,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isdead: 0
   hpbar: {fileID: 0}
-  maxHp: 20
-  currenthp: 20
+  maxHp: 12
+  currenthp: 12
 --- !u!114 &-3928441844984948182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03e4da558c4d374fbcf2acf54f8758c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character_num: 0
+  character_num: 2
   is_Enemy: 1
   Opposite_team: 
   is_range_long: 1
@@ -298,15 +298,19 @@ MonoBehaviour:
   AIr_Unit_Attack: 0
   attackRange: 8
   attack_anim_speed: 0
-  armor: 1
-  attack: 3
+  armor: 0
+  attack: 4
   isInAir: 0
   hp_bar: {fileID: -2411556164601556882}
+  EnemyTower: {fileID: 0}
+  MyTower: {fileID: 0}
   DefaultTarget: {fileID: 0}
   target: {fileID: 0}
   unit: {fileID: -4937075824482533769}
   isDead: 0
   isEnable: 1
+  isVictory: 0
+  isLose: 0
 --- !u!114 &-4937075824482533769
 MonoBehaviour:
   m_ObjectHideFlags: 0

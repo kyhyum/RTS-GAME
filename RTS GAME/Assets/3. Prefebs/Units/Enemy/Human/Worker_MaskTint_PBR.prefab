@@ -340,8 +340,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isdead: 0
   hpbar: {fileID: 0}
-  maxHp: 0
-  currenthp: 0
+  maxHp: 10
+  currenthp: 10
 --- !u!1 &8270204979990732060
 GameObject:
   m_ObjectHideFlags: 0

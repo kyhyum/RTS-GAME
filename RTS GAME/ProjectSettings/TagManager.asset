@@ -5,11 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wall
-  - Enemy_Tower
-  - Player_Tower
   - Crystal
   - Worker
   - Store_Tower
+  - Tower
   layers:
   - Default
   - TransparentFX

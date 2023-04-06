@@ -361,8 +361,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isdead: 0
   hpbar: {fileID: 0}
-  maxHp: 20
-  currenthp: 20
+  maxHp: 30
+  currenthp: 30
 --- !u!114 &-391399843203433173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,17 +382,21 @@ MonoBehaviour:
   longRangeWeapon: {fileID: 0}
   Weapon: {fileID: 0}
   AIr_Unit_Attack: 0
-  attackRange: 8
+  attackRange: 3
   attack_anim_speed: 0
-  armor: 1
+  armor: 0
   attack: 3
   isInAir: 0
   hp_bar: {fileID: -7368043159336576598}
+  EnemyTower: {fileID: 0}
+  MyTower: {fileID: 0}
   DefaultTarget: {fileID: 0}
   target: {fileID: 0}
   unit: {fileID: -1014826590609041693}
   isDead: 0
   isEnable: 1
+  isVictory: 0
+  isLose: 0
 --- !u!114 &-1014826590609041693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -406,7 +410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  speed: 4
+  speed: 5
   turnSpeed: 3
   turnDst: 5
   stoppingDst: 10

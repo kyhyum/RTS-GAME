@@ -42,7 +42,7 @@ public class WalkState : IState
         Transform neareastTarget = null; // 가장 가까운 적을 저장하기 위한 변수
         for (int i = 0; i < colliders.Length; i++)
         {
-            if (colliders[i].tag == "Enemy_Tower")
+            if (colliders[i].tag == "Tower")
             {
                 Tower towers = colliders[i].GetComponentInParent<Tower>();
                 float dist = Vector3.Distance(Units.transform.position, towers.transform.position);
