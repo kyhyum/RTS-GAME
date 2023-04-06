@@ -518,11 +518,15 @@ MonoBehaviour:
   attack: 3
   isInAir: 0
   hp_bar: {fileID: 1461466896860095885}
+  EnemyTower: {fileID: 0}
+  MyTower: {fileID: 0}
   DefaultTarget: {fileID: 0}
   target: {fileID: 0}
   unit: {fileID: -2749316883412342938}
   isDead: 0
   isEnable: 1
+  isVictory: 0
+  isLose: 0
 --- !u!114 &-2749316883412342938
 MonoBehaviour:
   m_ObjectHideFlags: 0

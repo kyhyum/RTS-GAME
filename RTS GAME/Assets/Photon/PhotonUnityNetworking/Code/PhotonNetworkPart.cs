@@ -2555,5 +2555,10 @@ namespace Photon.Pun
                 PhotonNetwork.NetworkingClient.ConnectToRegionMaster(regionHandler.BestRegion.Code);
             }
         }
+
+        public static void RaiseEvent(byte eventCode, object[] data, RaiseEventOptions raiseEventOptions, object value)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

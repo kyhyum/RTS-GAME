@@ -4,30 +4,42 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine.SceneManagement;
 
 public class Loading : MonoBehaviourPunCallbacks
 {
-    private bool IsLoading_Enemy = false;
+    public bool IsLoading_Enemy = false;
 
     private void Start()
     {
-        photonView.RPC("is_Connect", RpcTarget.Others);
+        DontDestroyOnLoad(gameObject);    
     }
-    // Update is called once per frame
-    void Update()
+
+    private void Update()
     {
-        if(!IsLoading_Enemy)
+        Load();
+        if (IsLoading_Enemy)
         {
-            Time.timeScale = 0;
-        }
-        else
-        {
-            Time.timeScale = 1;
+            Destroy(gameObject);
         }
     }
 
+    public override void OnJoinedRoom()
+    {
+        // 현재 씬 이름이 "Lobby"인 경우에만 LoadLevel() 함수 호출
+        if (SceneManager.GetActiveScene().name == "BattleScene")
+        {
+            Load();
+        }
+    }
+
+    public void Load()
+    {
+        photonView.RPC("Set_Enemy_Loading", RpcTarget.Others);
+    }
+
     [PunRPC]
-    public void is_Connect()
+    public void Set_Enemy_Loading()
     {
         IsLoading_Enemy = true;
     }

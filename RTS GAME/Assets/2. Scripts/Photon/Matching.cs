@@ -5,10 +5,14 @@ using TMPro;
 using UnityEngine.UI;
 using Photon.Pun;
 using Photon.Realtime;
+using System.Diagnostics.Tracing;
+using UnityEngine.SceneManagement;
 
 public class Matching : MonoBehaviourPunCallbacks
 {
     public bool me_ready = false, opponent_ready = false;
+
+    public GameObject Loading_;
 
     // READY TEXT
     public TMP_Text me, opponent;
@@ -81,6 +85,7 @@ public class Matching : MonoBehaviourPunCallbacks
         //게임시작
         if (Timer == 0)
         {
+            Instantiate(Loading_);
             if (PhotonNetwork.IsMasterClient)
             {
                 PhotonNetwork.LoadLevel("BattleScene");

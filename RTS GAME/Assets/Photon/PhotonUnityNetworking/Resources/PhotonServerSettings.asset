@@ -43,6 +43,7 @@ MonoBehaviour:
   - opp_ready
   - is_Connect
   - Spawn_Enemy_Unit
+  - Set_Enemy_Loading
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 0
