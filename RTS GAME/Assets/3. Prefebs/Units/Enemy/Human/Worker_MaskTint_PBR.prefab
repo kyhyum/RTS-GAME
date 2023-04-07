@@ -268,8 +268,8 @@ GameObject:
   - component: {fileID: 8327433096723760918}
   - component: {fileID: 8269698638891889202}
   - component: {fileID: 125806797839596944}
-  - component: {fileID: -2742218825320626492}
   - component: {fileID: 3708237452917514708}
+  - component: {fileID: 7565137615284861153}
   m_Layer: 0
   m_Name: Worker_MaskTint_PBR
   m_TagString: Untagged
@@ -344,19 +344,6 @@ MonoBehaviour:
   hpbar: {fileID: 0}
   maxHp: 10
   currenthp: 10
---- !u!114 &-2742218825320626492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8270153876763769926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0879c755ab43bae489ee4e99ad036a92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!195 &3708237452917514708
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -379,6 +366,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 0
+--- !u!114 &7565137615284861153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8270153876763769926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb338882115305046b333cd15c00c71d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!1 &8270204979990732060
 GameObject:
   m_ObjectHideFlags: 0

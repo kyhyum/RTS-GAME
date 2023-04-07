@@ -41,26 +41,30 @@ public class Matching : MonoBehaviourPunCallbacks
         // 카운트 다운 표시
         time.text = Timer.ToString();
 
-        // 준비 완료 또는 준비 중 표시
-        if (me_ready)
+        if (Timer > 0)
         {
-            color.a = 1f;
-            me.color = color;
-        }
-        else
-        {
-            color.a = 0f;
-            me.color = color;
-        }
-        if (opponent_ready)
-        {
-            color.a = 1f;
-            opponent.color = color;
-        }
-        else
-        {
-            color.a = 0f;
-            opponent.color = color;
+            // 준비 완료 또는 준비 중 표시
+            if (me_ready)
+            {
+                color.a = 1f;
+                me.color = color;
+            }
+            else
+            {
+                color.a = 0f;
+                me.color = color;
+            }
+            if (opponent_ready)
+            {
+                color.a = 1f;
+                opponent.color = color;
+            }
+            else
+            {
+                color.a = 0f;
+                opponent.color = color;
+            }
+            photonView.RPC("opponent_tribe", RpcTarget.Others, me_tribe.text.ToString());
         }
 
         // 모두 준비 완료 시 5초 카운트 다운
@@ -71,7 +75,6 @@ public class Matching : MonoBehaviourPunCallbacks
                 Timer = 5;
         }
 
-        photonView.RPC("opponent_tribe", RpcTarget.Others, me_tribe.text.ToString());
     }
     IEnumerator Count()
     {

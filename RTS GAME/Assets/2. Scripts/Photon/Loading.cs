@@ -17,7 +17,7 @@ public class Loading : MonoBehaviourPunCallbacks
         Load();
         if (IsLoading_Enemy)
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
     }
 

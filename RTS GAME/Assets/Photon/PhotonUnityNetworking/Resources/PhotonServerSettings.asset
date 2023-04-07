@@ -46,6 +46,9 @@ MonoBehaviour:
   - Set_Enemy_Loading
   - Leave
   - ready
+  - tower_up
+  - armor_up
+  - attack_up
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

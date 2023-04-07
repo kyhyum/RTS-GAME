@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Photon.Pun;
 
-public class UIChange : MonoBehaviour
+public class UIChange : MonoBehaviourPunCallbacks
 {
     public GameObject UpgradeUI;
     public Transform ViewPort;
@@ -50,6 +51,7 @@ public class UIChange : MonoBehaviour
         attack.text = (++attack_lv).ToString();
         crystal.instance.now_crystal -= AttackCost;
         UnitSpawn.instance.PlusAttack += 1;
+        photonView.RPC("attack_up", RpcTarget.Others);
 
 
     }
@@ -64,6 +66,7 @@ public class UIChange : MonoBehaviour
         armor.text = (++armor_lv).ToString();
         crystal.instance.now_crystal -= ArmorCost;
         UnitSpawn.instance.PlusArmor += 1;
+        photonView.RPC("armor_up", RpcTarget.Others);
 
     }
     public void TowerUpgrade()
@@ -95,7 +98,34 @@ public class UIChange : MonoBehaviour
         mytower.GetComponent<Hp_Bar>().maxHp += 50;
         mytower.GetComponent<Hp_Bar>().currenthp += 50;
         tower.text = (++tower_lv).ToString();
+        photonView.RPC("tower_up", RpcTarget.Others, tower_lv);
         
     }
 
+    [PunRPC]
+    public void tower_up(int n)
+    {
+        GameObject othertower = GameObject.Find("Other WallTower");
+        if (n == 2)
+            othertower.GetComponent<MeshRenderer>().material = lv2;
+        else if(n == 3)
+            othertower.GetComponent<MeshRenderer>().material = lv3;
+        else
+            othertower.GetComponent<MeshRenderer>().material = lv4;
+        othertower.GetComponent<Tower>().upgrade_lv = n;
+        othertower.GetComponent<Hp_Bar>().maxHp += 50;
+        othertower.GetComponent<Hp_Bar>().currenthp += 50;
+    }
+
+    [PunRPC]
+    public void armor_up()
+    {
+        EnemySpawn.instance.enemy_PlusArmor += 1;
+    }
+
+    [PunRPC]
+    public void attack_up()
+    {
+        EnemySpawn.instance.enemy_PlusAttack += 1;
+    }
 }

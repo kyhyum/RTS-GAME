@@ -1546,6 +1546,8 @@ GameObject:
   - component: {fileID: 394277180}
   - component: {fileID: 394277179}
   - component: {fileID: 394277178}
+  - component: {fileID: 394277181}
+  - component: {fileID: 394277182}
   m_Layer: 5
   m_Name: Viewport
   m_TagString: Untagged
@@ -1625,6 +1627,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394277176}
   m_CullTransparentMesh: 1
+--- !u!114 &394277181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394277176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dda973ebb27bed4dac1a33535a9a5e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpgradeUI: {fileID: 4696109571740642113}
+  ViewPort: {fileID: 394277177}
+  lv2: {fileID: 2100000, guid: ebf2afb733ec83746a262ab73ff848b2, type: 2}
+  lv3: {fileID: 2100000, guid: 3012e16f74a04354b9fc08ea3b9bca31, type: 2}
+  lv4: {fileID: 2100000, guid: bd2a786a620f4494b856e9dad310afe4, type: 2}
+  tower: {fileID: 1345572613}
+  attack: {fileID: 1612974062}
+  armor: {fileID: 400951429}
+--- !u!114 &394277182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394277176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 5
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &400951427
 GameObject:
   m_ObjectHideFlags: 0
@@ -5858,7 +5902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2883b24310dd9434ba0beaae20e6477c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  now_crystal: 1000
+  now_crystal: 10
   tmp: {fileID: 3619313226977483329}
 --- !u!114 &1662050200
 MonoBehaviour:
@@ -5945,7 +5989,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents: []
-  sceneViewId: 1
+  sceneViewId: 3
   InstantiationId: 0
   isRuntimeInstantiated: 0
 --- !u!114 &1662050203
@@ -7968,7 +8012,7 @@ GameObject:
   - component: {fileID: 95000013465774381}
   m_Layer: 0
   m_Name: Other big crystal
-  m_TagString: Untagged
+  m_TagString: Crystal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7989,7 +8033,7 @@ GameObject:
   - component: {fileID: 95000014294920631}
   m_Layer: 0
   m_Name: Other small crystal
-  m_TagString: Untagged
+  m_TagString: Crystal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8508,26 +8552,6 @@ CapsuleCollider:
   m_Height: 0.04
   m_Direction: 1
   m_Center: {x: -0.0055656256, y: 0.02346941, z: 0.013663684}
---- !u!114 &536877543955138788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4696109571442077964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dda973ebb27bed4dac1a33535a9a5e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UpgradeUI: {fileID: 4696109571740642113}
-  ViewPort: {fileID: 394277177}
-  lv2: {fileID: 0}
-  lv3: {fileID: 0}
-  lv4: {fileID: 0}
-  tower: {fileID: 0}
-  attack: {fileID: 0}
-  armor: {fileID: 0}
 --- !u!1 &629512305759352557
 GameObject:
   m_ObjectHideFlags: 0
@@ -10376,7 +10400,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 536877543955138788}
+      - m_Target: {fileID: 394277181}
         m_TargetAssemblyTypeName: UIChange, Assembly-CSharp
         m_MethodName: UnitClick
         m_Mode: 1
@@ -10779,7 +10803,6 @@ GameObject:
   - component: {fileID: 4696109570659252854}
   - component: {fileID: 4696109570659252849}
   - component: {fileID: 4696109570659252855}
-  - component: {fileID: 4696109570659252856}
   m_Layer: 5
   m_Name: AttackUpgrade
   m_TagString: Untagged
@@ -10839,7 +10862,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4696109570659252856}
+      - m_Target: {fileID: 394277181}
         m_TargetAssemblyTypeName: UIChange, Assembly-CSharp
         m_MethodName: AttackUpgrade
         m_Mode: 1
@@ -10851,26 +10874,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &4696109570659252856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4696109570659252851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dda973ebb27bed4dac1a33535a9a5e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UpgradeUI: {fileID: 4696109571740642113}
-  ViewPort: {fileID: 394277177}
-  lv2: {fileID: 2100000, guid: ebf2afb733ec83746a262ab73ff848b2, type: 2}
-  lv3: {fileID: 2100000, guid: 3012e16f74a04354b9fc08ea3b9bca31, type: 2}
-  lv4: {fileID: 2100000, guid: bd2a786a620f4494b856e9dad310afe4, type: 2}
-  tower: {fileID: 1345572613}
-  attack: {fileID: 1612974062}
-  armor: {fileID: 400951429}
 --- !u!1 &4696109570759081441
 GameObject:
   m_ObjectHideFlags: 0
@@ -10883,7 +10886,6 @@ GameObject:
   - component: {fileID: 4696109570759081444}
   - component: {fileID: 4696109570759081447}
   - component: {fileID: 4696109570759081445}
-  - component: {fileID: 4696109570759081448}
   m_Layer: 5
   m_Name: TowerUpgrade
   m_TagString: Untagged
@@ -10943,7 +10945,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4696109570759081448}
+      - m_Target: {fileID: 394277181}
         m_TargetAssemblyTypeName: UIChange, Assembly-CSharp
         m_MethodName: TowerUpgrade
         m_Mode: 1
@@ -11008,26 +11010,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4696109570759081448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4696109570759081441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dda973ebb27bed4dac1a33535a9a5e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UpgradeUI: {fileID: 4696109571740642113}
-  ViewPort: {fileID: 394277177}
-  lv2: {fileID: 2100000, guid: ebf2afb733ec83746a262ab73ff848b2, type: 2}
-  lv3: {fileID: 2100000, guid: 3012e16f74a04354b9fc08ea3b9bca31, type: 2}
-  lv4: {fileID: 2100000, guid: bd2a786a620f4494b856e9dad310afe4, type: 2}
-  tower: {fileID: 1345572613}
-  attack: {fileID: 1612974062}
-  armor: {fileID: 400951429}
 --- !u!114 &4696109571442077938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11078,7 +11060,6 @@ GameObject:
   - component: {fileID: 4696109571442077939}
   - component: {fileID: 4696109571442077938}
   - component: {fileID: 4487282348012084265}
-  - component: {fileID: 536877543955138788}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -11230,7 +11211,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4696109572689963038}
+      - m_Target: {fileID: 394277181}
         m_TargetAssemblyTypeName: UIChange, Assembly-CSharp
         m_MethodName: ArmorUpgrade
         m_Mode: 1
@@ -11292,7 +11273,6 @@ GameObject:
   - component: {fileID: 4696109572689963011}
   - component: {fileID: 4696109572689963010}
   - component: {fileID: 4696109572689963008}
-  - component: {fileID: 4696109572689963038}
   m_Layer: 5
   m_Name: ArmorUpgrade
   m_TagString: Untagged
@@ -11323,26 +11303,6 @@ RectTransform:
   m_AnchoredPosition: {x: 315, y: 0}
   m_SizeDelta: {x: -890, y: -60}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &4696109572689963038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4696109572689963036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dda973ebb27bed4dac1a33535a9a5e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UpgradeUI: {fileID: 4696109571740642113}
-  ViewPort: {fileID: 394277177}
-  lv2: {fileID: 2100000, guid: ebf2afb733ec83746a262ab73ff848b2, type: 2}
-  lv3: {fileID: 2100000, guid: 3012e16f74a04354b9fc08ea3b9bca31, type: 2}
-  lv4: {fileID: 2100000, guid: bd2a786a620f4494b856e9dad310afe4, type: 2}
-  tower: {fileID: 1345572613}
-  attack: {fileID: 1612974062}
-  armor: {fileID: 400951429}
 --- !u!64 &4747640492748751617
 MeshCollider:
   m_ObjectHideFlags: 0
