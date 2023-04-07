@@ -289,6 +289,7 @@ GameObject:
   - component: {fileID: -7368043159336576598}
   - component: {fileID: -391399843203433173}
   - component: {fileID: -1014826590609041693}
+  - component: {fileID: 8939018608242106085}
   m_Layer: 8
   m_Name: Treeant MaskTintPBR
   m_TagString: Untagged
@@ -414,6 +415,22 @@ MonoBehaviour:
   turnSpeed: 3
   turnDst: 5
   stoppingDst: 10
+--- !u!54 &8939018608242106085
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7610057334067959725}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7610085961274481209
 GameObject:
   m_ObjectHideFlags: 0

@@ -24,6 +24,22 @@ public class End_Popup : MonoBehaviourPunCallbacks
         if(iswin)
         {
             Win_Text.SetActive(true);
+            photonView.RPC("Active_Popup", RpcTarget.Others, false);
+        }
+        else
+        {
+            Lose_Text.SetActive(true);
+            photonView.RPC("Active_Popup", RpcTarget.Others, true);
+        }
+    }
+
+    [PunRPC]
+    public void Active_Popup(bool iswin)
+    {
+        this.gameObject.SetActive(true);
+        if (iswin)
+        {
+            Win_Text.SetActive(true);
         }
         else
         {

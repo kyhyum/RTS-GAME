@@ -766,6 +766,7 @@ GameObject:
   - component: {fileID: 8943758865807024880}
   - component: {fileID: 3896897118750496253}
   - component: {fileID: -4282834196808419032}
+  - component: {fileID: -4634405361062711547}
   m_Layer: 8
   m_Name: Demon Hunter MaskTintPBR
   m_TagString: Untagged
@@ -891,6 +892,22 @@ MonoBehaviour:
   turnSpeed: 3
   turnDst: 5
   stoppingDst: 10
+--- !u!54 &-4634405361062711547
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602013011720619456}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1602014953506897328
 GameObject:
   m_ObjectHideFlags: 0

@@ -49,6 +49,7 @@ MonoBehaviour:
   - tower_up
   - armor_up
   - attack_up
+  - Active_Popup
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
