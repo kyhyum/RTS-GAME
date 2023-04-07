@@ -12,11 +12,11 @@ public class EndGame : MonoBehaviour
     {
         if (Player_Tower.IsDestroy)
         {
-            end_Popup.Active_End_Popup(true);
+            end_Popup.Active_End_Popup(false);
         }
         else if(Enemy_Tower.IsDestroy)
         {
-            end_Popup.Active_End_Popup(false);
+            end_Popup.Active_End_Popup(true);
         }
     }
 }

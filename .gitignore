@@ -2,13 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-Library/
-Temp/
-obj/
-/[Bb]uild/
-/[Bb]uilds/
-Logs/
-UserSettings/
+RTS GAME/Library/
+RTS GAME/Temp/
+RTS GAME/obj/
+RTS GAME/[Bb]uild/
+RTS GAME/[Bb]uilds/
+RTS GAME/Logs/
+RTS GAME/UserSettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -65,8 +65,8 @@ sysinfo.txt
 crashlytics-build.properties
 
 # Packed Addressables
-/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+RTS GAME/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
 # Temporary auto-generated Android Assets
-/[Aa]ssets/[Ss]treamingAssets/aa.meta
-/[Aa]ssets/[Ss]treamingAssets/aa/*
+RTS GAME/[Aa]ssets/[Ss]treamingAssets/aa.meta
+RTS GAME/[Aa]ssets/[Ss]treamingAssets/aa/*
