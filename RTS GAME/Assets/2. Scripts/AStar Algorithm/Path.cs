@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class Path
 {
-
-    public readonly Vector3[] lookPoints;
-    public readonly Line[] turnBoundaries;
-    public readonly int finishLineIndex;
-    public readonly int slowDownIndex;
+    public readonly Vector3[] lookPoints; // 경로상의 모든 점
+    public readonly Line[] turnBoundaries; // 각각의 회전 경계선
+    public readonly int finishLineIndex; // 마지막 회전 경계선의 인덱스
+    public readonly int slowDownIndex; // 감속을 시작할 지점의 인덱스
 
     public Path(Vector3[] waypoints, Vector3 startPos, float turnDst, float stoppingDst)
     {
@@ -42,22 +41,4 @@ public class Path
     {
         return new Vector2(v3.x, v3.z);
     }
-
-    public void DrawWithGizmos()
-    {
-
-        Gizmos.color = Color.black;
-        foreach (Vector3 p in lookPoints)
-        {
-            Gizmos.DrawCube(p + Vector3.up, Vector3.one);
-        }
-
-        Gizmos.color = Color.white;
-        foreach (Line l in turnBoundaries)
-        {
-            l.DrawWithGizmos(10);
-        }
-
-    }
-
 }

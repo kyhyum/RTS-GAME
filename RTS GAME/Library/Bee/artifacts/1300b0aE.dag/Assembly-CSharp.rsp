@@ -395,6 +395,8 @@
 "Assets/2. Scripts/MonsterAI/State/VictoryState.cs"
 "Assets/2. Scripts/MonsterAI/State/WalkState.cs"
 "Assets/2. Scripts/MonsterAI/Worker.cs"
+"Assets/2. Scripts/Photon/Battle/EndGame.cs"
+"Assets/2. Scripts/Photon/Battle/End_Popup.cs"
 "Assets/2. Scripts/Photon/Loading.cs"
 "Assets/2. Scripts/Photon/Matching.cs"
 "Assets/2. Scripts/Photon/PhotonConnect.cs"

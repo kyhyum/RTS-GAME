@@ -71,41 +71,34 @@ public class Projectile : MonoBehaviour
 
     IEnumerator SimulateProjectile()
     {
-        // Short delay added before Projectile is thrown
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.5f); // 대기 시간
 
-        // Move projectile to the position of throwing object + add some offset if needed.
-        Projectile_trs.position = myTransform.position + new Vector3(0, 0.0f, 0);
+        Projectile_trs.position = myTransform.position + new Vector3(0, 0.0f, 0); // 발사체 위치 설정
 
-        // Calculate distance to target
-        float target_Distance = Vector3.Distance(Projectile_trs.position, Target.position);
+        float target_Distance = Vector3.Distance(Projectile_trs.position, Target.position); // 발사 대상과의 거리 계산
 
-        // Calculate the velocity needed to throw the object to the target at specified angle.
-        float projectile_Velocity = target_Distance / (Mathf.Sin(2 * firingAngle * Mathf.Deg2Rad) / gravity);
+        float projectile_Velocity = target_Distance / (Mathf.Sin(2 * firingAngle * Mathf.Deg2Rad) / gravity); // 발사체의 속도 계산
 
-        // Extract the X  Y componenent of the velocity
-        float Vx = Mathf.Sqrt(projectile_Velocity) * Mathf.Cos(firingAngle * Mathf.Deg2Rad);
-        float Vy = Mathf.Sqrt(projectile_Velocity) * Mathf.Sin(firingAngle * Mathf.Deg2Rad);
+        float Vx = Mathf.Sqrt(projectile_Velocity) * Mathf.Cos(firingAngle * Mathf.Deg2Rad); // 발사체의 x축 속도 계산
+        float Vy = Mathf.Sqrt(projectile_Velocity) * Mathf.Sin(firingAngle * Mathf.Deg2Rad); // 발사체의 y축 속도 계산
 
-        // Calculate flight time.
-        float flightDuration = target_Distance / Vx;
+        float flightDuration = target_Distance / Vx; // 발사체 비행 시간 계산
 
-        // Rotate projectile to face the target.
-        Projectile_trs.rotation = Quaternion.LookRotation(Target.position - Projectile_trs.position);
+        Projectile_trs.rotation = Quaternion.LookRotation(Target.position - Projectile_trs.position); // 발사체 방향 설정
 
-        float elapse_time = 0;
+        float elapse_time = 0; // 경과 시간 초기화
 
         while (elapse_time < flightDuration)
         {
-            Projectile_trs.Translate(0, (Vy - (gravity * elapse_time)) * Time.deltaTime, Vx * Time.deltaTime);
+            Projectile_trs.Translate(0, (Vy - (gravity * elapse_time)) * Time.deltaTime, Vx * Time.deltaTime); // 발사체 위치 변경
 
-            elapse_time += Time.deltaTime;
+            elapse_time += Time.deltaTime; // 경과 시간 증가
 
-            yield return null;
+            yield return null; // 다음 프레임까지 대기
         }
 
-        projectile_Spawn.Unactive_Projectile(this.gameObject);
-        hp_bar.GetAttack(damage, armor);
+        projectile_Spawn.Unactive_Projectile(this.gameObject); // 발사체 비활성화
+        hp_bar.GetAttack(damage, armor); // 대미지 적용
     }
 }
 
