@@ -27,7 +27,6 @@ public class Matching : MonoBehaviourPunCallbacks
     private int Timer = 50;
     public TMP_Text time;
 
-    // Start is called before the first frame update
     void Start()
     {
         PhotonNetwork.AutomaticallySyncScene = true;
@@ -35,7 +34,6 @@ public class Matching : MonoBehaviourPunCallbacks
         StartCoroutine("Count");
     }
 
-    // Update is called once per frame
     void Update()
     {
         // 카운트 다운 표시
@@ -114,13 +112,13 @@ public class Matching : MonoBehaviourPunCallbacks
     }
 
     [PunRPC]
-    public void opponent_tribe(string tribe)
+    public void OpponentTribe(string tribe)
     {
         opp_tribe.text = tribe;
     }
 
     [PunRPC]
-    public void ready(bool state)
+    public void Ready(bool state)
     {
         opponent_ready = state;
     }

@@ -49,7 +49,7 @@ public class PhotonConnect : MonoBehaviourPunCallbacks
     }
     
     // 매칭 버튼 클릭 함수
-    public void matching()
+    public void Matching()
     {
         joingButton.interactable = false;
         //서버에 연결 중이면 룸에 접속 시도
@@ -66,7 +66,7 @@ public class PhotonConnect : MonoBehaviourPunCallbacks
     }
 
     // 매칭 취소 버튼 클릭 함수
-    public void matching_cancel()
+    public void MatchingCancel()
     {
         PhotonNetwork.LeaveRoom();
         matching_popup.SetActive(false);

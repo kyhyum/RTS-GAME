@@ -27,7 +27,7 @@ public class Loading : MonoBehaviourPunCallbacks
     }
 
     [PunRPC]
-    public void Set_Enemy_Loading()
+    public void SetEnemyLoading()
     {
         IsLoading_Enemy = true;
     }

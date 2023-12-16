@@ -18,7 +18,7 @@ public class End_Popup : MonoBehaviourPunCallbacks
         this.gameObject.SetActive(false);
     }
 
-    public void Active_End_Popup(bool iswin)
+    public void ActiveEndPopup(bool iswin)
     {
         this.gameObject.SetActive(true);
         if(iswin)
@@ -34,7 +34,7 @@ public class End_Popup : MonoBehaviourPunCallbacks
     }
 
     [PunRPC]
-    public void Active_Popup(bool iswin)
+    public void ActivePopup(bool iswin)
     {
         this.gameObject.SetActive(true);
         if (iswin)

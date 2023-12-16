@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class PauseButton : MonoBehaviour
 {
-    public End_Popup end_popup;
-    public GameObject Setting_Popup;
+    public End_Popup endPopup;
+    public GameObject settingPopup;
 
     // Start is called before the first frame update
     void Start()
     {
-        Setting_Popup.SetActive(false);
+        settingPopup.SetActive(false);
         this.gameObject.SetActive(false);   
     }
 
@@ -26,16 +26,16 @@ public class PauseButton : MonoBehaviour
 
     public void Surrender()
     {
-        end_popup.Active_End_Popup(false);
+        endPopup.ActiveEndPopup(false);
     }
 
     public void SetActive_Setting_popup()
     {
-        Setting_Popup.SetActive(true);
+        settingPopup.SetActive(true);
     }
 
     public void SetUnActive_Setting_popup()
     {
-        Setting_Popup.SetActive(false);
+        settingPopup.SetActive(false);
     }
 }

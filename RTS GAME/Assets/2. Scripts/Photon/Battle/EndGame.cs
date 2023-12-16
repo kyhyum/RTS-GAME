@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class EndGame : MonoBehaviour
 {
-    public Tower Player_Tower;
-    public Tower Enemy_Tower;
-    public End_Popup end_Popup; 
+    public Tower playerTower;
+    public Tower enemyTower;
+    public End_Popup endPopup; 
 
     private void Update()
     {
-        if (Player_Tower.IsDestroy)
+        if (playerTower.IsDestroy)
         {
-            end_Popup.Active_End_Popup(false);
+            endPopup.ActiveEndPopup(false);
         }
-        else if(Enemy_Tower.IsDestroy)
+        else if(enemyTower.IsDestroy)
         {
-            end_Popup.Active_End_Popup(true);
+            endPopup.ActiveEndPopup(true);
         }
     }
 }
